@@ -1,5 +1,7 @@
 # Protobufs for policy network
 
+See `message.proto` for message structures.
+
 ## Python
 See `python/usage.py` for usage.
 
