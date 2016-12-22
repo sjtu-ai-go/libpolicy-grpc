@@ -19,7 +19,7 @@ DESCRIPTOR = _descriptor.FileDescriptor(
   name='message.proto',
   package='gocnn',
   syntax='proto3',
-  serialized_pb=_b('\n\rmessage.proto\x12\x05gocnn\"\xbc\x01\n\tRequestV1\x12\x12\n\nboard_size\x18\x01 \x01(\x05\x12\x16\n\x0eour_group_lib1\x18\x02 \x03(\x08\x12\x16\n\x0eour_group_lib2\x18\x03 \x03(\x08\x12\x1b\n\x13our_group_lib3_plus\x18\x04 \x03(\x08\x12\x17\n\x0foppo_group_lib1\x18\x05 \x03(\x08\x12\x17\n\x0foppo_group_lib2\x18\x06 \x03(\x08\x12\x1c\n\x14oppo_group_lib3_plus\x18\x07 \x03(\x08\"5\n\nResponseV1\x12\x12\n\nboard_size\x18\x01 \x01(\x05\x12\x13\n\x0bpossibility\x18\x02 \x03(\x02\x62\x06proto3')
+  serialized_pb=_b('\n\rmessage.proto\x12\x05gocnn\"\xbc\x01\n\tRequestV1\x12\x12\n\nboard_size\x18\x01 \x01(\x05\x12\x16\n\x0eour_group_lib1\x18\x02 \x03(\x08\x12\x16\n\x0eour_group_lib2\x18\x03 \x03(\x08\x12\x1b\n\x13our_group_lib3_plus\x18\x04 \x03(\x08\x12\x17\n\x0foppo_group_lib1\x18\x05 \x03(\x08\x12\x17\n\x0foppo_group_lib2\x18\x06 \x03(\x08\x12\x1c\n\x14oppo_group_lib3_plus\x18\x07 \x03(\x08\"5\n\nResponseV1\x12\x12\n\nboard_size\x18\x01 \x01(\x05\x12\x13\n\x0bpossibility\x18\x02 \x03(\x02\"\xb2\x08\n\tRequestV2\x12\x12\n\nboard_size\x18\x01 \x01(\x05\x12\x11\n\tour_stone\x18\x02 \x03(\x08\x12\x12\n\noppo_stone\x18\x03 \x03(\x08\x12\x13\n\x0b\x65mpty_stone\x18\x04 \x03(\x08\x12\x13\n\x0bturn_since1\x18\x05 \x03(\x08\x12\x13\n\x0bturn_since2\x18\x06 \x03(\x08\x12\x13\n\x0bturn_since3\x18\x07 \x03(\x08\x12\x13\n\x0bturn_since4\x18\x08 \x03(\x08\x12\x13\n\x0bturn_since5\x18\t \x03(\x08\x12\x13\n\x0bturn_since6\x18\n \x03(\x08\x12\x13\n\x0bturn_since7\x18\x0b \x03(\x08\x12\x18\n\x10turn_since8_plus\x18\x0c \x03(\x08\x12\x0c\n\x04lib1\x18\r \x03(\x08\x12\x0c\n\x04lib2\x18\x0e \x03(\x08\x12\x0c\n\x04lib3\x18\x0f \x03(\x08\x12\x0c\n\x04lib4\x18\x10 \x03(\x08\x12\x0c\n\x04lib5\x18\x11 \x03(\x08\x12\x0c\n\x04lib6\x18\x12 \x03(\x08\x12\x0c\n\x04lib7\x18\x13 \x03(\x08\x12\x11\n\tlib8_plus\x18\x14 \x03(\x08\x12\x17\n\x0f\x61\x66ter_move_lib1\x18\x15 \x03(\x08\x12\x17\n\x0f\x61\x66ter_move_lib2\x18\x16 \x03(\x08\x12\x17\n\x0f\x61\x66ter_move_lib3\x18\x17 \x03(\x08\x12\x17\n\x0f\x61\x66ter_move_lib4\x18\x18 \x03(\x08\x12\x17\n\x0f\x61\x66ter_move_lib5\x18\x19 \x03(\x08\x12\x17\n\x0f\x61\x66ter_move_lib6\x18\x1a \x03(\x08\x12\x17\n\x0f\x61\x66ter_move_lib7\x18\x1b \x03(\x08\x12\x1c\n\x14\x61\x66ter_move_lib8_plus\x18\x1c \x03(\x08\x12\x16\n\x0e\x63\x61p_oppo_size1\x18\x1d \x03(\x08\x12\x16\n\x0e\x63\x61p_oppo_size2\x18\x1e \x03(\x08\x12\x16\n\x0e\x63\x61p_oppo_size3\x18\x1f \x03(\x08\x12\x16\n\x0e\x63\x61p_oppo_size4\x18  \x03(\x08\x12\x16\n\x0e\x63\x61p_oppo_size5\x18! \x03(\x08\x12\x16\n\x0e\x63\x61p_oppo_size6\x18\" \x03(\x08\x12\x16\n\x0e\x63\x61p_oppo_size7\x18# \x03(\x08\x12\x1b\n\x13\x63\x61p_oppo_size8_plus\x18$ \x03(\x08\x12\x15\n\rcap_our_size1\x18% \x03(\x08\x12\x15\n\rcap_our_size2\x18& \x03(\x08\x12\x15\n\rcap_our_size3\x18\' \x03(\x08\x12\x15\n\rcap_our_size4\x18( \x03(\x08\x12\x15\n\rcap_our_size5\x18) \x03(\x08\x12\x15\n\rcap_our_size6\x18* \x03(\x08\x12\x15\n\rcap_our_size7\x18+ \x03(\x08\x12\x1a\n\x12\x63\x61p_our_size8_plus\x18, \x03(\x08\x12\x19\n\x11not_fill_own_eyes\x18- \x03(\x08\x12\n\n\x02ko\x18. \x03(\x08\x12\x0e\n\x06\x62order\x18/ \x03(\x08\x12\x10\n\x08position\x18\x30 \x03(\x02\x12\x0c\n\x04ones\x18\x31 \x03(\x08\x12\r\n\x05zeros\x18\x32 \x03(\x08\x62\x06proto3')
 )
 _sym_db.RegisterFileDescriptor(DESCRIPTOR)
 
@@ -136,8 +136,383 @@ _RESPONSEV1 = _descriptor.Descriptor(
   serialized_end=268,
 )
 
+
+_REQUESTV2 = _descriptor.Descriptor(
+  name='RequestV2',
+  full_name='gocnn.RequestV2',
+  filename=None,
+  file=DESCRIPTOR,
+  containing_type=None,
+  fields=[
+    _descriptor.FieldDescriptor(
+      name='board_size', full_name='gocnn.RequestV2.board_size', index=0,
+      number=1, type=5, cpp_type=1, label=1,
+      has_default_value=False, default_value=0,
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='our_stone', full_name='gocnn.RequestV2.our_stone', index=1,
+      number=2, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='oppo_stone', full_name='gocnn.RequestV2.oppo_stone', index=2,
+      number=3, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='empty_stone', full_name='gocnn.RequestV2.empty_stone', index=3,
+      number=4, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='turn_since1', full_name='gocnn.RequestV2.turn_since1', index=4,
+      number=5, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='turn_since2', full_name='gocnn.RequestV2.turn_since2', index=5,
+      number=6, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='turn_since3', full_name='gocnn.RequestV2.turn_since3', index=6,
+      number=7, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='turn_since4', full_name='gocnn.RequestV2.turn_since4', index=7,
+      number=8, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='turn_since5', full_name='gocnn.RequestV2.turn_since5', index=8,
+      number=9, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='turn_since6', full_name='gocnn.RequestV2.turn_since6', index=9,
+      number=10, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='turn_since7', full_name='gocnn.RequestV2.turn_since7', index=10,
+      number=11, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='turn_since8_plus', full_name='gocnn.RequestV2.turn_since8_plus', index=11,
+      number=12, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='lib1', full_name='gocnn.RequestV2.lib1', index=12,
+      number=13, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='lib2', full_name='gocnn.RequestV2.lib2', index=13,
+      number=14, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='lib3', full_name='gocnn.RequestV2.lib3', index=14,
+      number=15, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='lib4', full_name='gocnn.RequestV2.lib4', index=15,
+      number=16, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='lib5', full_name='gocnn.RequestV2.lib5', index=16,
+      number=17, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='lib6', full_name='gocnn.RequestV2.lib6', index=17,
+      number=18, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='lib7', full_name='gocnn.RequestV2.lib7', index=18,
+      number=19, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='lib8_plus', full_name='gocnn.RequestV2.lib8_plus', index=19,
+      number=20, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='after_move_lib1', full_name='gocnn.RequestV2.after_move_lib1', index=20,
+      number=21, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='after_move_lib2', full_name='gocnn.RequestV2.after_move_lib2', index=21,
+      number=22, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='after_move_lib3', full_name='gocnn.RequestV2.after_move_lib3', index=22,
+      number=23, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='after_move_lib4', full_name='gocnn.RequestV2.after_move_lib4', index=23,
+      number=24, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='after_move_lib5', full_name='gocnn.RequestV2.after_move_lib5', index=24,
+      number=25, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='after_move_lib6', full_name='gocnn.RequestV2.after_move_lib6', index=25,
+      number=26, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='after_move_lib7', full_name='gocnn.RequestV2.after_move_lib7', index=26,
+      number=27, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='after_move_lib8_plus', full_name='gocnn.RequestV2.after_move_lib8_plus', index=27,
+      number=28, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_oppo_size1', full_name='gocnn.RequestV2.cap_oppo_size1', index=28,
+      number=29, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_oppo_size2', full_name='gocnn.RequestV2.cap_oppo_size2', index=29,
+      number=30, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_oppo_size3', full_name='gocnn.RequestV2.cap_oppo_size3', index=30,
+      number=31, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_oppo_size4', full_name='gocnn.RequestV2.cap_oppo_size4', index=31,
+      number=32, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_oppo_size5', full_name='gocnn.RequestV2.cap_oppo_size5', index=32,
+      number=33, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_oppo_size6', full_name='gocnn.RequestV2.cap_oppo_size6', index=33,
+      number=34, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_oppo_size7', full_name='gocnn.RequestV2.cap_oppo_size7', index=34,
+      number=35, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_oppo_size8_plus', full_name='gocnn.RequestV2.cap_oppo_size8_plus', index=35,
+      number=36, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_our_size1', full_name='gocnn.RequestV2.cap_our_size1', index=36,
+      number=37, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_our_size2', full_name='gocnn.RequestV2.cap_our_size2', index=37,
+      number=38, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_our_size3', full_name='gocnn.RequestV2.cap_our_size3', index=38,
+      number=39, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_our_size4', full_name='gocnn.RequestV2.cap_our_size4', index=39,
+      number=40, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_our_size5', full_name='gocnn.RequestV2.cap_our_size5', index=40,
+      number=41, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_our_size6', full_name='gocnn.RequestV2.cap_our_size6', index=41,
+      number=42, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_our_size7', full_name='gocnn.RequestV2.cap_our_size7', index=42,
+      number=43, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='cap_our_size8_plus', full_name='gocnn.RequestV2.cap_our_size8_plus', index=43,
+      number=44, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='not_fill_own_eyes', full_name='gocnn.RequestV2.not_fill_own_eyes', index=44,
+      number=45, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='ko', full_name='gocnn.RequestV2.ko', index=45,
+      number=46, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='border', full_name='gocnn.RequestV2.border', index=46,
+      number=47, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='position', full_name='gocnn.RequestV2.position', index=47,
+      number=48, type=2, cpp_type=6, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='ones', full_name='gocnn.RequestV2.ones', index=48,
+      number=49, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+    _descriptor.FieldDescriptor(
+      name='zeros', full_name='gocnn.RequestV2.zeros', index=49,
+      number=50, type=8, cpp_type=7, label=3,
+      has_default_value=False, default_value=[],
+      message_type=None, enum_type=None, containing_type=None,
+      is_extension=False, extension_scope=None,
+      options=None),
+  ],
+  extensions=[
+  ],
+  nested_types=[],
+  enum_types=[
+  ],
+  options=None,
+  is_extendable=False,
+  syntax='proto3',
+  extension_ranges=[],
+  oneofs=[
+  ],
+  serialized_start=271,
+  serialized_end=1345,
+)
+
 DESCRIPTOR.message_types_by_name['RequestV1'] = _REQUESTV1
 DESCRIPTOR.message_types_by_name['ResponseV1'] = _RESPONSEV1
+DESCRIPTOR.message_types_by_name['RequestV2'] = _REQUESTV2
 
 RequestV1 = _reflection.GeneratedProtocolMessageType('RequestV1', (_message.Message,), dict(
   DESCRIPTOR = _REQUESTV1,
@@ -152,6 +527,13 @@ ResponseV1 = _reflection.GeneratedProtocolMessageType('ResponseV1', (_message.Me
   # @@protoc_insertion_point(class_scope:gocnn.ResponseV1)
   ))
 _sym_db.RegisterMessage(ResponseV1)
+
+RequestV2 = _reflection.GeneratedProtocolMessageType('RequestV2', (_message.Message,), dict(
+  DESCRIPTOR = _REQUESTV2,
+  __module__ = 'message_pb2'
+  # @@protoc_insertion_point(class_scope:gocnn.RequestV2)
+  ))
+_sym_db.RegisterMessage(RequestV2)
 
 
 # @@protoc_insertion_point(module_scope)
