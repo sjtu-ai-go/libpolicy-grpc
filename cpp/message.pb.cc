@@ -42,7 +42,7 @@ void protobuf_AssignDesc_message_2eproto() {
       "message.proto");
   GOOGLE_CHECK(file != NULL);
   RequestV1_descriptor_ = file->message_type(0);
-  static const int RequestV1_offsets_[7] = {
+  static const int RequestV1_offsets_[8] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV1, board_size_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV1, our_group_lib1_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV1, our_group_lib2_),
@@ -50,6 +50,7 @@ void protobuf_AssignDesc_message_2eproto() {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV1, oppo_group_lib1_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV1, oppo_group_lib2_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV1, oppo_group_lib3_plus_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV1, is_simple_ko_),
   };
   RequestV1_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
@@ -182,40 +183,41 @@ void protobuf_AddDesc_message_2eproto() {
   GOOGLE_PROTOBUF_VERIFY_VERSION;
 
   ::google::protobuf::DescriptorPool::InternalAddGeneratedFile(
-    "\n\rmessage.proto\022\005gocnn\"\274\001\n\tRequestV1\022\022\n\n"
+    "\n\rmessage.proto\022\005gocnn\"\322\001\n\tRequestV1\022\022\n\n"
     "board_size\030\001 \001(\005\022\026\n\016our_group_lib1\030\002 \003(\010"
     "\022\026\n\016our_group_lib2\030\003 \003(\010\022\033\n\023our_group_li"
     "b3_plus\030\004 \003(\010\022\027\n\017oppo_group_lib1\030\005 \003(\010\022\027"
     "\n\017oppo_group_lib2\030\006 \003(\010\022\034\n\024oppo_group_li"
-    "b3_plus\030\007 \003(\010\"5\n\nResponseV1\022\022\n\nboard_siz"
-    "e\030\001 \001(\005\022\023\n\013possibility\030\002 \003(\002\"\262\010\n\tRequest"
-    "V2\022\022\n\nboard_size\030\001 \001(\005\022\021\n\tour_stone\030\002 \003("
-    "\010\022\022\n\noppo_stone\030\003 \003(\010\022\023\n\013empty_stone\030\004 \003"
-    "(\010\022\023\n\013turn_since1\030\005 \003(\010\022\023\n\013turn_since2\030\006"
-    " \003(\010\022\023\n\013turn_since3\030\007 \003(\010\022\023\n\013turn_since4"
-    "\030\010 \003(\010\022\023\n\013turn_since5\030\t \003(\010\022\023\n\013turn_sinc"
-    "e6\030\n \003(\010\022\023\n\013turn_since7\030\013 \003(\010\022\030\n\020turn_si"
-    "nce8_plus\030\014 \003(\010\022\014\n\004lib1\030\r \003(\010\022\014\n\004lib2\030\016 "
-    "\003(\010\022\014\n\004lib3\030\017 \003(\010\022\014\n\004lib4\030\020 \003(\010\022\014\n\004lib5\030"
-    "\021 \003(\010\022\014\n\004lib6\030\022 \003(\010\022\014\n\004lib7\030\023 \003(\010\022\021\n\tlib"
-    "8_plus\030\024 \003(\010\022\027\n\017after_move_lib1\030\025 \003(\010\022\027\n"
-    "\017after_move_lib2\030\026 \003(\010\022\027\n\017after_move_lib"
-    "3\030\027 \003(\010\022\027\n\017after_move_lib4\030\030 \003(\010\022\027\n\017afte"
-    "r_move_lib5\030\031 \003(\010\022\027\n\017after_move_lib6\030\032 \003"
-    "(\010\022\027\n\017after_move_lib7\030\033 \003(\010\022\034\n\024after_mov"
-    "e_lib8_plus\030\034 \003(\010\022\026\n\016cap_oppo_size1\030\035 \003("
-    "\010\022\026\n\016cap_oppo_size2\030\036 \003(\010\022\026\n\016cap_oppo_si"
-    "ze3\030\037 \003(\010\022\026\n\016cap_oppo_size4\030  \003(\010\022\026\n\016cap"
-    "_oppo_size5\030! \003(\010\022\026\n\016cap_oppo_size6\030\" \003("
-    "\010\022\026\n\016cap_oppo_size7\030# \003(\010\022\033\n\023cap_oppo_si"
-    "ze8_plus\030$ \003(\010\022\025\n\rcap_our_size1\030% \003(\010\022\025\n"
-    "\rcap_our_size2\030& \003(\010\022\025\n\rcap_our_size3\030\' "
-    "\003(\010\022\025\n\rcap_our_size4\030( \003(\010\022\025\n\rcap_our_si"
-    "ze5\030) \003(\010\022\025\n\rcap_our_size6\030* \003(\010\022\025\n\rcap_"
-    "our_size7\030+ \003(\010\022\032\n\022cap_our_size8_plus\030, "
-    "\003(\010\022\031\n\021not_fill_own_eyes\030- \003(\010\022\n\n\002ko\030. \003"
-    "(\010\022\016\n\006border\030/ \003(\010\022\020\n\010position\0300 \003(\002\022\014\n\004"
-    "ones\0301 \003(\010\022\r\n\005zeros\0302 \003(\010b\006proto3", 1353);
+    "b3_plus\030\007 \003(\010\022\024\n\014is_simple_ko\030\010 \003(\010\"5\n\nR"
+    "esponseV1\022\022\n\nboard_size\030\001 \001(\005\022\023\n\013possibi"
+    "lity\030\002 \003(\002\"\262\010\n\tRequestV2\022\022\n\nboard_size\030\001"
+    " \001(\005\022\021\n\tour_stone\030\002 \003(\010\022\022\n\noppo_stone\030\003 "
+    "\003(\010\022\023\n\013empty_stone\030\004 \003(\010\022\023\n\013turn_since1\030"
+    "\005 \003(\010\022\023\n\013turn_since2\030\006 \003(\010\022\023\n\013turn_since"
+    "3\030\007 \003(\010\022\023\n\013turn_since4\030\010 \003(\010\022\023\n\013turn_sin"
+    "ce5\030\t \003(\010\022\023\n\013turn_since6\030\n \003(\010\022\023\n\013turn_s"
+    "ince7\030\013 \003(\010\022\030\n\020turn_since8_plus\030\014 \003(\010\022\014\n"
+    "\004lib1\030\r \003(\010\022\014\n\004lib2\030\016 \003(\010\022\014\n\004lib3\030\017 \003(\010\022"
+    "\014\n\004lib4\030\020 \003(\010\022\014\n\004lib5\030\021 \003(\010\022\014\n\004lib6\030\022 \003("
+    "\010\022\014\n\004lib7\030\023 \003(\010\022\021\n\tlib8_plus\030\024 \003(\010\022\027\n\017af"
+    "ter_move_lib1\030\025 \003(\010\022\027\n\017after_move_lib2\030\026"
+    " \003(\010\022\027\n\017after_move_lib3\030\027 \003(\010\022\027\n\017after_m"
+    "ove_lib4\030\030 \003(\010\022\027\n\017after_move_lib5\030\031 \003(\010\022"
+    "\027\n\017after_move_lib6\030\032 \003(\010\022\027\n\017after_move_l"
+    "ib7\030\033 \003(\010\022\034\n\024after_move_lib8_plus\030\034 \003(\010\022"
+    "\026\n\016cap_oppo_size1\030\035 \003(\010\022\026\n\016cap_oppo_size"
+    "2\030\036 \003(\010\022\026\n\016cap_oppo_size3\030\037 \003(\010\022\026\n\016cap_o"
+    "ppo_size4\030  \003(\010\022\026\n\016cap_oppo_size5\030! \003(\010\022"
+    "\026\n\016cap_oppo_size6\030\" \003(\010\022\026\n\016cap_oppo_size"
+    "7\030# \003(\010\022\033\n\023cap_oppo_size8_plus\030$ \003(\010\022\025\n\r"
+    "cap_our_size1\030% \003(\010\022\025\n\rcap_our_size2\030& \003"
+    "(\010\022\025\n\rcap_our_size3\030\' \003(\010\022\025\n\rcap_our_siz"
+    "e4\030( \003(\010\022\025\n\rcap_our_size5\030) \003(\010\022\025\n\rcap_o"
+    "ur_size6\030* \003(\010\022\025\n\rcap_our_size7\030+ \003(\010\022\032\n"
+    "\022cap_our_size8_plus\030, \003(\010\022\031\n\021not_fill_ow"
+    "n_eyes\030- \003(\010\022\n\n\002ko\030. \003(\010\022\016\n\006border\030/ \003(\010"
+    "\022\020\n\010position\0300 \003(\002\022\014\n\004ones\0301 \003(\010\022\r\n\005zero"
+    "s\0302 \003(\010b\006proto3", 1375);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "message.proto", &protobuf_RegisterTypes);
   RequestV1::default_instance_ = new RequestV1();
@@ -244,6 +246,7 @@ const int RequestV1::kOurGroupLib3PlusFieldNumber;
 const int RequestV1::kOppoGroupLib1FieldNumber;
 const int RequestV1::kOppoGroupLib2FieldNumber;
 const int RequestV1::kOppoGroupLib3PlusFieldNumber;
+const int RequestV1::kIsSimpleKoFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RequestV1::RequestV1()
@@ -314,6 +317,7 @@ void RequestV1::Clear() {
   oppo_group_lib1_.Clear();
   oppo_group_lib2_.Clear();
   oppo_group_lib3_plus_.Clear();
+  is_simple_ko_.Clear();
 }
 
 bool RequestV1::MergePartialFromCodedStream(
@@ -444,6 +448,24 @@ bool RequestV1::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
+        if (input->ExpectTag(66)) goto parse_is_simple_ko;
+        break;
+      }
+
+      // repeated bool is_simple_ko = 8;
+      case 8: {
+        if (tag == 66) {
+         parse_is_simple_ko:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 input, this->mutable_is_simple_ko())));
+        } else if (tag == 64) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
+                 1, 66, input, this->mutable_is_simple_ko())));
+        } else {
+          goto handle_unusual;
+        }
         if (input->ExpectAtEnd()) goto success;
         break;
       }
@@ -535,6 +557,16 @@ void RequestV1::SerializeWithCachedSizes(
   for (int i = 0; i < this->oppo_group_lib3_plus_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
       this->oppo_group_lib3_plus(i), output);
+  }
+
+  // repeated bool is_simple_ko = 8;
+  if (this->is_simple_ko_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(8, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_is_simple_ko_cached_byte_size_);
+  }
+  for (int i = 0; i < this->is_simple_ko_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
+      this->is_simple_ko(i), output);
   }
 
   // @@protoc_insertion_point(serialize_end:gocnn.RequestV1)
@@ -630,6 +662,20 @@ void RequestV1::SerializeWithCachedSizes(
   for (int i = 0; i < this->oppo_group_lib3_plus_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteBoolNoTagToArray(this->oppo_group_lib3_plus(i), target);
+  }
+
+  // repeated bool is_simple_ko = 8;
+  if (this->is_simple_ko_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      8,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+      _is_simple_ko_cached_byte_size_, target);
+  }
+  for (int i = 0; i < this->is_simple_ko_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteBoolNoTagToArray(this->is_simple_ko(i), target);
   }
 
   // @@protoc_insertion_point(serialize_to_array_end:gocnn.RequestV1)
@@ -731,6 +777,20 @@ int RequestV1::ByteSize() const {
     total_size += data_size;
   }
 
+  // repeated bool is_simple_ko = 8;
+  {
+    int data_size = 0;
+    data_size = 1 * this->is_simple_ko_size();
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
+    }
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _is_simple_ko_cached_byte_size_ = data_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
   GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
   _cached_size_ = total_size;
   GOOGLE_SAFE_CONCURRENT_WRITES_END();
@@ -765,6 +825,7 @@ void RequestV1::MergeFrom(const RequestV1& from) {
   oppo_group_lib1_.MergeFrom(from.oppo_group_lib1_);
   oppo_group_lib2_.MergeFrom(from.oppo_group_lib2_);
   oppo_group_lib3_plus_.MergeFrom(from.oppo_group_lib3_plus_);
+  is_simple_ko_.MergeFrom(from.is_simple_ko_);
   if (from.board_size() != 0) {
     set_board_size(from.board_size());
   }
@@ -801,6 +862,7 @@ void RequestV1::InternalSwap(RequestV1* other) {
   oppo_group_lib1_.UnsafeArenaSwap(&other->oppo_group_lib1_);
   oppo_group_lib2_.UnsafeArenaSwap(&other->oppo_group_lib2_);
   oppo_group_lib3_plus_.UnsafeArenaSwap(&other->oppo_group_lib3_plus_);
+  is_simple_ko_.UnsafeArenaSwap(&other->is_simple_ko_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
@@ -1008,6 +1070,36 @@ RequestV1::oppo_group_lib3_plus() const {
 RequestV1::mutable_oppo_group_lib3_plus() {
   // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV1.oppo_group_lib3_plus)
   return &oppo_group_lib3_plus_;
+}
+
+// repeated bool is_simple_ko = 8;
+int RequestV1::is_simple_ko_size() const {
+  return is_simple_ko_.size();
+}
+void RequestV1::clear_is_simple_ko() {
+  is_simple_ko_.Clear();
+}
+ bool RequestV1::is_simple_ko(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV1.is_simple_ko)
+  return is_simple_ko_.Get(index);
+}
+ void RequestV1::set_is_simple_ko(int index, bool value) {
+  is_simple_ko_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV1.is_simple_ko)
+}
+ void RequestV1::add_is_simple_ko(bool value) {
+  is_simple_ko_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV1.is_simple_ko)
+}
+ const ::google::protobuf::RepeatedField< bool >&
+RequestV1::is_simple_ko() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV1.is_simple_ko)
+  return is_simple_ko_;
+}
+ ::google::protobuf::RepeatedField< bool >*
+RequestV1::mutable_is_simple_ko() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV1.is_simple_ko)
+  return &is_simple_ko_;
 }
 
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS

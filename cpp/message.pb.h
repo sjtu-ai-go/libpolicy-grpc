@@ -180,6 +180,18 @@ class RequestV1 : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::RepeatedField< bool >*
       mutable_oppo_group_lib3_plus();
 
+  // repeated bool is_simple_ko = 8;
+  int is_simple_ko_size() const;
+  void clear_is_simple_ko();
+  static const int kIsSimpleKoFieldNumber = 8;
+  bool is_simple_ko(int index) const;
+  void set_is_simple_ko(int index, bool value);
+  void add_is_simple_ko(bool value);
+  const ::google::protobuf::RepeatedField< bool >&
+      is_simple_ko() const;
+  ::google::protobuf::RepeatedField< bool >*
+      mutable_is_simple_ko();
+
   // @@protoc_insertion_point(class_scope:gocnn.RequestV1)
  private:
 
@@ -197,6 +209,8 @@ class RequestV1 : public ::google::protobuf::Message /* @@protoc_insertion_point
   mutable int _oppo_group_lib2_cached_byte_size_;
   ::google::protobuf::RepeatedField< bool > oppo_group_lib3_plus_;
   mutable int _oppo_group_lib3_plus_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > is_simple_ko_;
+  mutable int _is_simple_ko_cached_byte_size_;
   ::google::protobuf::int32 board_size_;
   mutable int _cached_size_;
   friend void  protobuf_AddDesc_message_2eproto();
@@ -1270,6 +1284,36 @@ inline ::google::protobuf::RepeatedField< bool >*
 RequestV1::mutable_oppo_group_lib3_plus() {
   // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV1.oppo_group_lib3_plus)
   return &oppo_group_lib3_plus_;
+}
+
+// repeated bool is_simple_ko = 8;
+inline int RequestV1::is_simple_ko_size() const {
+  return is_simple_ko_.size();
+}
+inline void RequestV1::clear_is_simple_ko() {
+  is_simple_ko_.Clear();
+}
+inline bool RequestV1::is_simple_ko(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV1.is_simple_ko)
+  return is_simple_ko_.Get(index);
+}
+inline void RequestV1::set_is_simple_ko(int index, bool value) {
+  is_simple_ko_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV1.is_simple_ko)
+}
+inline void RequestV1::add_is_simple_ko(bool value) {
+  is_simple_ko_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV1.is_simple_ko)
+}
+inline const ::google::protobuf::RepeatedField< bool >&
+RequestV1::is_simple_ko() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV1.is_simple_ko)
+  return is_simple_ko_;
+}
+inline ::google::protobuf::RepeatedField< bool >*
+RequestV1::mutable_is_simple_ko() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV1.is_simple_ko)
+  return &is_simple_ko_;
 }
 
 // -------------------------------------------------------------------
