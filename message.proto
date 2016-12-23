@@ -9,6 +9,7 @@ message RequestV1 {
 	repeated bool oppo_group_lib1 = 5;
 	repeated bool oppo_group_lib2 = 6;
 	repeated bool oppo_group_lib3_plus = 7;
+    repeated bool is_simple_ko = 8;
 }
 
 message ResponseV1 {
