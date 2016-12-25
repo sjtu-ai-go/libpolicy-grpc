@@ -39,6 +39,7 @@ void protobuf_ShutdownFile_message_2eproto();
 class RequestV1;
 class RequestV2;
 class ResponseV1;
+class ResponseV2;
 
 // ===================================================================
 
@@ -384,538 +385,346 @@ class RequestV2 : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::int32 board_size() const;
   void set_board_size(::google::protobuf::int32 value);
 
-  // repeated bool our_stone = 2;
-  int our_stone_size() const;
-  void clear_our_stone();
-  static const int kOurStoneFieldNumber = 2;
-  bool our_stone(int index) const;
-  void set_our_stone(int index, bool value);
-  void add_our_stone(bool value);
+  // repeated bool stone_color_our = 2;
+  int stone_color_our_size() const;
+  void clear_stone_color_our();
+  static const int kStoneColorOurFieldNumber = 2;
+  bool stone_color_our(int index) const;
+  void set_stone_color_our(int index, bool value);
+  void add_stone_color_our(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      our_stone() const;
+      stone_color_our() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_our_stone();
+      mutable_stone_color_our();
 
-  // repeated bool oppo_stone = 3;
-  int oppo_stone_size() const;
-  void clear_oppo_stone();
-  static const int kOppoStoneFieldNumber = 3;
-  bool oppo_stone(int index) const;
-  void set_oppo_stone(int index, bool value);
-  void add_oppo_stone(bool value);
+  // repeated bool stone_color_oppo = 3;
+  int stone_color_oppo_size() const;
+  void clear_stone_color_oppo();
+  static const int kStoneColorOppoFieldNumber = 3;
+  bool stone_color_oppo(int index) const;
+  void set_stone_color_oppo(int index, bool value);
+  void add_stone_color_oppo(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      oppo_stone() const;
+      stone_color_oppo() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_oppo_stone();
+      mutable_stone_color_oppo();
 
-  // repeated bool empty_stone = 4;
-  int empty_stone_size() const;
-  void clear_empty_stone();
-  static const int kEmptyStoneFieldNumber = 4;
-  bool empty_stone(int index) const;
-  void set_empty_stone(int index, bool value);
-  void add_empty_stone(bool value);
+  // repeated bool stone_color_empty = 4;
+  int stone_color_empty_size() const;
+  void clear_stone_color_empty();
+  static const int kStoneColorEmptyFieldNumber = 4;
+  bool stone_color_empty(int index) const;
+  void set_stone_color_empty(int index, bool value);
+  void add_stone_color_empty(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      empty_stone() const;
+      stone_color_empty() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_empty_stone();
+      mutable_stone_color_empty();
 
-  // repeated bool turn_since1 = 5;
-  int turn_since1_size() const;
-  void clear_turn_since1();
-  static const int kTurnSince1FieldNumber = 5;
-  bool turn_since1(int index) const;
-  void set_turn_since1(int index, bool value);
-  void add_turn_since1(bool value);
+  // repeated bool turns_since_one = 5;
+  int turns_since_one_size() const;
+  void clear_turns_since_one();
+  static const int kTurnsSinceOneFieldNumber = 5;
+  bool turns_since_one(int index) const;
+  void set_turns_since_one(int index, bool value);
+  void add_turns_since_one(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      turn_since1() const;
+      turns_since_one() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_turn_since1();
+      mutable_turns_since_one();
 
-  // repeated bool turn_since2 = 6;
-  int turn_since2_size() const;
-  void clear_turn_since2();
-  static const int kTurnSince2FieldNumber = 6;
-  bool turn_since2(int index) const;
-  void set_turn_since2(int index, bool value);
-  void add_turn_since2(bool value);
+  // repeated bool turns_since_two = 6;
+  int turns_since_two_size() const;
+  void clear_turns_since_two();
+  static const int kTurnsSinceTwoFieldNumber = 6;
+  bool turns_since_two(int index) const;
+  void set_turns_since_two(int index, bool value);
+  void add_turns_since_two(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      turn_since2() const;
+      turns_since_two() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_turn_since2();
+      mutable_turns_since_two();
 
-  // repeated bool turn_since3 = 7;
-  int turn_since3_size() const;
-  void clear_turn_since3();
-  static const int kTurnSince3FieldNumber = 7;
-  bool turn_since3(int index) const;
-  void set_turn_since3(int index, bool value);
-  void add_turn_since3(bool value);
+  // repeated bool turns_since_three = 7;
+  int turns_since_three_size() const;
+  void clear_turns_since_three();
+  static const int kTurnsSinceThreeFieldNumber = 7;
+  bool turns_since_three(int index) const;
+  void set_turns_since_three(int index, bool value);
+  void add_turns_since_three(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      turn_since3() const;
+      turns_since_three() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_turn_since3();
+      mutable_turns_since_three();
 
-  // repeated bool turn_since4 = 8;
-  int turn_since4_size() const;
-  void clear_turn_since4();
-  static const int kTurnSince4FieldNumber = 8;
-  bool turn_since4(int index) const;
-  void set_turn_since4(int index, bool value);
-  void add_turn_since4(bool value);
+  // repeated bool turns_since_four = 8;
+  int turns_since_four_size() const;
+  void clear_turns_since_four();
+  static const int kTurnsSinceFourFieldNumber = 8;
+  bool turns_since_four(int index) const;
+  void set_turns_since_four(int index, bool value);
+  void add_turns_since_four(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      turn_since4() const;
+      turns_since_four() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_turn_since4();
+      mutable_turns_since_four();
 
-  // repeated bool turn_since5 = 9;
-  int turn_since5_size() const;
-  void clear_turn_since5();
-  static const int kTurnSince5FieldNumber = 9;
-  bool turn_since5(int index) const;
-  void set_turn_since5(int index, bool value);
-  void add_turn_since5(bool value);
+  // repeated bool turns_since_five = 9;
+  int turns_since_five_size() const;
+  void clear_turns_since_five();
+  static const int kTurnsSinceFiveFieldNumber = 9;
+  bool turns_since_five(int index) const;
+  void set_turns_since_five(int index, bool value);
+  void add_turns_since_five(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      turn_since5() const;
+      turns_since_five() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_turn_since5();
+      mutable_turns_since_five();
 
-  // repeated bool turn_since6 = 10;
-  int turn_since6_size() const;
-  void clear_turn_since6();
-  static const int kTurnSince6FieldNumber = 10;
-  bool turn_since6(int index) const;
-  void set_turn_since6(int index, bool value);
-  void add_turn_since6(bool value);
+  // repeated bool turns_since_six = 10;
+  int turns_since_six_size() const;
+  void clear_turns_since_six();
+  static const int kTurnsSinceSixFieldNumber = 10;
+  bool turns_since_six(int index) const;
+  void set_turns_since_six(int index, bool value);
+  void add_turns_since_six(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      turn_since6() const;
+      turns_since_six() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_turn_since6();
+      mutable_turns_since_six();
 
-  // repeated bool turn_since7 = 11;
-  int turn_since7_size() const;
-  void clear_turn_since7();
-  static const int kTurnSince7FieldNumber = 11;
-  bool turn_since7(int index) const;
-  void set_turn_since7(int index, bool value);
-  void add_turn_since7(bool value);
+  // repeated bool turns_since_seven = 11;
+  int turns_since_seven_size() const;
+  void clear_turns_since_seven();
+  static const int kTurnsSinceSevenFieldNumber = 11;
+  bool turns_since_seven(int index) const;
+  void set_turns_since_seven(int index, bool value);
+  void add_turns_since_seven(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      turn_since7() const;
+      turns_since_seven() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_turn_since7();
+      mutable_turns_since_seven();
 
-  // repeated bool turn_since8_plus = 12;
-  int turn_since8_plus_size() const;
-  void clear_turn_since8_plus();
-  static const int kTurnSince8PlusFieldNumber = 12;
-  bool turn_since8_plus(int index) const;
-  void set_turn_since8_plus(int index, bool value);
-  void add_turn_since8_plus(bool value);
+  // repeated bool turns_since_more = 12;
+  int turns_since_more_size() const;
+  void clear_turns_since_more();
+  static const int kTurnsSinceMoreFieldNumber = 12;
+  bool turns_since_more(int index) const;
+  void set_turns_since_more(int index, bool value);
+  void add_turns_since_more(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      turn_since8_plus() const;
+      turns_since_more() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_turn_since8_plus();
+      mutable_turns_since_more();
 
-  // repeated bool lib1 = 13;
-  int lib1_size() const;
-  void clear_lib1();
-  static const int kLib1FieldNumber = 13;
-  bool lib1(int index) const;
-  void set_lib1(int index, bool value);
-  void add_lib1(bool value);
+  // repeated bool liberties_our_one = 13;
+  int liberties_our_one_size() const;
+  void clear_liberties_our_one();
+  static const int kLibertiesOurOneFieldNumber = 13;
+  bool liberties_our_one(int index) const;
+  void set_liberties_our_one(int index, bool value);
+  void add_liberties_our_one(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      lib1() const;
+      liberties_our_one() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_lib1();
+      mutable_liberties_our_one();
 
-  // repeated bool lib2 = 14;
-  int lib2_size() const;
-  void clear_lib2();
-  static const int kLib2FieldNumber = 14;
-  bool lib2(int index) const;
-  void set_lib2(int index, bool value);
-  void add_lib2(bool value);
+  // repeated bool liberties_our_two = 14;
+  int liberties_our_two_size() const;
+  void clear_liberties_our_two();
+  static const int kLibertiesOurTwoFieldNumber = 14;
+  bool liberties_our_two(int index) const;
+  void set_liberties_our_two(int index, bool value);
+  void add_liberties_our_two(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      lib2() const;
+      liberties_our_two() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_lib2();
+      mutable_liberties_our_two();
 
-  // repeated bool lib3 = 15;
-  int lib3_size() const;
-  void clear_lib3();
-  static const int kLib3FieldNumber = 15;
-  bool lib3(int index) const;
-  void set_lib3(int index, bool value);
-  void add_lib3(bool value);
+  // repeated bool liberties_our_three = 15;
+  int liberties_our_three_size() const;
+  void clear_liberties_our_three();
+  static const int kLibertiesOurThreeFieldNumber = 15;
+  bool liberties_our_three(int index) const;
+  void set_liberties_our_three(int index, bool value);
+  void add_liberties_our_three(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      lib3() const;
+      liberties_our_three() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_lib3();
+      mutable_liberties_our_three();
 
-  // repeated bool lib4 = 16;
-  int lib4_size() const;
-  void clear_lib4();
-  static const int kLib4FieldNumber = 16;
-  bool lib4(int index) const;
-  void set_lib4(int index, bool value);
-  void add_lib4(bool value);
+  // repeated bool liberties_our_more = 16;
+  int liberties_our_more_size() const;
+  void clear_liberties_our_more();
+  static const int kLibertiesOurMoreFieldNumber = 16;
+  bool liberties_our_more(int index) const;
+  void set_liberties_our_more(int index, bool value);
+  void add_liberties_our_more(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      lib4() const;
+      liberties_our_more() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_lib4();
+      mutable_liberties_our_more();
 
-  // repeated bool lib5 = 17;
-  int lib5_size() const;
-  void clear_lib5();
-  static const int kLib5FieldNumber = 17;
-  bool lib5(int index) const;
-  void set_lib5(int index, bool value);
-  void add_lib5(bool value);
+  // repeated bool liberties_oppo_one = 17;
+  int liberties_oppo_one_size() const;
+  void clear_liberties_oppo_one();
+  static const int kLibertiesOppoOneFieldNumber = 17;
+  bool liberties_oppo_one(int index) const;
+  void set_liberties_oppo_one(int index, bool value);
+  void add_liberties_oppo_one(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      lib5() const;
+      liberties_oppo_one() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_lib5();
+      mutable_liberties_oppo_one();
 
-  // repeated bool lib6 = 18;
-  int lib6_size() const;
-  void clear_lib6();
-  static const int kLib6FieldNumber = 18;
-  bool lib6(int index) const;
-  void set_lib6(int index, bool value);
-  void add_lib6(bool value);
+  // repeated bool liberties_oppo_two = 18;
+  int liberties_oppo_two_size() const;
+  void clear_liberties_oppo_two();
+  static const int kLibertiesOppoTwoFieldNumber = 18;
+  bool liberties_oppo_two(int index) const;
+  void set_liberties_oppo_two(int index, bool value);
+  void add_liberties_oppo_two(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      lib6() const;
+      liberties_oppo_two() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_lib6();
+      mutable_liberties_oppo_two();
 
-  // repeated bool lib7 = 19;
-  int lib7_size() const;
-  void clear_lib7();
-  static const int kLib7FieldNumber = 19;
-  bool lib7(int index) const;
-  void set_lib7(int index, bool value);
-  void add_lib7(bool value);
+  // repeated bool liberties_oppo_three = 19;
+  int liberties_oppo_three_size() const;
+  void clear_liberties_oppo_three();
+  static const int kLibertiesOppoThreeFieldNumber = 19;
+  bool liberties_oppo_three(int index) const;
+  void set_liberties_oppo_three(int index, bool value);
+  void add_liberties_oppo_three(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      lib7() const;
+      liberties_oppo_three() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_lib7();
+      mutable_liberties_oppo_three();
 
-  // repeated bool lib8_plus = 20;
-  int lib8_plus_size() const;
-  void clear_lib8_plus();
-  static const int kLib8PlusFieldNumber = 20;
-  bool lib8_plus(int index) const;
-  void set_lib8_plus(int index, bool value);
-  void add_lib8_plus(bool value);
+  // repeated bool liberties_oppo_more = 20;
+  int liberties_oppo_more_size() const;
+  void clear_liberties_oppo_more();
+  static const int kLibertiesOppoMoreFieldNumber = 20;
+  bool liberties_oppo_more(int index) const;
+  void set_liberties_oppo_more(int index, bool value);
+  void add_liberties_oppo_more(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      lib8_plus() const;
+      liberties_oppo_more() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_lib8_plus();
+      mutable_liberties_oppo_more();
 
-  // repeated bool after_move_lib1 = 21;
-  int after_move_lib1_size() const;
-  void clear_after_move_lib1();
-  static const int kAfterMoveLib1FieldNumber = 21;
-  bool after_move_lib1(int index) const;
-  void set_after_move_lib1(int index, bool value);
-  void add_after_move_lib1(bool value);
+  // repeated bool capture_size_one = 21;
+  int capture_size_one_size() const;
+  void clear_capture_size_one();
+  static const int kCaptureSizeOneFieldNumber = 21;
+  bool capture_size_one(int index) const;
+  void set_capture_size_one(int index, bool value);
+  void add_capture_size_one(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      after_move_lib1() const;
+      capture_size_one() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_after_move_lib1();
+      mutable_capture_size_one();
 
-  // repeated bool after_move_lib2 = 22;
-  int after_move_lib2_size() const;
-  void clear_after_move_lib2();
-  static const int kAfterMoveLib2FieldNumber = 22;
-  bool after_move_lib2(int index) const;
-  void set_after_move_lib2(int index, bool value);
-  void add_after_move_lib2(bool value);
+  // repeated bool capture_size_two = 22;
+  int capture_size_two_size() const;
+  void clear_capture_size_two();
+  static const int kCaptureSizeTwoFieldNumber = 22;
+  bool capture_size_two(int index) const;
+  void set_capture_size_two(int index, bool value);
+  void add_capture_size_two(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      after_move_lib2() const;
+      capture_size_two() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_after_move_lib2();
+      mutable_capture_size_two();
 
-  // repeated bool after_move_lib3 = 23;
-  int after_move_lib3_size() const;
-  void clear_after_move_lib3();
-  static const int kAfterMoveLib3FieldNumber = 23;
-  bool after_move_lib3(int index) const;
-  void set_after_move_lib3(int index, bool value);
-  void add_after_move_lib3(bool value);
+  // repeated bool capture_size_three = 23;
+  int capture_size_three_size() const;
+  void clear_capture_size_three();
+  static const int kCaptureSizeThreeFieldNumber = 23;
+  bool capture_size_three(int index) const;
+  void set_capture_size_three(int index, bool value);
+  void add_capture_size_three(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      after_move_lib3() const;
+      capture_size_three() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_after_move_lib3();
+      mutable_capture_size_three();
 
-  // repeated bool after_move_lib4 = 24;
-  int after_move_lib4_size() const;
-  void clear_after_move_lib4();
-  static const int kAfterMoveLib4FieldNumber = 24;
-  bool after_move_lib4(int index) const;
-  void set_after_move_lib4(int index, bool value);
-  void add_after_move_lib4(bool value);
+  // repeated bool capture_size_four = 24;
+  int capture_size_four_size() const;
+  void clear_capture_size_four();
+  static const int kCaptureSizeFourFieldNumber = 24;
+  bool capture_size_four(int index) const;
+  void set_capture_size_four(int index, bool value);
+  void add_capture_size_four(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      after_move_lib4() const;
+      capture_size_four() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_after_move_lib4();
+      mutable_capture_size_four();
 
-  // repeated bool after_move_lib5 = 25;
-  int after_move_lib5_size() const;
-  void clear_after_move_lib5();
-  static const int kAfterMoveLib5FieldNumber = 25;
-  bool after_move_lib5(int index) const;
-  void set_after_move_lib5(int index, bool value);
-  void add_after_move_lib5(bool value);
+  // repeated bool capture_size_five = 25;
+  int capture_size_five_size() const;
+  void clear_capture_size_five();
+  static const int kCaptureSizeFiveFieldNumber = 25;
+  bool capture_size_five(int index) const;
+  void set_capture_size_five(int index, bool value);
+  void add_capture_size_five(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      after_move_lib5() const;
+      capture_size_five() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_after_move_lib5();
+      mutable_capture_size_five();
 
-  // repeated bool after_move_lib6 = 26;
-  int after_move_lib6_size() const;
-  void clear_after_move_lib6();
-  static const int kAfterMoveLib6FieldNumber = 26;
-  bool after_move_lib6(int index) const;
-  void set_after_move_lib6(int index, bool value);
-  void add_after_move_lib6(bool value);
+  // repeated bool capture_size_six = 26;
+  int capture_size_six_size() const;
+  void clear_capture_size_six();
+  static const int kCaptureSizeSixFieldNumber = 26;
+  bool capture_size_six(int index) const;
+  void set_capture_size_six(int index, bool value);
+  void add_capture_size_six(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      after_move_lib6() const;
+      capture_size_six() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_after_move_lib6();
+      mutable_capture_size_six();
 
-  // repeated bool after_move_lib7 = 27;
-  int after_move_lib7_size() const;
-  void clear_after_move_lib7();
-  static const int kAfterMoveLib7FieldNumber = 27;
-  bool after_move_lib7(int index) const;
-  void set_after_move_lib7(int index, bool value);
-  void add_after_move_lib7(bool value);
+  // repeated bool capture_size_seven = 27;
+  int capture_size_seven_size() const;
+  void clear_capture_size_seven();
+  static const int kCaptureSizeSevenFieldNumber = 27;
+  bool capture_size_seven(int index) const;
+  void set_capture_size_seven(int index, bool value);
+  void add_capture_size_seven(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      after_move_lib7() const;
+      capture_size_seven() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_after_move_lib7();
+      mutable_capture_size_seven();
 
-  // repeated bool after_move_lib8_plus = 28;
-  int after_move_lib8_plus_size() const;
-  void clear_after_move_lib8_plus();
-  static const int kAfterMoveLib8PlusFieldNumber = 28;
-  bool after_move_lib8_plus(int index) const;
-  void set_after_move_lib8_plus(int index, bool value);
-  void add_after_move_lib8_plus(bool value);
+  // repeated bool capture_size_more = 28;
+  int capture_size_more_size() const;
+  void clear_capture_size_more();
+  static const int kCaptureSizeMoreFieldNumber = 28;
+  bool capture_size_more(int index) const;
+  void set_capture_size_more(int index, bool value);
+  void add_capture_size_more(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      after_move_lib8_plus() const;
+      capture_size_more() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_after_move_lib8_plus();
+      mutable_capture_size_more();
 
-  // repeated bool cap_oppo_size1 = 29;
-  int cap_oppo_size1_size() const;
-  void clear_cap_oppo_size1();
-  static const int kCapOppoSize1FieldNumber = 29;
-  bool cap_oppo_size1(int index) const;
-  void set_cap_oppo_size1(int index, bool value);
-  void add_cap_oppo_size1(bool value);
+  // repeated bool sensibleness = 29;
+  int sensibleness_size() const;
+  void clear_sensibleness();
+  static const int kSensiblenessFieldNumber = 29;
+  bool sensibleness(int index) const;
+  void set_sensibleness(int index, bool value);
+  void add_sensibleness(bool value);
   const ::google::protobuf::RepeatedField< bool >&
-      cap_oppo_size1() const;
+      sensibleness() const;
   ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_oppo_size1();
+      mutable_sensibleness();
 
-  // repeated bool cap_oppo_size2 = 30;
-  int cap_oppo_size2_size() const;
-  void clear_cap_oppo_size2();
-  static const int kCapOppoSize2FieldNumber = 30;
-  bool cap_oppo_size2(int index) const;
-  void set_cap_oppo_size2(int index, bool value);
-  void add_cap_oppo_size2(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_oppo_size2() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_oppo_size2();
-
-  // repeated bool cap_oppo_size3 = 31;
-  int cap_oppo_size3_size() const;
-  void clear_cap_oppo_size3();
-  static const int kCapOppoSize3FieldNumber = 31;
-  bool cap_oppo_size3(int index) const;
-  void set_cap_oppo_size3(int index, bool value);
-  void add_cap_oppo_size3(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_oppo_size3() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_oppo_size3();
-
-  // repeated bool cap_oppo_size4 = 32;
-  int cap_oppo_size4_size() const;
-  void clear_cap_oppo_size4();
-  static const int kCapOppoSize4FieldNumber = 32;
-  bool cap_oppo_size4(int index) const;
-  void set_cap_oppo_size4(int index, bool value);
-  void add_cap_oppo_size4(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_oppo_size4() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_oppo_size4();
-
-  // repeated bool cap_oppo_size5 = 33;
-  int cap_oppo_size5_size() const;
-  void clear_cap_oppo_size5();
-  static const int kCapOppoSize5FieldNumber = 33;
-  bool cap_oppo_size5(int index) const;
-  void set_cap_oppo_size5(int index, bool value);
-  void add_cap_oppo_size5(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_oppo_size5() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_oppo_size5();
-
-  // repeated bool cap_oppo_size6 = 34;
-  int cap_oppo_size6_size() const;
-  void clear_cap_oppo_size6();
-  static const int kCapOppoSize6FieldNumber = 34;
-  bool cap_oppo_size6(int index) const;
-  void set_cap_oppo_size6(int index, bool value);
-  void add_cap_oppo_size6(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_oppo_size6() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_oppo_size6();
-
-  // repeated bool cap_oppo_size7 = 35;
-  int cap_oppo_size7_size() const;
-  void clear_cap_oppo_size7();
-  static const int kCapOppoSize7FieldNumber = 35;
-  bool cap_oppo_size7(int index) const;
-  void set_cap_oppo_size7(int index, bool value);
-  void add_cap_oppo_size7(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_oppo_size7() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_oppo_size7();
-
-  // repeated bool cap_oppo_size8_plus = 36;
-  int cap_oppo_size8_plus_size() const;
-  void clear_cap_oppo_size8_plus();
-  static const int kCapOppoSize8PlusFieldNumber = 36;
-  bool cap_oppo_size8_plus(int index) const;
-  void set_cap_oppo_size8_plus(int index, bool value);
-  void add_cap_oppo_size8_plus(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_oppo_size8_plus() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_oppo_size8_plus();
-
-  // repeated bool cap_our_size1 = 37;
-  int cap_our_size1_size() const;
-  void clear_cap_our_size1();
-  static const int kCapOurSize1FieldNumber = 37;
-  bool cap_our_size1(int index) const;
-  void set_cap_our_size1(int index, bool value);
-  void add_cap_our_size1(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_our_size1() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_our_size1();
-
-  // repeated bool cap_our_size2 = 38;
-  int cap_our_size2_size() const;
-  void clear_cap_our_size2();
-  static const int kCapOurSize2FieldNumber = 38;
-  bool cap_our_size2(int index) const;
-  void set_cap_our_size2(int index, bool value);
-  void add_cap_our_size2(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_our_size2() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_our_size2();
-
-  // repeated bool cap_our_size3 = 39;
-  int cap_our_size3_size() const;
-  void clear_cap_our_size3();
-  static const int kCapOurSize3FieldNumber = 39;
-  bool cap_our_size3(int index) const;
-  void set_cap_our_size3(int index, bool value);
-  void add_cap_our_size3(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_our_size3() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_our_size3();
-
-  // repeated bool cap_our_size4 = 40;
-  int cap_our_size4_size() const;
-  void clear_cap_our_size4();
-  static const int kCapOurSize4FieldNumber = 40;
-  bool cap_our_size4(int index) const;
-  void set_cap_our_size4(int index, bool value);
-  void add_cap_our_size4(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_our_size4() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_our_size4();
-
-  // repeated bool cap_our_size5 = 41;
-  int cap_our_size5_size() const;
-  void clear_cap_our_size5();
-  static const int kCapOurSize5FieldNumber = 41;
-  bool cap_our_size5(int index) const;
-  void set_cap_our_size5(int index, bool value);
-  void add_cap_our_size5(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_our_size5() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_our_size5();
-
-  // repeated bool cap_our_size6 = 42;
-  int cap_our_size6_size() const;
-  void clear_cap_our_size6();
-  static const int kCapOurSize6FieldNumber = 42;
-  bool cap_our_size6(int index) const;
-  void set_cap_our_size6(int index, bool value);
-  void add_cap_our_size6(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_our_size6() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_our_size6();
-
-  // repeated bool cap_our_size7 = 43;
-  int cap_our_size7_size() const;
-  void clear_cap_our_size7();
-  static const int kCapOurSize7FieldNumber = 43;
-  bool cap_our_size7(int index) const;
-  void set_cap_our_size7(int index, bool value);
-  void add_cap_our_size7(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_our_size7() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_our_size7();
-
-  // repeated bool cap_our_size8_plus = 44;
-  int cap_our_size8_plus_size() const;
-  void clear_cap_our_size8_plus();
-  static const int kCapOurSize8PlusFieldNumber = 44;
-  bool cap_our_size8_plus(int index) const;
-  void set_cap_our_size8_plus(int index, bool value);
-  void add_cap_our_size8_plus(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      cap_our_size8_plus() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_cap_our_size8_plus();
-
-  // repeated bool not_fill_own_eyes = 45;
-  int not_fill_own_eyes_size() const;
-  void clear_not_fill_own_eyes();
-  static const int kNotFillOwnEyesFieldNumber = 45;
-  bool not_fill_own_eyes(int index) const;
-  void set_not_fill_own_eyes(int index, bool value);
-  void add_not_fill_own_eyes(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      not_fill_own_eyes() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_not_fill_own_eyes();
-
-  // repeated bool ko = 46;
+  // repeated bool ko = 30;
   int ko_size() const;
   void clear_ko();
-  static const int kKoFieldNumber = 46;
+  static const int kKoFieldNumber = 30;
   bool ko(int index) const;
   void set_ko(int index, bool value);
   void add_ko(bool value);
@@ -924,10 +733,10 @@ class RequestV2 : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::RepeatedField< bool >*
       mutable_ko();
 
-  // repeated bool border = 47;
+  // repeated bool border = 31;
   int border_size() const;
   void clear_border();
-  static const int kBorderFieldNumber = 47;
+  static const int kBorderFieldNumber = 31;
   bool border(int index) const;
   void set_border(int index, bool value);
   void add_border(bool value);
@@ -936,10 +745,10 @@ class RequestV2 : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::RepeatedField< bool >*
       mutable_border();
 
-  // repeated float position = 48;
+  // repeated float position = 32;
   int position_size() const;
   void clear_position();
-  static const int kPositionFieldNumber = 48;
+  static const int kPositionFieldNumber = 32;
   float position(int index) const;
   void set_position(int index, float value);
   void add_position(float value);
@@ -948,133 +757,73 @@ class RequestV2 : public ::google::protobuf::Message /* @@protoc_insertion_point
   ::google::protobuf::RepeatedField< float >*
       mutable_position();
 
-  // repeated bool ones = 49;
-  int ones_size() const;
-  void clear_ones();
-  static const int kOnesFieldNumber = 49;
-  bool ones(int index) const;
-  void set_ones(int index, bool value);
-  void add_ones(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      ones() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_ones();
-
-  // repeated bool zeros = 50;
-  int zeros_size() const;
-  void clear_zeros();
-  static const int kZerosFieldNumber = 50;
-  bool zeros(int index) const;
-  void set_zeros(int index, bool value);
-  void add_zeros(bool value);
-  const ::google::protobuf::RepeatedField< bool >&
-      zeros() const;
-  ::google::protobuf::RepeatedField< bool >*
-      mutable_zeros();
-
   // @@protoc_insertion_point(class_scope:gocnn.RequestV2)
  private:
 
   ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
   bool _is_default_instance_;
-  ::google::protobuf::RepeatedField< bool > our_stone_;
-  mutable int _our_stone_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > oppo_stone_;
-  mutable int _oppo_stone_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > empty_stone_;
-  mutable int _empty_stone_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > turn_since1_;
-  mutable int _turn_since1_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > turn_since2_;
-  mutable int _turn_since2_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > turn_since3_;
-  mutable int _turn_since3_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > turn_since4_;
-  mutable int _turn_since4_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > turn_since5_;
-  mutable int _turn_since5_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > turn_since6_;
-  mutable int _turn_since6_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > turn_since7_;
-  mutable int _turn_since7_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > turn_since8_plus_;
-  mutable int _turn_since8_plus_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > lib1_;
-  mutable int _lib1_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > lib2_;
-  mutable int _lib2_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > lib3_;
-  mutable int _lib3_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > lib4_;
-  mutable int _lib4_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > lib5_;
-  mutable int _lib5_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > lib6_;
-  mutable int _lib6_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > lib7_;
-  mutable int _lib7_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > lib8_plus_;
-  mutable int _lib8_plus_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > after_move_lib1_;
-  mutable int _after_move_lib1_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > after_move_lib2_;
-  mutable int _after_move_lib2_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > after_move_lib3_;
-  mutable int _after_move_lib3_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > after_move_lib4_;
-  mutable int _after_move_lib4_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > after_move_lib5_;
-  mutable int _after_move_lib5_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > after_move_lib6_;
-  mutable int _after_move_lib6_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > after_move_lib7_;
-  mutable int _after_move_lib7_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > after_move_lib8_plus_;
-  mutable int _after_move_lib8_plus_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_oppo_size1_;
-  mutable int _cap_oppo_size1_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_oppo_size2_;
-  mutable int _cap_oppo_size2_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_oppo_size3_;
-  mutable int _cap_oppo_size3_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_oppo_size4_;
-  mutable int _cap_oppo_size4_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_oppo_size5_;
-  mutable int _cap_oppo_size5_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_oppo_size6_;
-  mutable int _cap_oppo_size6_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_oppo_size7_;
-  mutable int _cap_oppo_size7_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_oppo_size8_plus_;
-  mutable int _cap_oppo_size8_plus_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_our_size1_;
-  mutable int _cap_our_size1_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_our_size2_;
-  mutable int _cap_our_size2_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_our_size3_;
-  mutable int _cap_our_size3_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_our_size4_;
-  mutable int _cap_our_size4_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_our_size5_;
-  mutable int _cap_our_size5_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_our_size6_;
-  mutable int _cap_our_size6_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_our_size7_;
-  mutable int _cap_our_size7_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > cap_our_size8_plus_;
-  mutable int _cap_our_size8_plus_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > not_fill_own_eyes_;
-  mutable int _not_fill_own_eyes_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > stone_color_our_;
+  mutable int _stone_color_our_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > stone_color_oppo_;
+  mutable int _stone_color_oppo_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > stone_color_empty_;
+  mutable int _stone_color_empty_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > turns_since_one_;
+  mutable int _turns_since_one_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > turns_since_two_;
+  mutable int _turns_since_two_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > turns_since_three_;
+  mutable int _turns_since_three_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > turns_since_four_;
+  mutable int _turns_since_four_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > turns_since_five_;
+  mutable int _turns_since_five_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > turns_since_six_;
+  mutable int _turns_since_six_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > turns_since_seven_;
+  mutable int _turns_since_seven_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > turns_since_more_;
+  mutable int _turns_since_more_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > liberties_our_one_;
+  mutable int _liberties_our_one_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > liberties_our_two_;
+  mutable int _liberties_our_two_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > liberties_our_three_;
+  mutable int _liberties_our_three_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > liberties_our_more_;
+  mutable int _liberties_our_more_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > liberties_oppo_one_;
+  mutable int _liberties_oppo_one_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > liberties_oppo_two_;
+  mutable int _liberties_oppo_two_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > liberties_oppo_three_;
+  mutable int _liberties_oppo_three_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > liberties_oppo_more_;
+  mutable int _liberties_oppo_more_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > capture_size_one_;
+  mutable int _capture_size_one_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > capture_size_two_;
+  mutable int _capture_size_two_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > capture_size_three_;
+  mutable int _capture_size_three_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > capture_size_four_;
+  mutable int _capture_size_four_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > capture_size_five_;
+  mutable int _capture_size_five_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > capture_size_six_;
+  mutable int _capture_size_six_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > capture_size_seven_;
+  mutable int _capture_size_seven_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > capture_size_more_;
+  mutable int _capture_size_more_cached_byte_size_;
+  ::google::protobuf::RepeatedField< bool > sensibleness_;
+  mutable int _sensibleness_cached_byte_size_;
   ::google::protobuf::RepeatedField< bool > ko_;
   mutable int _ko_cached_byte_size_;
   ::google::protobuf::RepeatedField< bool > border_;
   mutable int _border_cached_byte_size_;
   ::google::protobuf::RepeatedField< float > position_;
   mutable int _position_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > ones_;
-  mutable int _ones_cached_byte_size_;
-  ::google::protobuf::RepeatedField< bool > zeros_;
-  mutable int _zeros_cached_byte_size_;
   ::google::protobuf::int32 board_size_;
   mutable int _cached_size_;
   friend void  protobuf_AddDesc_message_2eproto();
@@ -1083,6 +832,102 @@ class RequestV2 : public ::google::protobuf::Message /* @@protoc_insertion_point
 
   void InitAsDefaultInstance();
   static RequestV2* default_instance_;
+};
+// -------------------------------------------------------------------
+
+class ResponseV2 : public ::google::protobuf::Message /* @@protoc_insertion_point(class_definition:gocnn.ResponseV2) */ {
+ public:
+  ResponseV2();
+  virtual ~ResponseV2();
+
+  ResponseV2(const ResponseV2& from);
+
+  inline ResponseV2& operator=(const ResponseV2& from) {
+    CopyFrom(from);
+    return *this;
+  }
+
+  static const ::google::protobuf::Descriptor* descriptor();
+  static const ResponseV2& default_instance();
+
+  void Swap(ResponseV2* other);
+
+  // implements Message ----------------------------------------------
+
+  inline ResponseV2* New() const { return New(NULL); }
+
+  ResponseV2* New(::google::protobuf::Arena* arena) const;
+  void CopyFrom(const ::google::protobuf::Message& from);
+  void MergeFrom(const ::google::protobuf::Message& from);
+  void CopyFrom(const ResponseV2& from);
+  void MergeFrom(const ResponseV2& from);
+  void Clear();
+  bool IsInitialized() const;
+
+  int ByteSize() const;
+  bool MergePartialFromCodedStream(
+      ::google::protobuf::io::CodedInputStream* input);
+  void SerializeWithCachedSizes(
+      ::google::protobuf::io::CodedOutputStream* output) const;
+  ::google::protobuf::uint8* InternalSerializeWithCachedSizesToArray(
+      bool deterministic, ::google::protobuf::uint8* output) const;
+  ::google::protobuf::uint8* SerializeWithCachedSizesToArray(::google::protobuf::uint8* output) const {
+    return InternalSerializeWithCachedSizesToArray(false, output);
+  }
+  int GetCachedSize() const { return _cached_size_; }
+  private:
+  void SharedCtor();
+  void SharedDtor();
+  void SetCachedSize(int size) const;
+  void InternalSwap(ResponseV2* other);
+  private:
+  inline ::google::protobuf::Arena* GetArenaNoVirtual() const {
+    return _internal_metadata_.arena();
+  }
+  inline void* MaybeArenaPtr() const {
+    return _internal_metadata_.raw_arena_ptr();
+  }
+  public:
+
+  ::google::protobuf::Metadata GetMetadata() const;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  // optional int32 board_size = 1;
+  void clear_board_size();
+  static const int kBoardSizeFieldNumber = 1;
+  ::google::protobuf::int32 board_size() const;
+  void set_board_size(::google::protobuf::int32 value);
+
+  // repeated float possibility = 2;
+  int possibility_size() const;
+  void clear_possibility();
+  static const int kPossibilityFieldNumber = 2;
+  float possibility(int index) const;
+  void set_possibility(int index, float value);
+  void add_possibility(float value);
+  const ::google::protobuf::RepeatedField< float >&
+      possibility() const;
+  ::google::protobuf::RepeatedField< float >*
+      mutable_possibility();
+
+  // @@protoc_insertion_point(class_scope:gocnn.ResponseV2)
+ private:
+
+  ::google::protobuf::internal::InternalMetadataWithArena _internal_metadata_;
+  bool _is_default_instance_;
+  ::google::protobuf::RepeatedField< float > possibility_;
+  mutable int _possibility_cached_byte_size_;
+  ::google::protobuf::int32 board_size_;
+  mutable int _cached_size_;
+  friend void  protobuf_AddDesc_message_2eproto();
+  friend void protobuf_AssignDesc_message_2eproto();
+  friend void protobuf_ShutdownFile_message_2eproto();
+
+  void InitAsDefaultInstance();
+  static ResponseV2* default_instance_;
 };
 // ===================================================================
 
@@ -1382,1327 +1227,847 @@ inline void RequestV2::set_board_size(::google::protobuf::int32 value) {
   // @@protoc_insertion_point(field_set:gocnn.RequestV2.board_size)
 }
 
-// repeated bool our_stone = 2;
-inline int RequestV2::our_stone_size() const {
-  return our_stone_.size();
+// repeated bool stone_color_our = 2;
+inline int RequestV2::stone_color_our_size() const {
+  return stone_color_our_.size();
 }
-inline void RequestV2::clear_our_stone() {
-  our_stone_.Clear();
+inline void RequestV2::clear_stone_color_our() {
+  stone_color_our_.Clear();
 }
-inline bool RequestV2::our_stone(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.our_stone)
-  return our_stone_.Get(index);
+inline bool RequestV2::stone_color_our(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.stone_color_our)
+  return stone_color_our_.Get(index);
 }
-inline void RequestV2::set_our_stone(int index, bool value) {
-  our_stone_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.our_stone)
+inline void RequestV2::set_stone_color_our(int index, bool value) {
+  stone_color_our_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.stone_color_our)
 }
-inline void RequestV2::add_our_stone(bool value) {
-  our_stone_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.our_stone)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::our_stone() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.our_stone)
-  return our_stone_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_our_stone() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.our_stone)
-  return &our_stone_;
-}
-
-// repeated bool oppo_stone = 3;
-inline int RequestV2::oppo_stone_size() const {
-  return oppo_stone_.size();
-}
-inline void RequestV2::clear_oppo_stone() {
-  oppo_stone_.Clear();
-}
-inline bool RequestV2::oppo_stone(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.oppo_stone)
-  return oppo_stone_.Get(index);
-}
-inline void RequestV2::set_oppo_stone(int index, bool value) {
-  oppo_stone_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.oppo_stone)
-}
-inline void RequestV2::add_oppo_stone(bool value) {
-  oppo_stone_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.oppo_stone)
+inline void RequestV2::add_stone_color_our(bool value) {
+  stone_color_our_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.stone_color_our)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::oppo_stone() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.oppo_stone)
-  return oppo_stone_;
+RequestV2::stone_color_our() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.stone_color_our)
+  return stone_color_our_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_oppo_stone() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.oppo_stone)
-  return &oppo_stone_;
+RequestV2::mutable_stone_color_our() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.stone_color_our)
+  return &stone_color_our_;
 }
 
-// repeated bool empty_stone = 4;
-inline int RequestV2::empty_stone_size() const {
-  return empty_stone_.size();
+// repeated bool stone_color_oppo = 3;
+inline int RequestV2::stone_color_oppo_size() const {
+  return stone_color_oppo_.size();
 }
-inline void RequestV2::clear_empty_stone() {
-  empty_stone_.Clear();
+inline void RequestV2::clear_stone_color_oppo() {
+  stone_color_oppo_.Clear();
 }
-inline bool RequestV2::empty_stone(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.empty_stone)
-  return empty_stone_.Get(index);
+inline bool RequestV2::stone_color_oppo(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.stone_color_oppo)
+  return stone_color_oppo_.Get(index);
 }
-inline void RequestV2::set_empty_stone(int index, bool value) {
-  empty_stone_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.empty_stone)
+inline void RequestV2::set_stone_color_oppo(int index, bool value) {
+  stone_color_oppo_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.stone_color_oppo)
 }
-inline void RequestV2::add_empty_stone(bool value) {
-  empty_stone_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.empty_stone)
+inline void RequestV2::add_stone_color_oppo(bool value) {
+  stone_color_oppo_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.stone_color_oppo)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::empty_stone() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.empty_stone)
-  return empty_stone_;
+RequestV2::stone_color_oppo() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.stone_color_oppo)
+  return stone_color_oppo_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_empty_stone() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.empty_stone)
-  return &empty_stone_;
+RequestV2::mutable_stone_color_oppo() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.stone_color_oppo)
+  return &stone_color_oppo_;
 }
 
-// repeated bool turn_since1 = 5;
-inline int RequestV2::turn_since1_size() const {
-  return turn_since1_.size();
+// repeated bool stone_color_empty = 4;
+inline int RequestV2::stone_color_empty_size() const {
+  return stone_color_empty_.size();
 }
-inline void RequestV2::clear_turn_since1() {
-  turn_since1_.Clear();
+inline void RequestV2::clear_stone_color_empty() {
+  stone_color_empty_.Clear();
 }
-inline bool RequestV2::turn_since1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since1)
-  return turn_since1_.Get(index);
+inline bool RequestV2::stone_color_empty(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.stone_color_empty)
+  return stone_color_empty_.Get(index);
 }
-inline void RequestV2::set_turn_since1(int index, bool value) {
-  turn_since1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since1)
+inline void RequestV2::set_stone_color_empty(int index, bool value) {
+  stone_color_empty_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.stone_color_empty)
 }
-inline void RequestV2::add_turn_since1(bool value) {
-  turn_since1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since1)
+inline void RequestV2::add_stone_color_empty(bool value) {
+  stone_color_empty_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.stone_color_empty)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since1)
-  return turn_since1_;
+RequestV2::stone_color_empty() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.stone_color_empty)
+  return stone_color_empty_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since1)
-  return &turn_since1_;
+RequestV2::mutable_stone_color_empty() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.stone_color_empty)
+  return &stone_color_empty_;
 }
 
-// repeated bool turn_since2 = 6;
-inline int RequestV2::turn_since2_size() const {
-  return turn_since2_.size();
+// repeated bool turns_since_one = 5;
+inline int RequestV2::turns_since_one_size() const {
+  return turns_since_one_.size();
 }
-inline void RequestV2::clear_turn_since2() {
-  turn_since2_.Clear();
+inline void RequestV2::clear_turns_since_one() {
+  turns_since_one_.Clear();
 }
-inline bool RequestV2::turn_since2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since2)
-  return turn_since2_.Get(index);
+inline bool RequestV2::turns_since_one(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_one)
+  return turns_since_one_.Get(index);
 }
-inline void RequestV2::set_turn_since2(int index, bool value) {
-  turn_since2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since2)
+inline void RequestV2::set_turns_since_one(int index, bool value) {
+  turns_since_one_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_one)
 }
-inline void RequestV2::add_turn_since2(bool value) {
-  turn_since2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since2)
+inline void RequestV2::add_turns_since_one(bool value) {
+  turns_since_one_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_one)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since2)
-  return turn_since2_;
+RequestV2::turns_since_one() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_one)
+  return turns_since_one_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since2)
-  return &turn_since2_;
+RequestV2::mutable_turns_since_one() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_one)
+  return &turns_since_one_;
 }
 
-// repeated bool turn_since3 = 7;
-inline int RequestV2::turn_since3_size() const {
-  return turn_since3_.size();
+// repeated bool turns_since_two = 6;
+inline int RequestV2::turns_since_two_size() const {
+  return turns_since_two_.size();
 }
-inline void RequestV2::clear_turn_since3() {
-  turn_since3_.Clear();
+inline void RequestV2::clear_turns_since_two() {
+  turns_since_two_.Clear();
 }
-inline bool RequestV2::turn_since3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since3)
-  return turn_since3_.Get(index);
+inline bool RequestV2::turns_since_two(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_two)
+  return turns_since_two_.Get(index);
 }
-inline void RequestV2::set_turn_since3(int index, bool value) {
-  turn_since3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since3)
+inline void RequestV2::set_turns_since_two(int index, bool value) {
+  turns_since_two_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_two)
 }
-inline void RequestV2::add_turn_since3(bool value) {
-  turn_since3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since3)
+inline void RequestV2::add_turns_since_two(bool value) {
+  turns_since_two_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_two)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since3)
-  return turn_since3_;
+RequestV2::turns_since_two() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_two)
+  return turns_since_two_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since3)
-  return &turn_since3_;
+RequestV2::mutable_turns_since_two() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_two)
+  return &turns_since_two_;
 }
 
-// repeated bool turn_since4 = 8;
-inline int RequestV2::turn_since4_size() const {
-  return turn_since4_.size();
+// repeated bool turns_since_three = 7;
+inline int RequestV2::turns_since_three_size() const {
+  return turns_since_three_.size();
 }
-inline void RequestV2::clear_turn_since4() {
-  turn_since4_.Clear();
+inline void RequestV2::clear_turns_since_three() {
+  turns_since_three_.Clear();
 }
-inline bool RequestV2::turn_since4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since4)
-  return turn_since4_.Get(index);
+inline bool RequestV2::turns_since_three(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_three)
+  return turns_since_three_.Get(index);
 }
-inline void RequestV2::set_turn_since4(int index, bool value) {
-  turn_since4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since4)
+inline void RequestV2::set_turns_since_three(int index, bool value) {
+  turns_since_three_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_three)
 }
-inline void RequestV2::add_turn_since4(bool value) {
-  turn_since4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since4)
+inline void RequestV2::add_turns_since_three(bool value) {
+  turns_since_three_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_three)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since4)
-  return turn_since4_;
+RequestV2::turns_since_three() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_three)
+  return turns_since_three_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since4)
-  return &turn_since4_;
+RequestV2::mutable_turns_since_three() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_three)
+  return &turns_since_three_;
 }
 
-// repeated bool turn_since5 = 9;
-inline int RequestV2::turn_since5_size() const {
-  return turn_since5_.size();
+// repeated bool turns_since_four = 8;
+inline int RequestV2::turns_since_four_size() const {
+  return turns_since_four_.size();
 }
-inline void RequestV2::clear_turn_since5() {
-  turn_since5_.Clear();
+inline void RequestV2::clear_turns_since_four() {
+  turns_since_four_.Clear();
 }
-inline bool RequestV2::turn_since5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since5)
-  return turn_since5_.Get(index);
+inline bool RequestV2::turns_since_four(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_four)
+  return turns_since_four_.Get(index);
 }
-inline void RequestV2::set_turn_since5(int index, bool value) {
-  turn_since5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since5)
+inline void RequestV2::set_turns_since_four(int index, bool value) {
+  turns_since_four_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_four)
 }
-inline void RequestV2::add_turn_since5(bool value) {
-  turn_since5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since5)
+inline void RequestV2::add_turns_since_four(bool value) {
+  turns_since_four_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_four)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since5)
-  return turn_since5_;
+RequestV2::turns_since_four() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_four)
+  return turns_since_four_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since5)
-  return &turn_since5_;
+RequestV2::mutable_turns_since_four() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_four)
+  return &turns_since_four_;
 }
 
-// repeated bool turn_since6 = 10;
-inline int RequestV2::turn_since6_size() const {
-  return turn_since6_.size();
+// repeated bool turns_since_five = 9;
+inline int RequestV2::turns_since_five_size() const {
+  return turns_since_five_.size();
 }
-inline void RequestV2::clear_turn_since6() {
-  turn_since6_.Clear();
+inline void RequestV2::clear_turns_since_five() {
+  turns_since_five_.Clear();
 }
-inline bool RequestV2::turn_since6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since6)
-  return turn_since6_.Get(index);
+inline bool RequestV2::turns_since_five(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_five)
+  return turns_since_five_.Get(index);
 }
-inline void RequestV2::set_turn_since6(int index, bool value) {
-  turn_since6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since6)
+inline void RequestV2::set_turns_since_five(int index, bool value) {
+  turns_since_five_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_five)
 }
-inline void RequestV2::add_turn_since6(bool value) {
-  turn_since6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since6)
+inline void RequestV2::add_turns_since_five(bool value) {
+  turns_since_five_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_five)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since6)
-  return turn_since6_;
+RequestV2::turns_since_five() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_five)
+  return turns_since_five_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since6)
-  return &turn_since6_;
+RequestV2::mutable_turns_since_five() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_five)
+  return &turns_since_five_;
 }
 
-// repeated bool turn_since7 = 11;
-inline int RequestV2::turn_since7_size() const {
-  return turn_since7_.size();
+// repeated bool turns_since_six = 10;
+inline int RequestV2::turns_since_six_size() const {
+  return turns_since_six_.size();
 }
-inline void RequestV2::clear_turn_since7() {
-  turn_since7_.Clear();
+inline void RequestV2::clear_turns_since_six() {
+  turns_since_six_.Clear();
 }
-inline bool RequestV2::turn_since7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since7)
-  return turn_since7_.Get(index);
+inline bool RequestV2::turns_since_six(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_six)
+  return turns_since_six_.Get(index);
 }
-inline void RequestV2::set_turn_since7(int index, bool value) {
-  turn_since7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since7)
+inline void RequestV2::set_turns_since_six(int index, bool value) {
+  turns_since_six_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_six)
 }
-inline void RequestV2::add_turn_since7(bool value) {
-  turn_since7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since7)
+inline void RequestV2::add_turns_since_six(bool value) {
+  turns_since_six_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_six)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since7)
-  return turn_since7_;
+RequestV2::turns_since_six() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_six)
+  return turns_since_six_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since7)
-  return &turn_since7_;
+RequestV2::mutable_turns_since_six() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_six)
+  return &turns_since_six_;
 }
 
-// repeated bool turn_since8_plus = 12;
-inline int RequestV2::turn_since8_plus_size() const {
-  return turn_since8_plus_.size();
+// repeated bool turns_since_seven = 11;
+inline int RequestV2::turns_since_seven_size() const {
+  return turns_since_seven_.size();
 }
-inline void RequestV2::clear_turn_since8_plus() {
-  turn_since8_plus_.Clear();
+inline void RequestV2::clear_turns_since_seven() {
+  turns_since_seven_.Clear();
 }
-inline bool RequestV2::turn_since8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since8_plus)
-  return turn_since8_plus_.Get(index);
+inline bool RequestV2::turns_since_seven(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_seven)
+  return turns_since_seven_.Get(index);
 }
-inline void RequestV2::set_turn_since8_plus(int index, bool value) {
-  turn_since8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since8_plus)
+inline void RequestV2::set_turns_since_seven(int index, bool value) {
+  turns_since_seven_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_seven)
 }
-inline void RequestV2::add_turn_since8_plus(bool value) {
-  turn_since8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since8_plus)
+inline void RequestV2::add_turns_since_seven(bool value) {
+  turns_since_seven_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_seven)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since8_plus)
-  return turn_since8_plus_;
+RequestV2::turns_since_seven() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_seven)
+  return turns_since_seven_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since8_plus)
-  return &turn_since8_plus_;
+RequestV2::mutable_turns_since_seven() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_seven)
+  return &turns_since_seven_;
 }
 
-// repeated bool lib1 = 13;
-inline int RequestV2::lib1_size() const {
-  return lib1_.size();
+// repeated bool turns_since_more = 12;
+inline int RequestV2::turns_since_more_size() const {
+  return turns_since_more_.size();
 }
-inline void RequestV2::clear_lib1() {
-  lib1_.Clear();
+inline void RequestV2::clear_turns_since_more() {
+  turns_since_more_.Clear();
 }
-inline bool RequestV2::lib1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib1)
-  return lib1_.Get(index);
+inline bool RequestV2::turns_since_more(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_more)
+  return turns_since_more_.Get(index);
 }
-inline void RequestV2::set_lib1(int index, bool value) {
-  lib1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib1)
+inline void RequestV2::set_turns_since_more(int index, bool value) {
+  turns_since_more_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_more)
 }
-inline void RequestV2::add_lib1(bool value) {
-  lib1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib1)
+inline void RequestV2::add_turns_since_more(bool value) {
+  turns_since_more_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_more)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib1)
-  return lib1_;
+RequestV2::turns_since_more() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_more)
+  return turns_since_more_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib1)
-  return &lib1_;
+RequestV2::mutable_turns_since_more() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_more)
+  return &turns_since_more_;
 }
 
-// repeated bool lib2 = 14;
-inline int RequestV2::lib2_size() const {
-  return lib2_.size();
+// repeated bool liberties_our_one = 13;
+inline int RequestV2::liberties_our_one_size() const {
+  return liberties_our_one_.size();
 }
-inline void RequestV2::clear_lib2() {
-  lib2_.Clear();
+inline void RequestV2::clear_liberties_our_one() {
+  liberties_our_one_.Clear();
 }
-inline bool RequestV2::lib2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib2)
-  return lib2_.Get(index);
+inline bool RequestV2::liberties_our_one(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_our_one)
+  return liberties_our_one_.Get(index);
 }
-inline void RequestV2::set_lib2(int index, bool value) {
-  lib2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib2)
+inline void RequestV2::set_liberties_our_one(int index, bool value) {
+  liberties_our_one_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_our_one)
 }
-inline void RequestV2::add_lib2(bool value) {
-  lib2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib2)
+inline void RequestV2::add_liberties_our_one(bool value) {
+  liberties_our_one_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_our_one)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib2)
-  return lib2_;
+RequestV2::liberties_our_one() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_our_one)
+  return liberties_our_one_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib2)
-  return &lib2_;
+RequestV2::mutable_liberties_our_one() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_our_one)
+  return &liberties_our_one_;
 }
 
-// repeated bool lib3 = 15;
-inline int RequestV2::lib3_size() const {
-  return lib3_.size();
+// repeated bool liberties_our_two = 14;
+inline int RequestV2::liberties_our_two_size() const {
+  return liberties_our_two_.size();
 }
-inline void RequestV2::clear_lib3() {
-  lib3_.Clear();
+inline void RequestV2::clear_liberties_our_two() {
+  liberties_our_two_.Clear();
 }
-inline bool RequestV2::lib3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib3)
-  return lib3_.Get(index);
+inline bool RequestV2::liberties_our_two(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_our_two)
+  return liberties_our_two_.Get(index);
 }
-inline void RequestV2::set_lib3(int index, bool value) {
-  lib3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib3)
+inline void RequestV2::set_liberties_our_two(int index, bool value) {
+  liberties_our_two_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_our_two)
 }
-inline void RequestV2::add_lib3(bool value) {
-  lib3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib3)
+inline void RequestV2::add_liberties_our_two(bool value) {
+  liberties_our_two_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_our_two)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib3)
-  return lib3_;
+RequestV2::liberties_our_two() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_our_two)
+  return liberties_our_two_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib3)
-  return &lib3_;
+RequestV2::mutable_liberties_our_two() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_our_two)
+  return &liberties_our_two_;
 }
 
-// repeated bool lib4 = 16;
-inline int RequestV2::lib4_size() const {
-  return lib4_.size();
+// repeated bool liberties_our_three = 15;
+inline int RequestV2::liberties_our_three_size() const {
+  return liberties_our_three_.size();
 }
-inline void RequestV2::clear_lib4() {
-  lib4_.Clear();
+inline void RequestV2::clear_liberties_our_three() {
+  liberties_our_three_.Clear();
 }
-inline bool RequestV2::lib4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib4)
-  return lib4_.Get(index);
+inline bool RequestV2::liberties_our_three(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_our_three)
+  return liberties_our_three_.Get(index);
 }
-inline void RequestV2::set_lib4(int index, bool value) {
-  lib4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib4)
+inline void RequestV2::set_liberties_our_three(int index, bool value) {
+  liberties_our_three_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_our_three)
 }
-inline void RequestV2::add_lib4(bool value) {
-  lib4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib4)
+inline void RequestV2::add_liberties_our_three(bool value) {
+  liberties_our_three_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_our_three)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib4)
-  return lib4_;
+RequestV2::liberties_our_three() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_our_three)
+  return liberties_our_three_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib4)
-  return &lib4_;
+RequestV2::mutable_liberties_our_three() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_our_three)
+  return &liberties_our_three_;
 }
 
-// repeated bool lib5 = 17;
-inline int RequestV2::lib5_size() const {
-  return lib5_.size();
+// repeated bool liberties_our_more = 16;
+inline int RequestV2::liberties_our_more_size() const {
+  return liberties_our_more_.size();
 }
-inline void RequestV2::clear_lib5() {
-  lib5_.Clear();
+inline void RequestV2::clear_liberties_our_more() {
+  liberties_our_more_.Clear();
 }
-inline bool RequestV2::lib5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib5)
-  return lib5_.Get(index);
+inline bool RequestV2::liberties_our_more(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_our_more)
+  return liberties_our_more_.Get(index);
 }
-inline void RequestV2::set_lib5(int index, bool value) {
-  lib5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib5)
+inline void RequestV2::set_liberties_our_more(int index, bool value) {
+  liberties_our_more_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_our_more)
 }
-inline void RequestV2::add_lib5(bool value) {
-  lib5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib5)
+inline void RequestV2::add_liberties_our_more(bool value) {
+  liberties_our_more_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_our_more)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib5)
-  return lib5_;
+RequestV2::liberties_our_more() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_our_more)
+  return liberties_our_more_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib5)
-  return &lib5_;
+RequestV2::mutable_liberties_our_more() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_our_more)
+  return &liberties_our_more_;
 }
 
-// repeated bool lib6 = 18;
-inline int RequestV2::lib6_size() const {
-  return lib6_.size();
+// repeated bool liberties_oppo_one = 17;
+inline int RequestV2::liberties_oppo_one_size() const {
+  return liberties_oppo_one_.size();
 }
-inline void RequestV2::clear_lib6() {
-  lib6_.Clear();
+inline void RequestV2::clear_liberties_oppo_one() {
+  liberties_oppo_one_.Clear();
 }
-inline bool RequestV2::lib6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib6)
-  return lib6_.Get(index);
+inline bool RequestV2::liberties_oppo_one(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_oppo_one)
+  return liberties_oppo_one_.Get(index);
 }
-inline void RequestV2::set_lib6(int index, bool value) {
-  lib6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib6)
+inline void RequestV2::set_liberties_oppo_one(int index, bool value) {
+  liberties_oppo_one_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_oppo_one)
 }
-inline void RequestV2::add_lib6(bool value) {
-  lib6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib6)
+inline void RequestV2::add_liberties_oppo_one(bool value) {
+  liberties_oppo_one_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_oppo_one)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib6)
-  return lib6_;
+RequestV2::liberties_oppo_one() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_oppo_one)
+  return liberties_oppo_one_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib6)
-  return &lib6_;
+RequestV2::mutable_liberties_oppo_one() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_oppo_one)
+  return &liberties_oppo_one_;
 }
 
-// repeated bool lib7 = 19;
-inline int RequestV2::lib7_size() const {
-  return lib7_.size();
+// repeated bool liberties_oppo_two = 18;
+inline int RequestV2::liberties_oppo_two_size() const {
+  return liberties_oppo_two_.size();
 }
-inline void RequestV2::clear_lib7() {
-  lib7_.Clear();
+inline void RequestV2::clear_liberties_oppo_two() {
+  liberties_oppo_two_.Clear();
 }
-inline bool RequestV2::lib7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib7)
-  return lib7_.Get(index);
+inline bool RequestV2::liberties_oppo_two(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_oppo_two)
+  return liberties_oppo_two_.Get(index);
 }
-inline void RequestV2::set_lib7(int index, bool value) {
-  lib7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib7)
+inline void RequestV2::set_liberties_oppo_two(int index, bool value) {
+  liberties_oppo_two_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_oppo_two)
 }
-inline void RequestV2::add_lib7(bool value) {
-  lib7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib7)
+inline void RequestV2::add_liberties_oppo_two(bool value) {
+  liberties_oppo_two_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_oppo_two)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib7)
-  return lib7_;
+RequestV2::liberties_oppo_two() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_oppo_two)
+  return liberties_oppo_two_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib7)
-  return &lib7_;
+RequestV2::mutable_liberties_oppo_two() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_oppo_two)
+  return &liberties_oppo_two_;
 }
 
-// repeated bool lib8_plus = 20;
-inline int RequestV2::lib8_plus_size() const {
-  return lib8_plus_.size();
+// repeated bool liberties_oppo_three = 19;
+inline int RequestV2::liberties_oppo_three_size() const {
+  return liberties_oppo_three_.size();
 }
-inline void RequestV2::clear_lib8_plus() {
-  lib8_plus_.Clear();
+inline void RequestV2::clear_liberties_oppo_three() {
+  liberties_oppo_three_.Clear();
 }
-inline bool RequestV2::lib8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib8_plus)
-  return lib8_plus_.Get(index);
+inline bool RequestV2::liberties_oppo_three(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_oppo_three)
+  return liberties_oppo_three_.Get(index);
 }
-inline void RequestV2::set_lib8_plus(int index, bool value) {
-  lib8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib8_plus)
+inline void RequestV2::set_liberties_oppo_three(int index, bool value) {
+  liberties_oppo_three_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_oppo_three)
 }
-inline void RequestV2::add_lib8_plus(bool value) {
-  lib8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib8_plus)
+inline void RequestV2::add_liberties_oppo_three(bool value) {
+  liberties_oppo_three_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_oppo_three)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib8_plus)
-  return lib8_plus_;
+RequestV2::liberties_oppo_three() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_oppo_three)
+  return liberties_oppo_three_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib8_plus)
-  return &lib8_plus_;
+RequestV2::mutable_liberties_oppo_three() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_oppo_three)
+  return &liberties_oppo_three_;
 }
 
-// repeated bool after_move_lib1 = 21;
-inline int RequestV2::after_move_lib1_size() const {
-  return after_move_lib1_.size();
+// repeated bool liberties_oppo_more = 20;
+inline int RequestV2::liberties_oppo_more_size() const {
+  return liberties_oppo_more_.size();
 }
-inline void RequestV2::clear_after_move_lib1() {
-  after_move_lib1_.Clear();
+inline void RequestV2::clear_liberties_oppo_more() {
+  liberties_oppo_more_.Clear();
 }
-inline bool RequestV2::after_move_lib1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib1)
-  return after_move_lib1_.Get(index);
+inline bool RequestV2::liberties_oppo_more(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_oppo_more)
+  return liberties_oppo_more_.Get(index);
 }
-inline void RequestV2::set_after_move_lib1(int index, bool value) {
-  after_move_lib1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib1)
+inline void RequestV2::set_liberties_oppo_more(int index, bool value) {
+  liberties_oppo_more_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_oppo_more)
 }
-inline void RequestV2::add_after_move_lib1(bool value) {
-  after_move_lib1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib1)
+inline void RequestV2::add_liberties_oppo_more(bool value) {
+  liberties_oppo_more_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_oppo_more)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib1)
-  return after_move_lib1_;
+RequestV2::liberties_oppo_more() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_oppo_more)
+  return liberties_oppo_more_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib1)
-  return &after_move_lib1_;
+RequestV2::mutable_liberties_oppo_more() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_oppo_more)
+  return &liberties_oppo_more_;
 }
 
-// repeated bool after_move_lib2 = 22;
-inline int RequestV2::after_move_lib2_size() const {
-  return after_move_lib2_.size();
+// repeated bool capture_size_one = 21;
+inline int RequestV2::capture_size_one_size() const {
+  return capture_size_one_.size();
 }
-inline void RequestV2::clear_after_move_lib2() {
-  after_move_lib2_.Clear();
+inline void RequestV2::clear_capture_size_one() {
+  capture_size_one_.Clear();
 }
-inline bool RequestV2::after_move_lib2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib2)
-  return after_move_lib2_.Get(index);
+inline bool RequestV2::capture_size_one(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_one)
+  return capture_size_one_.Get(index);
 }
-inline void RequestV2::set_after_move_lib2(int index, bool value) {
-  after_move_lib2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib2)
+inline void RequestV2::set_capture_size_one(int index, bool value) {
+  capture_size_one_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_one)
 }
-inline void RequestV2::add_after_move_lib2(bool value) {
-  after_move_lib2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib2)
+inline void RequestV2::add_capture_size_one(bool value) {
+  capture_size_one_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_one)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib2)
-  return after_move_lib2_;
+RequestV2::capture_size_one() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_one)
+  return capture_size_one_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib2)
-  return &after_move_lib2_;
+RequestV2::mutable_capture_size_one() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_one)
+  return &capture_size_one_;
 }
 
-// repeated bool after_move_lib3 = 23;
-inline int RequestV2::after_move_lib3_size() const {
-  return after_move_lib3_.size();
+// repeated bool capture_size_two = 22;
+inline int RequestV2::capture_size_two_size() const {
+  return capture_size_two_.size();
 }
-inline void RequestV2::clear_after_move_lib3() {
-  after_move_lib3_.Clear();
+inline void RequestV2::clear_capture_size_two() {
+  capture_size_two_.Clear();
 }
-inline bool RequestV2::after_move_lib3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib3)
-  return after_move_lib3_.Get(index);
+inline bool RequestV2::capture_size_two(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_two)
+  return capture_size_two_.Get(index);
 }
-inline void RequestV2::set_after_move_lib3(int index, bool value) {
-  after_move_lib3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib3)
+inline void RequestV2::set_capture_size_two(int index, bool value) {
+  capture_size_two_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_two)
 }
-inline void RequestV2::add_after_move_lib3(bool value) {
-  after_move_lib3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib3)
+inline void RequestV2::add_capture_size_two(bool value) {
+  capture_size_two_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_two)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib3)
-  return after_move_lib3_;
+RequestV2::capture_size_two() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_two)
+  return capture_size_two_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib3)
-  return &after_move_lib3_;
+RequestV2::mutable_capture_size_two() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_two)
+  return &capture_size_two_;
 }
 
-// repeated bool after_move_lib4 = 24;
-inline int RequestV2::after_move_lib4_size() const {
-  return after_move_lib4_.size();
+// repeated bool capture_size_three = 23;
+inline int RequestV2::capture_size_three_size() const {
+  return capture_size_three_.size();
 }
-inline void RequestV2::clear_after_move_lib4() {
-  after_move_lib4_.Clear();
+inline void RequestV2::clear_capture_size_three() {
+  capture_size_three_.Clear();
 }
-inline bool RequestV2::after_move_lib4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib4)
-  return after_move_lib4_.Get(index);
+inline bool RequestV2::capture_size_three(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_three)
+  return capture_size_three_.Get(index);
 }
-inline void RequestV2::set_after_move_lib4(int index, bool value) {
-  after_move_lib4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib4)
+inline void RequestV2::set_capture_size_three(int index, bool value) {
+  capture_size_three_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_three)
 }
-inline void RequestV2::add_after_move_lib4(bool value) {
-  after_move_lib4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib4)
+inline void RequestV2::add_capture_size_three(bool value) {
+  capture_size_three_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_three)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib4)
-  return after_move_lib4_;
+RequestV2::capture_size_three() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_three)
+  return capture_size_three_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib4)
-  return &after_move_lib4_;
+RequestV2::mutable_capture_size_three() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_three)
+  return &capture_size_three_;
 }
 
-// repeated bool after_move_lib5 = 25;
-inline int RequestV2::after_move_lib5_size() const {
-  return after_move_lib5_.size();
+// repeated bool capture_size_four = 24;
+inline int RequestV2::capture_size_four_size() const {
+  return capture_size_four_.size();
 }
-inline void RequestV2::clear_after_move_lib5() {
-  after_move_lib5_.Clear();
+inline void RequestV2::clear_capture_size_four() {
+  capture_size_four_.Clear();
 }
-inline bool RequestV2::after_move_lib5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib5)
-  return after_move_lib5_.Get(index);
+inline bool RequestV2::capture_size_four(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_four)
+  return capture_size_four_.Get(index);
 }
-inline void RequestV2::set_after_move_lib5(int index, bool value) {
-  after_move_lib5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib5)
+inline void RequestV2::set_capture_size_four(int index, bool value) {
+  capture_size_four_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_four)
 }
-inline void RequestV2::add_after_move_lib5(bool value) {
-  after_move_lib5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib5)
+inline void RequestV2::add_capture_size_four(bool value) {
+  capture_size_four_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_four)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib5)
-  return after_move_lib5_;
+RequestV2::capture_size_four() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_four)
+  return capture_size_four_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib5)
-  return &after_move_lib5_;
+RequestV2::mutable_capture_size_four() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_four)
+  return &capture_size_four_;
 }
 
-// repeated bool after_move_lib6 = 26;
-inline int RequestV2::after_move_lib6_size() const {
-  return after_move_lib6_.size();
+// repeated bool capture_size_five = 25;
+inline int RequestV2::capture_size_five_size() const {
+  return capture_size_five_.size();
 }
-inline void RequestV2::clear_after_move_lib6() {
-  after_move_lib6_.Clear();
+inline void RequestV2::clear_capture_size_five() {
+  capture_size_five_.Clear();
 }
-inline bool RequestV2::after_move_lib6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib6)
-  return after_move_lib6_.Get(index);
+inline bool RequestV2::capture_size_five(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_five)
+  return capture_size_five_.Get(index);
 }
-inline void RequestV2::set_after_move_lib6(int index, bool value) {
-  after_move_lib6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib6)
+inline void RequestV2::set_capture_size_five(int index, bool value) {
+  capture_size_five_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_five)
 }
-inline void RequestV2::add_after_move_lib6(bool value) {
-  after_move_lib6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib6)
+inline void RequestV2::add_capture_size_five(bool value) {
+  capture_size_five_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_five)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib6)
-  return after_move_lib6_;
+RequestV2::capture_size_five() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_five)
+  return capture_size_five_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib6)
-  return &after_move_lib6_;
+RequestV2::mutable_capture_size_five() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_five)
+  return &capture_size_five_;
 }
 
-// repeated bool after_move_lib7 = 27;
-inline int RequestV2::after_move_lib7_size() const {
-  return after_move_lib7_.size();
+// repeated bool capture_size_six = 26;
+inline int RequestV2::capture_size_six_size() const {
+  return capture_size_six_.size();
 }
-inline void RequestV2::clear_after_move_lib7() {
-  after_move_lib7_.Clear();
+inline void RequestV2::clear_capture_size_six() {
+  capture_size_six_.Clear();
 }
-inline bool RequestV2::after_move_lib7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib7)
-  return after_move_lib7_.Get(index);
+inline bool RequestV2::capture_size_six(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_six)
+  return capture_size_six_.Get(index);
 }
-inline void RequestV2::set_after_move_lib7(int index, bool value) {
-  after_move_lib7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib7)
+inline void RequestV2::set_capture_size_six(int index, bool value) {
+  capture_size_six_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_six)
 }
-inline void RequestV2::add_after_move_lib7(bool value) {
-  after_move_lib7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib7)
+inline void RequestV2::add_capture_size_six(bool value) {
+  capture_size_six_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_six)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib7)
-  return after_move_lib7_;
+RequestV2::capture_size_six() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_six)
+  return capture_size_six_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib7)
-  return &after_move_lib7_;
+RequestV2::mutable_capture_size_six() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_six)
+  return &capture_size_six_;
 }
 
-// repeated bool after_move_lib8_plus = 28;
-inline int RequestV2::after_move_lib8_plus_size() const {
-  return after_move_lib8_plus_.size();
+// repeated bool capture_size_seven = 27;
+inline int RequestV2::capture_size_seven_size() const {
+  return capture_size_seven_.size();
 }
-inline void RequestV2::clear_after_move_lib8_plus() {
-  after_move_lib8_plus_.Clear();
+inline void RequestV2::clear_capture_size_seven() {
+  capture_size_seven_.Clear();
 }
-inline bool RequestV2::after_move_lib8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib8_plus)
-  return after_move_lib8_plus_.Get(index);
+inline bool RequestV2::capture_size_seven(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_seven)
+  return capture_size_seven_.Get(index);
 }
-inline void RequestV2::set_after_move_lib8_plus(int index, bool value) {
-  after_move_lib8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib8_plus)
+inline void RequestV2::set_capture_size_seven(int index, bool value) {
+  capture_size_seven_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_seven)
 }
-inline void RequestV2::add_after_move_lib8_plus(bool value) {
-  after_move_lib8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib8_plus)
+inline void RequestV2::add_capture_size_seven(bool value) {
+  capture_size_seven_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_seven)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib8_plus)
-  return after_move_lib8_plus_;
+RequestV2::capture_size_seven() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_seven)
+  return capture_size_seven_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib8_plus)
-  return &after_move_lib8_plus_;
+RequestV2::mutable_capture_size_seven() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_seven)
+  return &capture_size_seven_;
 }
 
-// repeated bool cap_oppo_size1 = 29;
-inline int RequestV2::cap_oppo_size1_size() const {
-  return cap_oppo_size1_.size();
+// repeated bool capture_size_more = 28;
+inline int RequestV2::capture_size_more_size() const {
+  return capture_size_more_.size();
 }
-inline void RequestV2::clear_cap_oppo_size1() {
-  cap_oppo_size1_.Clear();
+inline void RequestV2::clear_capture_size_more() {
+  capture_size_more_.Clear();
 }
-inline bool RequestV2::cap_oppo_size1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size1)
-  return cap_oppo_size1_.Get(index);
+inline bool RequestV2::capture_size_more(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_more)
+  return capture_size_more_.Get(index);
 }
-inline void RequestV2::set_cap_oppo_size1(int index, bool value) {
-  cap_oppo_size1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size1)
+inline void RequestV2::set_capture_size_more(int index, bool value) {
+  capture_size_more_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_more)
 }
-inline void RequestV2::add_cap_oppo_size1(bool value) {
-  cap_oppo_size1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size1)
+inline void RequestV2::add_capture_size_more(bool value) {
+  capture_size_more_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_more)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size1)
-  return cap_oppo_size1_;
+RequestV2::capture_size_more() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_more)
+  return capture_size_more_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size1)
-  return &cap_oppo_size1_;
+RequestV2::mutable_capture_size_more() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_more)
+  return &capture_size_more_;
 }
 
-// repeated bool cap_oppo_size2 = 30;
-inline int RequestV2::cap_oppo_size2_size() const {
-  return cap_oppo_size2_.size();
+// repeated bool sensibleness = 29;
+inline int RequestV2::sensibleness_size() const {
+  return sensibleness_.size();
 }
-inline void RequestV2::clear_cap_oppo_size2() {
-  cap_oppo_size2_.Clear();
+inline void RequestV2::clear_sensibleness() {
+  sensibleness_.Clear();
 }
-inline bool RequestV2::cap_oppo_size2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size2)
-  return cap_oppo_size2_.Get(index);
+inline bool RequestV2::sensibleness(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.sensibleness)
+  return sensibleness_.Get(index);
 }
-inline void RequestV2::set_cap_oppo_size2(int index, bool value) {
-  cap_oppo_size2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size2)
+inline void RequestV2::set_sensibleness(int index, bool value) {
+  sensibleness_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.sensibleness)
 }
-inline void RequestV2::add_cap_oppo_size2(bool value) {
-  cap_oppo_size2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size2)
+inline void RequestV2::add_sensibleness(bool value) {
+  sensibleness_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.sensibleness)
 }
 inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size2)
-  return cap_oppo_size2_;
+RequestV2::sensibleness() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.sensibleness)
+  return sensibleness_;
 }
 inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size2)
-  return &cap_oppo_size2_;
+RequestV2::mutable_sensibleness() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.sensibleness)
+  return &sensibleness_;
 }
 
-// repeated bool cap_oppo_size3 = 31;
-inline int RequestV2::cap_oppo_size3_size() const {
-  return cap_oppo_size3_.size();
-}
-inline void RequestV2::clear_cap_oppo_size3() {
-  cap_oppo_size3_.Clear();
-}
-inline bool RequestV2::cap_oppo_size3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size3)
-  return cap_oppo_size3_.Get(index);
-}
-inline void RequestV2::set_cap_oppo_size3(int index, bool value) {
-  cap_oppo_size3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size3)
-}
-inline void RequestV2::add_cap_oppo_size3(bool value) {
-  cap_oppo_size3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size3)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size3)
-  return cap_oppo_size3_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size3)
-  return &cap_oppo_size3_;
-}
-
-// repeated bool cap_oppo_size4 = 32;
-inline int RequestV2::cap_oppo_size4_size() const {
-  return cap_oppo_size4_.size();
-}
-inline void RequestV2::clear_cap_oppo_size4() {
-  cap_oppo_size4_.Clear();
-}
-inline bool RequestV2::cap_oppo_size4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size4)
-  return cap_oppo_size4_.Get(index);
-}
-inline void RequestV2::set_cap_oppo_size4(int index, bool value) {
-  cap_oppo_size4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size4)
-}
-inline void RequestV2::add_cap_oppo_size4(bool value) {
-  cap_oppo_size4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size4)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size4)
-  return cap_oppo_size4_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size4)
-  return &cap_oppo_size4_;
-}
-
-// repeated bool cap_oppo_size5 = 33;
-inline int RequestV2::cap_oppo_size5_size() const {
-  return cap_oppo_size5_.size();
-}
-inline void RequestV2::clear_cap_oppo_size5() {
-  cap_oppo_size5_.Clear();
-}
-inline bool RequestV2::cap_oppo_size5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size5)
-  return cap_oppo_size5_.Get(index);
-}
-inline void RequestV2::set_cap_oppo_size5(int index, bool value) {
-  cap_oppo_size5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size5)
-}
-inline void RequestV2::add_cap_oppo_size5(bool value) {
-  cap_oppo_size5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size5)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size5)
-  return cap_oppo_size5_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size5)
-  return &cap_oppo_size5_;
-}
-
-// repeated bool cap_oppo_size6 = 34;
-inline int RequestV2::cap_oppo_size6_size() const {
-  return cap_oppo_size6_.size();
-}
-inline void RequestV2::clear_cap_oppo_size6() {
-  cap_oppo_size6_.Clear();
-}
-inline bool RequestV2::cap_oppo_size6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size6)
-  return cap_oppo_size6_.Get(index);
-}
-inline void RequestV2::set_cap_oppo_size6(int index, bool value) {
-  cap_oppo_size6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size6)
-}
-inline void RequestV2::add_cap_oppo_size6(bool value) {
-  cap_oppo_size6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size6)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size6)
-  return cap_oppo_size6_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size6)
-  return &cap_oppo_size6_;
-}
-
-// repeated bool cap_oppo_size7 = 35;
-inline int RequestV2::cap_oppo_size7_size() const {
-  return cap_oppo_size7_.size();
-}
-inline void RequestV2::clear_cap_oppo_size7() {
-  cap_oppo_size7_.Clear();
-}
-inline bool RequestV2::cap_oppo_size7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size7)
-  return cap_oppo_size7_.Get(index);
-}
-inline void RequestV2::set_cap_oppo_size7(int index, bool value) {
-  cap_oppo_size7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size7)
-}
-inline void RequestV2::add_cap_oppo_size7(bool value) {
-  cap_oppo_size7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size7)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size7)
-  return cap_oppo_size7_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size7)
-  return &cap_oppo_size7_;
-}
-
-// repeated bool cap_oppo_size8_plus = 36;
-inline int RequestV2::cap_oppo_size8_plus_size() const {
-  return cap_oppo_size8_plus_.size();
-}
-inline void RequestV2::clear_cap_oppo_size8_plus() {
-  cap_oppo_size8_plus_.Clear();
-}
-inline bool RequestV2::cap_oppo_size8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size8_plus)
-  return cap_oppo_size8_plus_.Get(index);
-}
-inline void RequestV2::set_cap_oppo_size8_plus(int index, bool value) {
-  cap_oppo_size8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size8_plus)
-}
-inline void RequestV2::add_cap_oppo_size8_plus(bool value) {
-  cap_oppo_size8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size8_plus)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size8_plus)
-  return cap_oppo_size8_plus_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size8_plus)
-  return &cap_oppo_size8_plus_;
-}
-
-// repeated bool cap_our_size1 = 37;
-inline int RequestV2::cap_our_size1_size() const {
-  return cap_our_size1_.size();
-}
-inline void RequestV2::clear_cap_our_size1() {
-  cap_our_size1_.Clear();
-}
-inline bool RequestV2::cap_our_size1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size1)
-  return cap_our_size1_.Get(index);
-}
-inline void RequestV2::set_cap_our_size1(int index, bool value) {
-  cap_our_size1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size1)
-}
-inline void RequestV2::add_cap_our_size1(bool value) {
-  cap_our_size1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size1)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size1)
-  return cap_our_size1_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size1)
-  return &cap_our_size1_;
-}
-
-// repeated bool cap_our_size2 = 38;
-inline int RequestV2::cap_our_size2_size() const {
-  return cap_our_size2_.size();
-}
-inline void RequestV2::clear_cap_our_size2() {
-  cap_our_size2_.Clear();
-}
-inline bool RequestV2::cap_our_size2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size2)
-  return cap_our_size2_.Get(index);
-}
-inline void RequestV2::set_cap_our_size2(int index, bool value) {
-  cap_our_size2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size2)
-}
-inline void RequestV2::add_cap_our_size2(bool value) {
-  cap_our_size2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size2)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size2)
-  return cap_our_size2_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size2)
-  return &cap_our_size2_;
-}
-
-// repeated bool cap_our_size3 = 39;
-inline int RequestV2::cap_our_size3_size() const {
-  return cap_our_size3_.size();
-}
-inline void RequestV2::clear_cap_our_size3() {
-  cap_our_size3_.Clear();
-}
-inline bool RequestV2::cap_our_size3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size3)
-  return cap_our_size3_.Get(index);
-}
-inline void RequestV2::set_cap_our_size3(int index, bool value) {
-  cap_our_size3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size3)
-}
-inline void RequestV2::add_cap_our_size3(bool value) {
-  cap_our_size3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size3)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size3)
-  return cap_our_size3_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size3)
-  return &cap_our_size3_;
-}
-
-// repeated bool cap_our_size4 = 40;
-inline int RequestV2::cap_our_size4_size() const {
-  return cap_our_size4_.size();
-}
-inline void RequestV2::clear_cap_our_size4() {
-  cap_our_size4_.Clear();
-}
-inline bool RequestV2::cap_our_size4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size4)
-  return cap_our_size4_.Get(index);
-}
-inline void RequestV2::set_cap_our_size4(int index, bool value) {
-  cap_our_size4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size4)
-}
-inline void RequestV2::add_cap_our_size4(bool value) {
-  cap_our_size4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size4)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size4)
-  return cap_our_size4_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size4)
-  return &cap_our_size4_;
-}
-
-// repeated bool cap_our_size5 = 41;
-inline int RequestV2::cap_our_size5_size() const {
-  return cap_our_size5_.size();
-}
-inline void RequestV2::clear_cap_our_size5() {
-  cap_our_size5_.Clear();
-}
-inline bool RequestV2::cap_our_size5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size5)
-  return cap_our_size5_.Get(index);
-}
-inline void RequestV2::set_cap_our_size5(int index, bool value) {
-  cap_our_size5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size5)
-}
-inline void RequestV2::add_cap_our_size5(bool value) {
-  cap_our_size5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size5)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size5)
-  return cap_our_size5_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size5)
-  return &cap_our_size5_;
-}
-
-// repeated bool cap_our_size6 = 42;
-inline int RequestV2::cap_our_size6_size() const {
-  return cap_our_size6_.size();
-}
-inline void RequestV2::clear_cap_our_size6() {
-  cap_our_size6_.Clear();
-}
-inline bool RequestV2::cap_our_size6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size6)
-  return cap_our_size6_.Get(index);
-}
-inline void RequestV2::set_cap_our_size6(int index, bool value) {
-  cap_our_size6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size6)
-}
-inline void RequestV2::add_cap_our_size6(bool value) {
-  cap_our_size6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size6)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size6)
-  return cap_our_size6_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size6)
-  return &cap_our_size6_;
-}
-
-// repeated bool cap_our_size7 = 43;
-inline int RequestV2::cap_our_size7_size() const {
-  return cap_our_size7_.size();
-}
-inline void RequestV2::clear_cap_our_size7() {
-  cap_our_size7_.Clear();
-}
-inline bool RequestV2::cap_our_size7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size7)
-  return cap_our_size7_.Get(index);
-}
-inline void RequestV2::set_cap_our_size7(int index, bool value) {
-  cap_our_size7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size7)
-}
-inline void RequestV2::add_cap_our_size7(bool value) {
-  cap_our_size7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size7)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size7)
-  return cap_our_size7_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size7)
-  return &cap_our_size7_;
-}
-
-// repeated bool cap_our_size8_plus = 44;
-inline int RequestV2::cap_our_size8_plus_size() const {
-  return cap_our_size8_plus_.size();
-}
-inline void RequestV2::clear_cap_our_size8_plus() {
-  cap_our_size8_plus_.Clear();
-}
-inline bool RequestV2::cap_our_size8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size8_plus)
-  return cap_our_size8_plus_.Get(index);
-}
-inline void RequestV2::set_cap_our_size8_plus(int index, bool value) {
-  cap_our_size8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size8_plus)
-}
-inline void RequestV2::add_cap_our_size8_plus(bool value) {
-  cap_our_size8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size8_plus)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size8_plus)
-  return cap_our_size8_plus_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size8_plus)
-  return &cap_our_size8_plus_;
-}
-
-// repeated bool not_fill_own_eyes = 45;
-inline int RequestV2::not_fill_own_eyes_size() const {
-  return not_fill_own_eyes_.size();
-}
-inline void RequestV2::clear_not_fill_own_eyes() {
-  not_fill_own_eyes_.Clear();
-}
-inline bool RequestV2::not_fill_own_eyes(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.not_fill_own_eyes)
-  return not_fill_own_eyes_.Get(index);
-}
-inline void RequestV2::set_not_fill_own_eyes(int index, bool value) {
-  not_fill_own_eyes_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.not_fill_own_eyes)
-}
-inline void RequestV2::add_not_fill_own_eyes(bool value) {
-  not_fill_own_eyes_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.not_fill_own_eyes)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::not_fill_own_eyes() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.not_fill_own_eyes)
-  return not_fill_own_eyes_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_not_fill_own_eyes() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.not_fill_own_eyes)
-  return &not_fill_own_eyes_;
-}
-
-// repeated bool ko = 46;
+// repeated bool ko = 30;
 inline int RequestV2::ko_size() const {
   return ko_.size();
 }
@@ -2732,7 +2097,7 @@ RequestV2::mutable_ko() {
   return &ko_;
 }
 
-// repeated bool border = 47;
+// repeated bool border = 31;
 inline int RequestV2::border_size() const {
   return border_.size();
 }
@@ -2762,7 +2127,7 @@ RequestV2::mutable_border() {
   return &border_;
 }
 
-// repeated float position = 48;
+// repeated float position = 32;
 inline int RequestV2::position_size() const {
   return position_.size();
 }
@@ -2792,67 +2157,57 @@ RequestV2::mutable_position() {
   return &position_;
 }
 
-// repeated bool ones = 49;
-inline int RequestV2::ones_size() const {
-  return ones_.size();
+// -------------------------------------------------------------------
+
+// ResponseV2
+
+// optional int32 board_size = 1;
+inline void ResponseV2::clear_board_size() {
+  board_size_ = 0;
 }
-inline void RequestV2::clear_ones() {
-  ones_.Clear();
+inline ::google::protobuf::int32 ResponseV2::board_size() const {
+  // @@protoc_insertion_point(field_get:gocnn.ResponseV2.board_size)
+  return board_size_;
 }
-inline bool RequestV2::ones(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.ones)
-  return ones_.Get(index);
-}
-inline void RequestV2::set_ones(int index, bool value) {
-  ones_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.ones)
-}
-inline void RequestV2::add_ones(bool value) {
-  ones_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.ones)
-}
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::ones() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.ones)
-  return ones_;
-}
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_ones() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.ones)
-  return &ones_;
+inline void ResponseV2::set_board_size(::google::protobuf::int32 value) {
+  
+  board_size_ = value;
+  // @@protoc_insertion_point(field_set:gocnn.ResponseV2.board_size)
 }
 
-// repeated bool zeros = 50;
-inline int RequestV2::zeros_size() const {
-  return zeros_.size();
+// repeated float possibility = 2;
+inline int ResponseV2::possibility_size() const {
+  return possibility_.size();
 }
-inline void RequestV2::clear_zeros() {
-  zeros_.Clear();
+inline void ResponseV2::clear_possibility() {
+  possibility_.Clear();
 }
-inline bool RequestV2::zeros(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.zeros)
-  return zeros_.Get(index);
+inline float ResponseV2::possibility(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.ResponseV2.possibility)
+  return possibility_.Get(index);
 }
-inline void RequestV2::set_zeros(int index, bool value) {
-  zeros_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.zeros)
+inline void ResponseV2::set_possibility(int index, float value) {
+  possibility_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.ResponseV2.possibility)
 }
-inline void RequestV2::add_zeros(bool value) {
-  zeros_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.zeros)
+inline void ResponseV2::add_possibility(float value) {
+  possibility_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.ResponseV2.possibility)
 }
-inline const ::google::protobuf::RepeatedField< bool >&
-RequestV2::zeros() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.zeros)
-  return zeros_;
+inline const ::google::protobuf::RepeatedField< float >&
+ResponseV2::possibility() const {
+  // @@protoc_insertion_point(field_list:gocnn.ResponseV2.possibility)
+  return possibility_;
 }
-inline ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_zeros() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.zeros)
-  return &zeros_;
+inline ::google::protobuf::RepeatedField< float >*
+ResponseV2::mutable_possibility() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.ResponseV2.possibility)
+  return &possibility_;
 }
 
 #endif  // !PROTOBUF_INLINE_NOT_IN_HEADERS
+// -------------------------------------------------------------------
+
 // -------------------------------------------------------------------
 
 // -------------------------------------------------------------------

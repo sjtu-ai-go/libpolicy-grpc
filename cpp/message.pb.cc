@@ -30,6 +30,9 @@ const ::google::protobuf::internal::GeneratedMessageReflection*
 const ::google::protobuf::Descriptor* RequestV2_descriptor_ = NULL;
 const ::google::protobuf::internal::GeneratedMessageReflection*
   RequestV2_reflection_ = NULL;
+const ::google::protobuf::Descriptor* ResponseV2_descriptor_ = NULL;
+const ::google::protobuf::internal::GeneratedMessageReflection*
+  ResponseV2_reflection_ = NULL;
 
 }  // namespace
 
@@ -80,57 +83,39 @@ void protobuf_AssignDesc_message_2eproto() {
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ResponseV1, _internal_metadata_),
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ResponseV1, _is_default_instance_));
   RequestV2_descriptor_ = file->message_type(2);
-  static const int RequestV2_offsets_[50] = {
+  static const int RequestV2_offsets_[32] = {
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, board_size_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, our_stone_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, oppo_stone_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, empty_stone_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turn_since1_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turn_since2_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turn_since3_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turn_since4_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turn_since5_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turn_since6_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turn_since7_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turn_since8_plus_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, lib1_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, lib2_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, lib3_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, lib4_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, lib5_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, lib6_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, lib7_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, lib8_plus_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, after_move_lib1_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, after_move_lib2_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, after_move_lib3_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, after_move_lib4_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, after_move_lib5_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, after_move_lib6_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, after_move_lib7_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, after_move_lib8_plus_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_oppo_size1_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_oppo_size2_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_oppo_size3_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_oppo_size4_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_oppo_size5_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_oppo_size6_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_oppo_size7_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_oppo_size8_plus_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_our_size1_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_our_size2_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_our_size3_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_our_size4_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_our_size5_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_our_size6_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_our_size7_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, cap_our_size8_plus_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, not_fill_own_eyes_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, stone_color_our_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, stone_color_oppo_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, stone_color_empty_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turns_since_one_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turns_since_two_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turns_since_three_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turns_since_four_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turns_since_five_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turns_since_six_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turns_since_seven_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, turns_since_more_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, liberties_our_one_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, liberties_our_two_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, liberties_our_three_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, liberties_our_more_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, liberties_oppo_one_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, liberties_oppo_two_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, liberties_oppo_three_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, liberties_oppo_more_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, capture_size_one_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, capture_size_two_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, capture_size_three_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, capture_size_four_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, capture_size_five_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, capture_size_six_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, capture_size_seven_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, capture_size_more_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, sensibleness_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, ko_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, border_),
     GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, position_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, ones_),
-    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, zeros_),
   };
   RequestV2_reflection_ =
     ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
@@ -143,6 +128,22 @@ void protobuf_AssignDesc_message_2eproto() {
       sizeof(RequestV2),
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, _internal_metadata_),
       GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(RequestV2, _is_default_instance_));
+  ResponseV2_descriptor_ = file->message_type(3);
+  static const int ResponseV2_offsets_[2] = {
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ResponseV2, board_size_),
+    GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ResponseV2, possibility_),
+  };
+  ResponseV2_reflection_ =
+    ::google::protobuf::internal::GeneratedMessageReflection::NewGeneratedMessageReflection(
+      ResponseV2_descriptor_,
+      ResponseV2::default_instance_,
+      ResponseV2_offsets_,
+      -1,
+      -1,
+      -1,
+      sizeof(ResponseV2),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ResponseV2, _internal_metadata_),
+      GOOGLE_PROTOBUF_GENERATED_MESSAGE_FIELD_OFFSET(ResponseV2, _is_default_instance_));
 }
 
 namespace {
@@ -162,6 +163,8 @@ void protobuf_RegisterTypes(const ::std::string&) {
       ResponseV1_descriptor_, &ResponseV1::default_instance());
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
       RequestV2_descriptor_, &RequestV2::default_instance());
+  ::google::protobuf::MessageFactory::InternalRegisterGeneratedMessage(
+      ResponseV2_descriptor_, &ResponseV2::default_instance());
 }
 
 }  // namespace
@@ -173,6 +176,8 @@ void protobuf_ShutdownFile_message_2eproto() {
   delete ResponseV1_reflection_;
   delete RequestV2::default_instance_;
   delete RequestV2_reflection_;
+  delete ResponseV2::default_instance_;
+  delete ResponseV2_reflection_;
 }
 
 void protobuf_AddDesc_message_2eproto() GOOGLE_ATTRIBUTE_COLD;
@@ -190,42 +195,39 @@ void protobuf_AddDesc_message_2eproto() {
     "\n\017oppo_group_lib2\030\006 \003(\010\022\034\n\024oppo_group_li"
     "b3_plus\030\007 \003(\010\022\024\n\014is_simple_ko\030\010 \003(\010\"5\n\nR"
     "esponseV1\022\022\n\nboard_size\030\001 \001(\005\022\023\n\013possibi"
-    "lity\030\002 \003(\002\"\262\010\n\tRequestV2\022\022\n\nboard_size\030\001"
-    " \001(\005\022\021\n\tour_stone\030\002 \003(\010\022\022\n\noppo_stone\030\003 "
-    "\003(\010\022\023\n\013empty_stone\030\004 \003(\010\022\023\n\013turn_since1\030"
-    "\005 \003(\010\022\023\n\013turn_since2\030\006 \003(\010\022\023\n\013turn_since"
-    "3\030\007 \003(\010\022\023\n\013turn_since4\030\010 \003(\010\022\023\n\013turn_sin"
-    "ce5\030\t \003(\010\022\023\n\013turn_since6\030\n \003(\010\022\023\n\013turn_s"
-    "ince7\030\013 \003(\010\022\030\n\020turn_since8_plus\030\014 \003(\010\022\014\n"
-    "\004lib1\030\r \003(\010\022\014\n\004lib2\030\016 \003(\010\022\014\n\004lib3\030\017 \003(\010\022"
-    "\014\n\004lib4\030\020 \003(\010\022\014\n\004lib5\030\021 \003(\010\022\014\n\004lib6\030\022 \003("
-    "\010\022\014\n\004lib7\030\023 \003(\010\022\021\n\tlib8_plus\030\024 \003(\010\022\027\n\017af"
-    "ter_move_lib1\030\025 \003(\010\022\027\n\017after_move_lib2\030\026"
-    " \003(\010\022\027\n\017after_move_lib3\030\027 \003(\010\022\027\n\017after_m"
-    "ove_lib4\030\030 \003(\010\022\027\n\017after_move_lib5\030\031 \003(\010\022"
-    "\027\n\017after_move_lib6\030\032 \003(\010\022\027\n\017after_move_l"
-    "ib7\030\033 \003(\010\022\034\n\024after_move_lib8_plus\030\034 \003(\010\022"
-    "\026\n\016cap_oppo_size1\030\035 \003(\010\022\026\n\016cap_oppo_size"
-    "2\030\036 \003(\010\022\026\n\016cap_oppo_size3\030\037 \003(\010\022\026\n\016cap_o"
-    "ppo_size4\030  \003(\010\022\026\n\016cap_oppo_size5\030! \003(\010\022"
-    "\026\n\016cap_oppo_size6\030\" \003(\010\022\026\n\016cap_oppo_size"
-    "7\030# \003(\010\022\033\n\023cap_oppo_size8_plus\030$ \003(\010\022\025\n\r"
-    "cap_our_size1\030% \003(\010\022\025\n\rcap_our_size2\030& \003"
-    "(\010\022\025\n\rcap_our_size3\030\' \003(\010\022\025\n\rcap_our_siz"
-    "e4\030( \003(\010\022\025\n\rcap_our_size5\030) \003(\010\022\025\n\rcap_o"
-    "ur_size6\030* \003(\010\022\025\n\rcap_our_size7\030+ \003(\010\022\032\n"
-    "\022cap_our_size8_plus\030, \003(\010\022\031\n\021not_fill_ow"
-    "n_eyes\030- \003(\010\022\n\n\002ko\030. \003(\010\022\016\n\006border\030/ \003(\010"
-    "\022\020\n\010position\0300 \003(\002\022\014\n\004ones\0301 \003(\010\022\r\n\005zero"
-    "s\0302 \003(\010b\006proto3", 1375);
+    "lity\030\002 \003(\002\"\271\006\n\tRequestV2\022\022\n\nboard_size\030\001"
+    " \001(\005\022\027\n\017stone_color_our\030\002 \003(\010\022\030\n\020stone_c"
+    "olor_oppo\030\003 \003(\010\022\031\n\021stone_color_empty\030\004 \003"
+    "(\010\022\027\n\017turns_since_one\030\005 \003(\010\022\027\n\017turns_sin"
+    "ce_two\030\006 \003(\010\022\031\n\021turns_since_three\030\007 \003(\010\022"
+    "\030\n\020turns_since_four\030\010 \003(\010\022\030\n\020turns_since"
+    "_five\030\t \003(\010\022\027\n\017turns_since_six\030\n \003(\010\022\031\n\021"
+    "turns_since_seven\030\013 \003(\010\022\030\n\020turns_since_m"
+    "ore\030\014 \003(\010\022\031\n\021liberties_our_one\030\r \003(\010\022\031\n\021"
+    "liberties_our_two\030\016 \003(\010\022\033\n\023liberties_our"
+    "_three\030\017 \003(\010\022\032\n\022liberties_our_more\030\020 \003(\010"
+    "\022\032\n\022liberties_oppo_one\030\021 \003(\010\022\032\n\022libertie"
+    "s_oppo_two\030\022 \003(\010\022\034\n\024liberties_oppo_three"
+    "\030\023 \003(\010\022\033\n\023liberties_oppo_more\030\024 \003(\010\022\030\n\020c"
+    "apture_size_one\030\025 \003(\010\022\030\n\020capture_size_tw"
+    "o\030\026 \003(\010\022\032\n\022capture_size_three\030\027 \003(\010\022\031\n\021c"
+    "apture_size_four\030\030 \003(\010\022\031\n\021capture_size_f"
+    "ive\030\031 \003(\010\022\030\n\020capture_size_six\030\032 \003(\010\022\032\n\022c"
+    "apture_size_seven\030\033 \003(\010\022\031\n\021capture_size_"
+    "more\030\034 \003(\010\022\024\n\014sensibleness\030\035 \003(\010\022\n\n\002ko\030\036"
+    " \003(\010\022\016\n\006border\030\037 \003(\010\022\020\n\010position\030  \003(\002\"5"
+    "\n\nResponseV2\022\022\n\nboard_size\030\001 \001(\005\022\023\n\013poss"
+    "ibility\030\002 \003(\002b\006proto3", 1181);
   ::google::protobuf::MessageFactory::InternalRegisterGeneratedFile(
     "message.proto", &protobuf_RegisterTypes);
   RequestV1::default_instance_ = new RequestV1();
   ResponseV1::default_instance_ = new ResponseV1();
   RequestV2::default_instance_ = new RequestV2();
+  ResponseV2::default_instance_ = new ResponseV2();
   RequestV1::default_instance_->InitAsDefaultInstance();
   ResponseV1::default_instance_->InitAsDefaultInstance();
   RequestV2::default_instance_->InitAsDefaultInstance();
+  ResponseV2::default_instance_->InitAsDefaultInstance();
   ::google::protobuf::internal::OnShutdown(&protobuf_ShutdownFile_message_2eproto);
 }
 
@@ -1436,55 +1438,37 @@ ResponseV1::mutable_possibility() {
 
 #if !defined(_MSC_VER) || _MSC_VER >= 1900
 const int RequestV2::kBoardSizeFieldNumber;
-const int RequestV2::kOurStoneFieldNumber;
-const int RequestV2::kOppoStoneFieldNumber;
-const int RequestV2::kEmptyStoneFieldNumber;
-const int RequestV2::kTurnSince1FieldNumber;
-const int RequestV2::kTurnSince2FieldNumber;
-const int RequestV2::kTurnSince3FieldNumber;
-const int RequestV2::kTurnSince4FieldNumber;
-const int RequestV2::kTurnSince5FieldNumber;
-const int RequestV2::kTurnSince6FieldNumber;
-const int RequestV2::kTurnSince7FieldNumber;
-const int RequestV2::kTurnSince8PlusFieldNumber;
-const int RequestV2::kLib1FieldNumber;
-const int RequestV2::kLib2FieldNumber;
-const int RequestV2::kLib3FieldNumber;
-const int RequestV2::kLib4FieldNumber;
-const int RequestV2::kLib5FieldNumber;
-const int RequestV2::kLib6FieldNumber;
-const int RequestV2::kLib7FieldNumber;
-const int RequestV2::kLib8PlusFieldNumber;
-const int RequestV2::kAfterMoveLib1FieldNumber;
-const int RequestV2::kAfterMoveLib2FieldNumber;
-const int RequestV2::kAfterMoveLib3FieldNumber;
-const int RequestV2::kAfterMoveLib4FieldNumber;
-const int RequestV2::kAfterMoveLib5FieldNumber;
-const int RequestV2::kAfterMoveLib6FieldNumber;
-const int RequestV2::kAfterMoveLib7FieldNumber;
-const int RequestV2::kAfterMoveLib8PlusFieldNumber;
-const int RequestV2::kCapOppoSize1FieldNumber;
-const int RequestV2::kCapOppoSize2FieldNumber;
-const int RequestV2::kCapOppoSize3FieldNumber;
-const int RequestV2::kCapOppoSize4FieldNumber;
-const int RequestV2::kCapOppoSize5FieldNumber;
-const int RequestV2::kCapOppoSize6FieldNumber;
-const int RequestV2::kCapOppoSize7FieldNumber;
-const int RequestV2::kCapOppoSize8PlusFieldNumber;
-const int RequestV2::kCapOurSize1FieldNumber;
-const int RequestV2::kCapOurSize2FieldNumber;
-const int RequestV2::kCapOurSize3FieldNumber;
-const int RequestV2::kCapOurSize4FieldNumber;
-const int RequestV2::kCapOurSize5FieldNumber;
-const int RequestV2::kCapOurSize6FieldNumber;
-const int RequestV2::kCapOurSize7FieldNumber;
-const int RequestV2::kCapOurSize8PlusFieldNumber;
-const int RequestV2::kNotFillOwnEyesFieldNumber;
+const int RequestV2::kStoneColorOurFieldNumber;
+const int RequestV2::kStoneColorOppoFieldNumber;
+const int RequestV2::kStoneColorEmptyFieldNumber;
+const int RequestV2::kTurnsSinceOneFieldNumber;
+const int RequestV2::kTurnsSinceTwoFieldNumber;
+const int RequestV2::kTurnsSinceThreeFieldNumber;
+const int RequestV2::kTurnsSinceFourFieldNumber;
+const int RequestV2::kTurnsSinceFiveFieldNumber;
+const int RequestV2::kTurnsSinceSixFieldNumber;
+const int RequestV2::kTurnsSinceSevenFieldNumber;
+const int RequestV2::kTurnsSinceMoreFieldNumber;
+const int RequestV2::kLibertiesOurOneFieldNumber;
+const int RequestV2::kLibertiesOurTwoFieldNumber;
+const int RequestV2::kLibertiesOurThreeFieldNumber;
+const int RequestV2::kLibertiesOurMoreFieldNumber;
+const int RequestV2::kLibertiesOppoOneFieldNumber;
+const int RequestV2::kLibertiesOppoTwoFieldNumber;
+const int RequestV2::kLibertiesOppoThreeFieldNumber;
+const int RequestV2::kLibertiesOppoMoreFieldNumber;
+const int RequestV2::kCaptureSizeOneFieldNumber;
+const int RequestV2::kCaptureSizeTwoFieldNumber;
+const int RequestV2::kCaptureSizeThreeFieldNumber;
+const int RequestV2::kCaptureSizeFourFieldNumber;
+const int RequestV2::kCaptureSizeFiveFieldNumber;
+const int RequestV2::kCaptureSizeSixFieldNumber;
+const int RequestV2::kCaptureSizeSevenFieldNumber;
+const int RequestV2::kCaptureSizeMoreFieldNumber;
+const int RequestV2::kSensiblenessFieldNumber;
 const int RequestV2::kKoFieldNumber;
 const int RequestV2::kBorderFieldNumber;
 const int RequestV2::kPositionFieldNumber;
-const int RequestV2::kOnesFieldNumber;
-const int RequestV2::kZerosFieldNumber;
 #endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
 
 RequestV2::RequestV2()
@@ -1549,55 +1533,37 @@ RequestV2* RequestV2::New(::google::protobuf::Arena* arena) const {
 void RequestV2::Clear() {
 // @@protoc_insertion_point(message_clear_start:gocnn.RequestV2)
   board_size_ = 0;
-  our_stone_.Clear();
-  oppo_stone_.Clear();
-  empty_stone_.Clear();
-  turn_since1_.Clear();
-  turn_since2_.Clear();
-  turn_since3_.Clear();
-  turn_since4_.Clear();
-  turn_since5_.Clear();
-  turn_since6_.Clear();
-  turn_since7_.Clear();
-  turn_since8_plus_.Clear();
-  lib1_.Clear();
-  lib2_.Clear();
-  lib3_.Clear();
-  lib4_.Clear();
-  lib5_.Clear();
-  lib6_.Clear();
-  lib7_.Clear();
-  lib8_plus_.Clear();
-  after_move_lib1_.Clear();
-  after_move_lib2_.Clear();
-  after_move_lib3_.Clear();
-  after_move_lib4_.Clear();
-  after_move_lib5_.Clear();
-  after_move_lib6_.Clear();
-  after_move_lib7_.Clear();
-  after_move_lib8_plus_.Clear();
-  cap_oppo_size1_.Clear();
-  cap_oppo_size2_.Clear();
-  cap_oppo_size3_.Clear();
-  cap_oppo_size4_.Clear();
-  cap_oppo_size5_.Clear();
-  cap_oppo_size6_.Clear();
-  cap_oppo_size7_.Clear();
-  cap_oppo_size8_plus_.Clear();
-  cap_our_size1_.Clear();
-  cap_our_size2_.Clear();
-  cap_our_size3_.Clear();
-  cap_our_size4_.Clear();
-  cap_our_size5_.Clear();
-  cap_our_size6_.Clear();
-  cap_our_size7_.Clear();
-  cap_our_size8_plus_.Clear();
-  not_fill_own_eyes_.Clear();
+  stone_color_our_.Clear();
+  stone_color_oppo_.Clear();
+  stone_color_empty_.Clear();
+  turns_since_one_.Clear();
+  turns_since_two_.Clear();
+  turns_since_three_.Clear();
+  turns_since_four_.Clear();
+  turns_since_five_.Clear();
+  turns_since_six_.Clear();
+  turns_since_seven_.Clear();
+  turns_since_more_.Clear();
+  liberties_our_one_.Clear();
+  liberties_our_two_.Clear();
+  liberties_our_three_.Clear();
+  liberties_our_more_.Clear();
+  liberties_oppo_one_.Clear();
+  liberties_oppo_two_.Clear();
+  liberties_oppo_three_.Clear();
+  liberties_oppo_more_.Clear();
+  capture_size_one_.Clear();
+  capture_size_two_.Clear();
+  capture_size_three_.Clear();
+  capture_size_four_.Clear();
+  capture_size_five_.Clear();
+  capture_size_six_.Clear();
+  capture_size_seven_.Clear();
+  capture_size_more_.Clear();
+  sensibleness_.Clear();
   ko_.Clear();
   border_.Clear();
   position_.Clear();
-  ones_.Clear();
-  zeros_.Clear();
 }
 
 bool RequestV2::MergePartialFromCodedStream(
@@ -1620,885 +1586,561 @@ bool RequestV2::MergePartialFromCodedStream(
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(18)) goto parse_our_stone;
+        if (input->ExpectTag(18)) goto parse_stone_color_our;
         break;
       }
 
-      // repeated bool our_stone = 2;
+      // repeated bool stone_color_our = 2;
       case 2: {
         if (tag == 18) {
-         parse_our_stone:
+         parse_stone_color_our:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_our_stone())));
+                 input, this->mutable_stone_color_our())));
         } else if (tag == 16) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 18, input, this->mutable_our_stone())));
+                 1, 18, input, this->mutable_stone_color_our())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(26)) goto parse_oppo_stone;
+        if (input->ExpectTag(26)) goto parse_stone_color_oppo;
         break;
       }
 
-      // repeated bool oppo_stone = 3;
+      // repeated bool stone_color_oppo = 3;
       case 3: {
         if (tag == 26) {
-         parse_oppo_stone:
+         parse_stone_color_oppo:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_oppo_stone())));
+                 input, this->mutable_stone_color_oppo())));
         } else if (tag == 24) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 26, input, this->mutable_oppo_stone())));
+                 1, 26, input, this->mutable_stone_color_oppo())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(34)) goto parse_empty_stone;
+        if (input->ExpectTag(34)) goto parse_stone_color_empty;
         break;
       }
 
-      // repeated bool empty_stone = 4;
+      // repeated bool stone_color_empty = 4;
       case 4: {
         if (tag == 34) {
-         parse_empty_stone:
+         parse_stone_color_empty:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_empty_stone())));
+                 input, this->mutable_stone_color_empty())));
         } else if (tag == 32) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 34, input, this->mutable_empty_stone())));
+                 1, 34, input, this->mutable_stone_color_empty())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(42)) goto parse_turn_since1;
+        if (input->ExpectTag(42)) goto parse_turns_since_one;
         break;
       }
 
-      // repeated bool turn_since1 = 5;
+      // repeated bool turns_since_one = 5;
       case 5: {
         if (tag == 42) {
-         parse_turn_since1:
+         parse_turns_since_one:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_turn_since1())));
+                 input, this->mutable_turns_since_one())));
         } else if (tag == 40) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 42, input, this->mutable_turn_since1())));
+                 1, 42, input, this->mutable_turns_since_one())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(50)) goto parse_turn_since2;
+        if (input->ExpectTag(50)) goto parse_turns_since_two;
         break;
       }
 
-      // repeated bool turn_since2 = 6;
+      // repeated bool turns_since_two = 6;
       case 6: {
         if (tag == 50) {
-         parse_turn_since2:
+         parse_turns_since_two:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_turn_since2())));
+                 input, this->mutable_turns_since_two())));
         } else if (tag == 48) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 50, input, this->mutable_turn_since2())));
+                 1, 50, input, this->mutable_turns_since_two())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(58)) goto parse_turn_since3;
+        if (input->ExpectTag(58)) goto parse_turns_since_three;
         break;
       }
 
-      // repeated bool turn_since3 = 7;
+      // repeated bool turns_since_three = 7;
       case 7: {
         if (tag == 58) {
-         parse_turn_since3:
+         parse_turns_since_three:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_turn_since3())));
+                 input, this->mutable_turns_since_three())));
         } else if (tag == 56) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 58, input, this->mutable_turn_since3())));
+                 1, 58, input, this->mutable_turns_since_three())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(66)) goto parse_turn_since4;
+        if (input->ExpectTag(66)) goto parse_turns_since_four;
         break;
       }
 
-      // repeated bool turn_since4 = 8;
+      // repeated bool turns_since_four = 8;
       case 8: {
         if (tag == 66) {
-         parse_turn_since4:
+         parse_turns_since_four:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_turn_since4())));
+                 input, this->mutable_turns_since_four())));
         } else if (tag == 64) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 66, input, this->mutable_turn_since4())));
+                 1, 66, input, this->mutable_turns_since_four())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(74)) goto parse_turn_since5;
+        if (input->ExpectTag(74)) goto parse_turns_since_five;
         break;
       }
 
-      // repeated bool turn_since5 = 9;
+      // repeated bool turns_since_five = 9;
       case 9: {
         if (tag == 74) {
-         parse_turn_since5:
+         parse_turns_since_five:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_turn_since5())));
+                 input, this->mutable_turns_since_five())));
         } else if (tag == 72) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 74, input, this->mutable_turn_since5())));
+                 1, 74, input, this->mutable_turns_since_five())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(82)) goto parse_turn_since6;
+        if (input->ExpectTag(82)) goto parse_turns_since_six;
         break;
       }
 
-      // repeated bool turn_since6 = 10;
+      // repeated bool turns_since_six = 10;
       case 10: {
         if (tag == 82) {
-         parse_turn_since6:
+         parse_turns_since_six:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_turn_since6())));
+                 input, this->mutable_turns_since_six())));
         } else if (tag == 80) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 82, input, this->mutable_turn_since6())));
+                 1, 82, input, this->mutable_turns_since_six())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(90)) goto parse_turn_since7;
+        if (input->ExpectTag(90)) goto parse_turns_since_seven;
         break;
       }
 
-      // repeated bool turn_since7 = 11;
+      // repeated bool turns_since_seven = 11;
       case 11: {
         if (tag == 90) {
-         parse_turn_since7:
+         parse_turns_since_seven:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_turn_since7())));
+                 input, this->mutable_turns_since_seven())));
         } else if (tag == 88) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 90, input, this->mutable_turn_since7())));
+                 1, 90, input, this->mutable_turns_since_seven())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(98)) goto parse_turn_since8_plus;
+        if (input->ExpectTag(98)) goto parse_turns_since_more;
         break;
       }
 
-      // repeated bool turn_since8_plus = 12;
+      // repeated bool turns_since_more = 12;
       case 12: {
         if (tag == 98) {
-         parse_turn_since8_plus:
+         parse_turns_since_more:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_turn_since8_plus())));
+                 input, this->mutable_turns_since_more())));
         } else if (tag == 96) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 98, input, this->mutable_turn_since8_plus())));
+                 1, 98, input, this->mutable_turns_since_more())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(106)) goto parse_lib1;
+        if (input->ExpectTag(106)) goto parse_liberties_our_one;
         break;
       }
 
-      // repeated bool lib1 = 13;
+      // repeated bool liberties_our_one = 13;
       case 13: {
         if (tag == 106) {
-         parse_lib1:
+         parse_liberties_our_one:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_lib1())));
+                 input, this->mutable_liberties_our_one())));
         } else if (tag == 104) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 106, input, this->mutable_lib1())));
+                 1, 106, input, this->mutable_liberties_our_one())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(114)) goto parse_lib2;
+        if (input->ExpectTag(114)) goto parse_liberties_our_two;
         break;
       }
 
-      // repeated bool lib2 = 14;
+      // repeated bool liberties_our_two = 14;
       case 14: {
         if (tag == 114) {
-         parse_lib2:
+         parse_liberties_our_two:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_lib2())));
+                 input, this->mutable_liberties_our_two())));
         } else if (tag == 112) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 114, input, this->mutable_lib2())));
+                 1, 114, input, this->mutable_liberties_our_two())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(122)) goto parse_lib3;
+        if (input->ExpectTag(122)) goto parse_liberties_our_three;
         break;
       }
 
-      // repeated bool lib3 = 15;
+      // repeated bool liberties_our_three = 15;
       case 15: {
         if (tag == 122) {
-         parse_lib3:
+         parse_liberties_our_three:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_lib3())));
+                 input, this->mutable_liberties_our_three())));
         } else if (tag == 120) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 1, 122, input, this->mutable_lib3())));
+                 1, 122, input, this->mutable_liberties_our_three())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(130)) goto parse_lib4;
+        if (input->ExpectTag(130)) goto parse_liberties_our_more;
         break;
       }
 
-      // repeated bool lib4 = 16;
+      // repeated bool liberties_our_more = 16;
       case 16: {
         if (tag == 130) {
-         parse_lib4:
+         parse_liberties_our_more:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_lib4())));
+                 input, this->mutable_liberties_our_more())));
         } else if (tag == 128) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 130, input, this->mutable_lib4())));
+                 2, 130, input, this->mutable_liberties_our_more())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(138)) goto parse_lib5;
+        if (input->ExpectTag(138)) goto parse_liberties_oppo_one;
         break;
       }
 
-      // repeated bool lib5 = 17;
+      // repeated bool liberties_oppo_one = 17;
       case 17: {
         if (tag == 138) {
-         parse_lib5:
+         parse_liberties_oppo_one:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_lib5())));
+                 input, this->mutable_liberties_oppo_one())));
         } else if (tag == 136) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 138, input, this->mutable_lib5())));
+                 2, 138, input, this->mutable_liberties_oppo_one())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(146)) goto parse_lib6;
+        if (input->ExpectTag(146)) goto parse_liberties_oppo_two;
         break;
       }
 
-      // repeated bool lib6 = 18;
+      // repeated bool liberties_oppo_two = 18;
       case 18: {
         if (tag == 146) {
-         parse_lib6:
+         parse_liberties_oppo_two:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_lib6())));
+                 input, this->mutable_liberties_oppo_two())));
         } else if (tag == 144) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 146, input, this->mutable_lib6())));
+                 2, 146, input, this->mutable_liberties_oppo_two())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(154)) goto parse_lib7;
+        if (input->ExpectTag(154)) goto parse_liberties_oppo_three;
         break;
       }
 
-      // repeated bool lib7 = 19;
+      // repeated bool liberties_oppo_three = 19;
       case 19: {
         if (tag == 154) {
-         parse_lib7:
+         parse_liberties_oppo_three:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_lib7())));
+                 input, this->mutable_liberties_oppo_three())));
         } else if (tag == 152) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 154, input, this->mutable_lib7())));
+                 2, 154, input, this->mutable_liberties_oppo_three())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(162)) goto parse_lib8_plus;
+        if (input->ExpectTag(162)) goto parse_liberties_oppo_more;
         break;
       }
 
-      // repeated bool lib8_plus = 20;
+      // repeated bool liberties_oppo_more = 20;
       case 20: {
         if (tag == 162) {
-         parse_lib8_plus:
+         parse_liberties_oppo_more:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_lib8_plus())));
+                 input, this->mutable_liberties_oppo_more())));
         } else if (tag == 160) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 162, input, this->mutable_lib8_plus())));
+                 2, 162, input, this->mutable_liberties_oppo_more())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(170)) goto parse_after_move_lib1;
+        if (input->ExpectTag(170)) goto parse_capture_size_one;
         break;
       }
 
-      // repeated bool after_move_lib1 = 21;
+      // repeated bool capture_size_one = 21;
       case 21: {
         if (tag == 170) {
-         parse_after_move_lib1:
+         parse_capture_size_one:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_after_move_lib1())));
+                 input, this->mutable_capture_size_one())));
         } else if (tag == 168) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 170, input, this->mutable_after_move_lib1())));
+                 2, 170, input, this->mutable_capture_size_one())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(178)) goto parse_after_move_lib2;
+        if (input->ExpectTag(178)) goto parse_capture_size_two;
         break;
       }
 
-      // repeated bool after_move_lib2 = 22;
+      // repeated bool capture_size_two = 22;
       case 22: {
         if (tag == 178) {
-         parse_after_move_lib2:
+         parse_capture_size_two:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_after_move_lib2())));
+                 input, this->mutable_capture_size_two())));
         } else if (tag == 176) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 178, input, this->mutable_after_move_lib2())));
+                 2, 178, input, this->mutable_capture_size_two())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(186)) goto parse_after_move_lib3;
+        if (input->ExpectTag(186)) goto parse_capture_size_three;
         break;
       }
 
-      // repeated bool after_move_lib3 = 23;
+      // repeated bool capture_size_three = 23;
       case 23: {
         if (tag == 186) {
-         parse_after_move_lib3:
+         parse_capture_size_three:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_after_move_lib3())));
+                 input, this->mutable_capture_size_three())));
         } else if (tag == 184) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 186, input, this->mutable_after_move_lib3())));
+                 2, 186, input, this->mutable_capture_size_three())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(194)) goto parse_after_move_lib4;
+        if (input->ExpectTag(194)) goto parse_capture_size_four;
         break;
       }
 
-      // repeated bool after_move_lib4 = 24;
+      // repeated bool capture_size_four = 24;
       case 24: {
         if (tag == 194) {
-         parse_after_move_lib4:
+         parse_capture_size_four:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_after_move_lib4())));
+                 input, this->mutable_capture_size_four())));
         } else if (tag == 192) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 194, input, this->mutable_after_move_lib4())));
+                 2, 194, input, this->mutable_capture_size_four())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(202)) goto parse_after_move_lib5;
+        if (input->ExpectTag(202)) goto parse_capture_size_five;
         break;
       }
 
-      // repeated bool after_move_lib5 = 25;
+      // repeated bool capture_size_five = 25;
       case 25: {
         if (tag == 202) {
-         parse_after_move_lib5:
+         parse_capture_size_five:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_after_move_lib5())));
+                 input, this->mutable_capture_size_five())));
         } else if (tag == 200) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 202, input, this->mutable_after_move_lib5())));
+                 2, 202, input, this->mutable_capture_size_five())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(210)) goto parse_after_move_lib6;
+        if (input->ExpectTag(210)) goto parse_capture_size_six;
         break;
       }
 
-      // repeated bool after_move_lib6 = 26;
+      // repeated bool capture_size_six = 26;
       case 26: {
         if (tag == 210) {
-         parse_after_move_lib6:
+         parse_capture_size_six:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_after_move_lib6())));
+                 input, this->mutable_capture_size_six())));
         } else if (tag == 208) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 210, input, this->mutable_after_move_lib6())));
+                 2, 210, input, this->mutable_capture_size_six())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(218)) goto parse_after_move_lib7;
+        if (input->ExpectTag(218)) goto parse_capture_size_seven;
         break;
       }
 
-      // repeated bool after_move_lib7 = 27;
+      // repeated bool capture_size_seven = 27;
       case 27: {
         if (tag == 218) {
-         parse_after_move_lib7:
+         parse_capture_size_seven:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_after_move_lib7())));
+                 input, this->mutable_capture_size_seven())));
         } else if (tag == 216) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 218, input, this->mutable_after_move_lib7())));
+                 2, 218, input, this->mutable_capture_size_seven())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(226)) goto parse_after_move_lib8_plus;
+        if (input->ExpectTag(226)) goto parse_capture_size_more;
         break;
       }
 
-      // repeated bool after_move_lib8_plus = 28;
+      // repeated bool capture_size_more = 28;
       case 28: {
         if (tag == 226) {
-         parse_after_move_lib8_plus:
+         parse_capture_size_more:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_after_move_lib8_plus())));
+                 input, this->mutable_capture_size_more())));
         } else if (tag == 224) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 226, input, this->mutable_after_move_lib8_plus())));
+                 2, 226, input, this->mutable_capture_size_more())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(234)) goto parse_cap_oppo_size1;
+        if (input->ExpectTag(234)) goto parse_sensibleness;
         break;
       }
 
-      // repeated bool cap_oppo_size1 = 29;
+      // repeated bool sensibleness = 29;
       case 29: {
         if (tag == 234) {
-         parse_cap_oppo_size1:
+         parse_sensibleness:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_oppo_size1())));
+                 input, this->mutable_sensibleness())));
         } else if (tag == 232) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 234, input, this->mutable_cap_oppo_size1())));
+                 2, 234, input, this->mutable_sensibleness())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(242)) goto parse_cap_oppo_size2;
+        if (input->ExpectTag(242)) goto parse_ko;
         break;
       }
 
-      // repeated bool cap_oppo_size2 = 30;
+      // repeated bool ko = 30;
       case 30: {
         if (tag == 242) {
-         parse_cap_oppo_size2:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_oppo_size2())));
-        } else if (tag == 240) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 242, input, this->mutable_cap_oppo_size2())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(250)) goto parse_cap_oppo_size3;
-        break;
-      }
-
-      // repeated bool cap_oppo_size3 = 31;
-      case 31: {
-        if (tag == 250) {
-         parse_cap_oppo_size3:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_oppo_size3())));
-        } else if (tag == 248) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 250, input, this->mutable_cap_oppo_size3())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(258)) goto parse_cap_oppo_size4;
-        break;
-      }
-
-      // repeated bool cap_oppo_size4 = 32;
-      case 32: {
-        if (tag == 258) {
-         parse_cap_oppo_size4:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_oppo_size4())));
-        } else if (tag == 256) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 258, input, this->mutable_cap_oppo_size4())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(266)) goto parse_cap_oppo_size5;
-        break;
-      }
-
-      // repeated bool cap_oppo_size5 = 33;
-      case 33: {
-        if (tag == 266) {
-         parse_cap_oppo_size5:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_oppo_size5())));
-        } else if (tag == 264) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 266, input, this->mutable_cap_oppo_size5())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(274)) goto parse_cap_oppo_size6;
-        break;
-      }
-
-      // repeated bool cap_oppo_size6 = 34;
-      case 34: {
-        if (tag == 274) {
-         parse_cap_oppo_size6:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_oppo_size6())));
-        } else if (tag == 272) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 274, input, this->mutable_cap_oppo_size6())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(282)) goto parse_cap_oppo_size7;
-        break;
-      }
-
-      // repeated bool cap_oppo_size7 = 35;
-      case 35: {
-        if (tag == 282) {
-         parse_cap_oppo_size7:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_oppo_size7())));
-        } else if (tag == 280) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 282, input, this->mutable_cap_oppo_size7())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(290)) goto parse_cap_oppo_size8_plus;
-        break;
-      }
-
-      // repeated bool cap_oppo_size8_plus = 36;
-      case 36: {
-        if (tag == 290) {
-         parse_cap_oppo_size8_plus:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_oppo_size8_plus())));
-        } else if (tag == 288) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 290, input, this->mutable_cap_oppo_size8_plus())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(298)) goto parse_cap_our_size1;
-        break;
-      }
-
-      // repeated bool cap_our_size1 = 37;
-      case 37: {
-        if (tag == 298) {
-         parse_cap_our_size1:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_our_size1())));
-        } else if (tag == 296) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 298, input, this->mutable_cap_our_size1())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(306)) goto parse_cap_our_size2;
-        break;
-      }
-
-      // repeated bool cap_our_size2 = 38;
-      case 38: {
-        if (tag == 306) {
-         parse_cap_our_size2:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_our_size2())));
-        } else if (tag == 304) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 306, input, this->mutable_cap_our_size2())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(314)) goto parse_cap_our_size3;
-        break;
-      }
-
-      // repeated bool cap_our_size3 = 39;
-      case 39: {
-        if (tag == 314) {
-         parse_cap_our_size3:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_our_size3())));
-        } else if (tag == 312) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 314, input, this->mutable_cap_our_size3())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(322)) goto parse_cap_our_size4;
-        break;
-      }
-
-      // repeated bool cap_our_size4 = 40;
-      case 40: {
-        if (tag == 322) {
-         parse_cap_our_size4:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_our_size4())));
-        } else if (tag == 320) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 322, input, this->mutable_cap_our_size4())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(330)) goto parse_cap_our_size5;
-        break;
-      }
-
-      // repeated bool cap_our_size5 = 41;
-      case 41: {
-        if (tag == 330) {
-         parse_cap_our_size5:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_our_size5())));
-        } else if (tag == 328) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 330, input, this->mutable_cap_our_size5())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(338)) goto parse_cap_our_size6;
-        break;
-      }
-
-      // repeated bool cap_our_size6 = 42;
-      case 42: {
-        if (tag == 338) {
-         parse_cap_our_size6:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_our_size6())));
-        } else if (tag == 336) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 338, input, this->mutable_cap_our_size6())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(346)) goto parse_cap_our_size7;
-        break;
-      }
-
-      // repeated bool cap_our_size7 = 43;
-      case 43: {
-        if (tag == 346) {
-         parse_cap_our_size7:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_our_size7())));
-        } else if (tag == 344) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 346, input, this->mutable_cap_our_size7())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(354)) goto parse_cap_our_size8_plus;
-        break;
-      }
-
-      // repeated bool cap_our_size8_plus = 44;
-      case 44: {
-        if (tag == 354) {
-         parse_cap_our_size8_plus:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_cap_our_size8_plus())));
-        } else if (tag == 352) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 354, input, this->mutable_cap_our_size8_plus())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(362)) goto parse_not_fill_own_eyes;
-        break;
-      }
-
-      // repeated bool not_fill_own_eyes = 45;
-      case 45: {
-        if (tag == 362) {
-         parse_not_fill_own_eyes:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_not_fill_own_eyes())));
-        } else if (tag == 360) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 362, input, this->mutable_not_fill_own_eyes())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(370)) goto parse_ko;
-        break;
-      }
-
-      // repeated bool ko = 46;
-      case 46: {
-        if (tag == 370) {
          parse_ko:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, this->mutable_ko())));
-        } else if (tag == 368) {
+        } else if (tag == 240) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 370, input, this->mutable_ko())));
+                 2, 242, input, this->mutable_ko())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(378)) goto parse_border;
+        if (input->ExpectTag(250)) goto parse_border;
         break;
       }
 
-      // repeated bool border = 47;
-      case 47: {
-        if (tag == 378) {
+      // repeated bool border = 31;
+      case 31: {
+        if (tag == 250) {
          parse_border:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
                  input, this->mutable_border())));
-        } else if (tag == 376) {
+        } else if (tag == 248) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 378, input, this->mutable_border())));
+                 2, 250, input, this->mutable_border())));
         } else {
           goto handle_unusual;
         }
-        if (input->ExpectTag(386)) goto parse_position;
+        if (input->ExpectTag(258)) goto parse_position;
         break;
       }
 
-      // repeated float position = 48;
-      case 48: {
-        if (tag == 386) {
+      // repeated float position = 32;
+      case 32: {
+        if (tag == 258) {
          parse_position:
           DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
                  input, this->mutable_position())));
-        } else if (tag == 389) {
+        } else if (tag == 261) {
           DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
                    float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
-                 2, 386, input, this->mutable_position())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(394)) goto parse_ones;
-        break;
-      }
-
-      // repeated bool ones = 49;
-      case 49: {
-        if (tag == 394) {
-         parse_ones:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_ones())));
-        } else if (tag == 392) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 394, input, this->mutable_ones())));
-        } else {
-          goto handle_unusual;
-        }
-        if (input->ExpectTag(402)) goto parse_zeros;
-        break;
-      }
-
-      // repeated bool zeros = 50;
-      case 50: {
-        if (tag == 402) {
-         parse_zeros:
-          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 input, this->mutable_zeros())));
-        } else if (tag == 400) {
-          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
-                   bool, ::google::protobuf::internal::WireFormatLite::TYPE_BOOL>(
-                 2, 402, input, this->mutable_zeros())));
+                 2, 258, input, this->mutable_position())));
         } else {
           goto handle_unusual;
         }
@@ -2535,449 +2177,289 @@ void RequestV2::SerializeWithCachedSizes(
     ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->board_size(), output);
   }
 
-  // repeated bool our_stone = 2;
-  if (this->our_stone_size() > 0) {
+  // repeated bool stone_color_our = 2;
+  if (this->stone_color_our_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(2, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_our_stone_cached_byte_size_);
+    output->WriteVarint32(_stone_color_our_cached_byte_size_);
   }
-  for (int i = 0; i < this->our_stone_size(); i++) {
+  for (int i = 0; i < this->stone_color_our_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->our_stone(i), output);
+      this->stone_color_our(i), output);
   }
 
-  // repeated bool oppo_stone = 3;
-  if (this->oppo_stone_size() > 0) {
+  // repeated bool stone_color_oppo = 3;
+  if (this->stone_color_oppo_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(3, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_oppo_stone_cached_byte_size_);
+    output->WriteVarint32(_stone_color_oppo_cached_byte_size_);
   }
-  for (int i = 0; i < this->oppo_stone_size(); i++) {
+  for (int i = 0; i < this->stone_color_oppo_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->oppo_stone(i), output);
+      this->stone_color_oppo(i), output);
   }
 
-  // repeated bool empty_stone = 4;
-  if (this->empty_stone_size() > 0) {
+  // repeated bool stone_color_empty = 4;
+  if (this->stone_color_empty_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(4, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_empty_stone_cached_byte_size_);
+    output->WriteVarint32(_stone_color_empty_cached_byte_size_);
   }
-  for (int i = 0; i < this->empty_stone_size(); i++) {
+  for (int i = 0; i < this->stone_color_empty_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->empty_stone(i), output);
+      this->stone_color_empty(i), output);
   }
 
-  // repeated bool turn_since1 = 5;
-  if (this->turn_since1_size() > 0) {
+  // repeated bool turns_since_one = 5;
+  if (this->turns_since_one_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(5, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_turn_since1_cached_byte_size_);
+    output->WriteVarint32(_turns_since_one_cached_byte_size_);
   }
-  for (int i = 0; i < this->turn_since1_size(); i++) {
+  for (int i = 0; i < this->turns_since_one_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->turn_since1(i), output);
+      this->turns_since_one(i), output);
   }
 
-  // repeated bool turn_since2 = 6;
-  if (this->turn_since2_size() > 0) {
+  // repeated bool turns_since_two = 6;
+  if (this->turns_since_two_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(6, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_turn_since2_cached_byte_size_);
+    output->WriteVarint32(_turns_since_two_cached_byte_size_);
   }
-  for (int i = 0; i < this->turn_since2_size(); i++) {
+  for (int i = 0; i < this->turns_since_two_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->turn_since2(i), output);
+      this->turns_since_two(i), output);
   }
 
-  // repeated bool turn_since3 = 7;
-  if (this->turn_since3_size() > 0) {
+  // repeated bool turns_since_three = 7;
+  if (this->turns_since_three_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(7, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_turn_since3_cached_byte_size_);
+    output->WriteVarint32(_turns_since_three_cached_byte_size_);
   }
-  for (int i = 0; i < this->turn_since3_size(); i++) {
+  for (int i = 0; i < this->turns_since_three_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->turn_since3(i), output);
+      this->turns_since_three(i), output);
   }
 
-  // repeated bool turn_since4 = 8;
-  if (this->turn_since4_size() > 0) {
+  // repeated bool turns_since_four = 8;
+  if (this->turns_since_four_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(8, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_turn_since4_cached_byte_size_);
+    output->WriteVarint32(_turns_since_four_cached_byte_size_);
   }
-  for (int i = 0; i < this->turn_since4_size(); i++) {
+  for (int i = 0; i < this->turns_since_four_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->turn_since4(i), output);
+      this->turns_since_four(i), output);
   }
 
-  // repeated bool turn_since5 = 9;
-  if (this->turn_since5_size() > 0) {
+  // repeated bool turns_since_five = 9;
+  if (this->turns_since_five_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(9, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_turn_since5_cached_byte_size_);
+    output->WriteVarint32(_turns_since_five_cached_byte_size_);
   }
-  for (int i = 0; i < this->turn_since5_size(); i++) {
+  for (int i = 0; i < this->turns_since_five_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->turn_since5(i), output);
+      this->turns_since_five(i), output);
   }
 
-  // repeated bool turn_since6 = 10;
-  if (this->turn_since6_size() > 0) {
+  // repeated bool turns_since_six = 10;
+  if (this->turns_since_six_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(10, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_turn_since6_cached_byte_size_);
+    output->WriteVarint32(_turns_since_six_cached_byte_size_);
   }
-  for (int i = 0; i < this->turn_since6_size(); i++) {
+  for (int i = 0; i < this->turns_since_six_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->turn_since6(i), output);
+      this->turns_since_six(i), output);
   }
 
-  // repeated bool turn_since7 = 11;
-  if (this->turn_since7_size() > 0) {
+  // repeated bool turns_since_seven = 11;
+  if (this->turns_since_seven_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(11, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_turn_since7_cached_byte_size_);
+    output->WriteVarint32(_turns_since_seven_cached_byte_size_);
   }
-  for (int i = 0; i < this->turn_since7_size(); i++) {
+  for (int i = 0; i < this->turns_since_seven_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->turn_since7(i), output);
+      this->turns_since_seven(i), output);
   }
 
-  // repeated bool turn_since8_plus = 12;
-  if (this->turn_since8_plus_size() > 0) {
+  // repeated bool turns_since_more = 12;
+  if (this->turns_since_more_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(12, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_turn_since8_plus_cached_byte_size_);
+    output->WriteVarint32(_turns_since_more_cached_byte_size_);
   }
-  for (int i = 0; i < this->turn_since8_plus_size(); i++) {
+  for (int i = 0; i < this->turns_since_more_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->turn_since8_plus(i), output);
+      this->turns_since_more(i), output);
   }
 
-  // repeated bool lib1 = 13;
-  if (this->lib1_size() > 0) {
+  // repeated bool liberties_our_one = 13;
+  if (this->liberties_our_one_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(13, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_lib1_cached_byte_size_);
+    output->WriteVarint32(_liberties_our_one_cached_byte_size_);
   }
-  for (int i = 0; i < this->lib1_size(); i++) {
+  for (int i = 0; i < this->liberties_our_one_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->lib1(i), output);
+      this->liberties_our_one(i), output);
   }
 
-  // repeated bool lib2 = 14;
-  if (this->lib2_size() > 0) {
+  // repeated bool liberties_our_two = 14;
+  if (this->liberties_our_two_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(14, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_lib2_cached_byte_size_);
+    output->WriteVarint32(_liberties_our_two_cached_byte_size_);
   }
-  for (int i = 0; i < this->lib2_size(); i++) {
+  for (int i = 0; i < this->liberties_our_two_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->lib2(i), output);
+      this->liberties_our_two(i), output);
   }
 
-  // repeated bool lib3 = 15;
-  if (this->lib3_size() > 0) {
+  // repeated bool liberties_our_three = 15;
+  if (this->liberties_our_three_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(15, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_lib3_cached_byte_size_);
+    output->WriteVarint32(_liberties_our_three_cached_byte_size_);
   }
-  for (int i = 0; i < this->lib3_size(); i++) {
+  for (int i = 0; i < this->liberties_our_three_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->lib3(i), output);
+      this->liberties_our_three(i), output);
   }
 
-  // repeated bool lib4 = 16;
-  if (this->lib4_size() > 0) {
+  // repeated bool liberties_our_more = 16;
+  if (this->liberties_our_more_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(16, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_lib4_cached_byte_size_);
+    output->WriteVarint32(_liberties_our_more_cached_byte_size_);
   }
-  for (int i = 0; i < this->lib4_size(); i++) {
+  for (int i = 0; i < this->liberties_our_more_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->lib4(i), output);
+      this->liberties_our_more(i), output);
   }
 
-  // repeated bool lib5 = 17;
-  if (this->lib5_size() > 0) {
+  // repeated bool liberties_oppo_one = 17;
+  if (this->liberties_oppo_one_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(17, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_lib5_cached_byte_size_);
+    output->WriteVarint32(_liberties_oppo_one_cached_byte_size_);
   }
-  for (int i = 0; i < this->lib5_size(); i++) {
+  for (int i = 0; i < this->liberties_oppo_one_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->lib5(i), output);
+      this->liberties_oppo_one(i), output);
   }
 
-  // repeated bool lib6 = 18;
-  if (this->lib6_size() > 0) {
+  // repeated bool liberties_oppo_two = 18;
+  if (this->liberties_oppo_two_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(18, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_lib6_cached_byte_size_);
+    output->WriteVarint32(_liberties_oppo_two_cached_byte_size_);
   }
-  for (int i = 0; i < this->lib6_size(); i++) {
+  for (int i = 0; i < this->liberties_oppo_two_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->lib6(i), output);
+      this->liberties_oppo_two(i), output);
   }
 
-  // repeated bool lib7 = 19;
-  if (this->lib7_size() > 0) {
+  // repeated bool liberties_oppo_three = 19;
+  if (this->liberties_oppo_three_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(19, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_lib7_cached_byte_size_);
+    output->WriteVarint32(_liberties_oppo_three_cached_byte_size_);
   }
-  for (int i = 0; i < this->lib7_size(); i++) {
+  for (int i = 0; i < this->liberties_oppo_three_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->lib7(i), output);
+      this->liberties_oppo_three(i), output);
   }
 
-  // repeated bool lib8_plus = 20;
-  if (this->lib8_plus_size() > 0) {
+  // repeated bool liberties_oppo_more = 20;
+  if (this->liberties_oppo_more_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(20, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_lib8_plus_cached_byte_size_);
+    output->WriteVarint32(_liberties_oppo_more_cached_byte_size_);
   }
-  for (int i = 0; i < this->lib8_plus_size(); i++) {
+  for (int i = 0; i < this->liberties_oppo_more_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->lib8_plus(i), output);
+      this->liberties_oppo_more(i), output);
   }
 
-  // repeated bool after_move_lib1 = 21;
-  if (this->after_move_lib1_size() > 0) {
+  // repeated bool capture_size_one = 21;
+  if (this->capture_size_one_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(21, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_after_move_lib1_cached_byte_size_);
+    output->WriteVarint32(_capture_size_one_cached_byte_size_);
   }
-  for (int i = 0; i < this->after_move_lib1_size(); i++) {
+  for (int i = 0; i < this->capture_size_one_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->after_move_lib1(i), output);
+      this->capture_size_one(i), output);
   }
 
-  // repeated bool after_move_lib2 = 22;
-  if (this->after_move_lib2_size() > 0) {
+  // repeated bool capture_size_two = 22;
+  if (this->capture_size_two_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(22, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_after_move_lib2_cached_byte_size_);
+    output->WriteVarint32(_capture_size_two_cached_byte_size_);
   }
-  for (int i = 0; i < this->after_move_lib2_size(); i++) {
+  for (int i = 0; i < this->capture_size_two_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->after_move_lib2(i), output);
+      this->capture_size_two(i), output);
   }
 
-  // repeated bool after_move_lib3 = 23;
-  if (this->after_move_lib3_size() > 0) {
+  // repeated bool capture_size_three = 23;
+  if (this->capture_size_three_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(23, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_after_move_lib3_cached_byte_size_);
+    output->WriteVarint32(_capture_size_three_cached_byte_size_);
   }
-  for (int i = 0; i < this->after_move_lib3_size(); i++) {
+  for (int i = 0; i < this->capture_size_three_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->after_move_lib3(i), output);
+      this->capture_size_three(i), output);
   }
 
-  // repeated bool after_move_lib4 = 24;
-  if (this->after_move_lib4_size() > 0) {
+  // repeated bool capture_size_four = 24;
+  if (this->capture_size_four_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(24, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_after_move_lib4_cached_byte_size_);
+    output->WriteVarint32(_capture_size_four_cached_byte_size_);
   }
-  for (int i = 0; i < this->after_move_lib4_size(); i++) {
+  for (int i = 0; i < this->capture_size_four_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->after_move_lib4(i), output);
+      this->capture_size_four(i), output);
   }
 
-  // repeated bool after_move_lib5 = 25;
-  if (this->after_move_lib5_size() > 0) {
+  // repeated bool capture_size_five = 25;
+  if (this->capture_size_five_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(25, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_after_move_lib5_cached_byte_size_);
+    output->WriteVarint32(_capture_size_five_cached_byte_size_);
   }
-  for (int i = 0; i < this->after_move_lib5_size(); i++) {
+  for (int i = 0; i < this->capture_size_five_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->after_move_lib5(i), output);
+      this->capture_size_five(i), output);
   }
 
-  // repeated bool after_move_lib6 = 26;
-  if (this->after_move_lib6_size() > 0) {
+  // repeated bool capture_size_six = 26;
+  if (this->capture_size_six_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(26, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_after_move_lib6_cached_byte_size_);
+    output->WriteVarint32(_capture_size_six_cached_byte_size_);
   }
-  for (int i = 0; i < this->after_move_lib6_size(); i++) {
+  for (int i = 0; i < this->capture_size_six_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->after_move_lib6(i), output);
+      this->capture_size_six(i), output);
   }
 
-  // repeated bool after_move_lib7 = 27;
-  if (this->after_move_lib7_size() > 0) {
+  // repeated bool capture_size_seven = 27;
+  if (this->capture_size_seven_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(27, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_after_move_lib7_cached_byte_size_);
+    output->WriteVarint32(_capture_size_seven_cached_byte_size_);
   }
-  for (int i = 0; i < this->after_move_lib7_size(); i++) {
+  for (int i = 0; i < this->capture_size_seven_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->after_move_lib7(i), output);
+      this->capture_size_seven(i), output);
   }
 
-  // repeated bool after_move_lib8_plus = 28;
-  if (this->after_move_lib8_plus_size() > 0) {
+  // repeated bool capture_size_more = 28;
+  if (this->capture_size_more_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(28, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_after_move_lib8_plus_cached_byte_size_);
+    output->WriteVarint32(_capture_size_more_cached_byte_size_);
   }
-  for (int i = 0; i < this->after_move_lib8_plus_size(); i++) {
+  for (int i = 0; i < this->capture_size_more_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->after_move_lib8_plus(i), output);
+      this->capture_size_more(i), output);
   }
 
-  // repeated bool cap_oppo_size1 = 29;
-  if (this->cap_oppo_size1_size() > 0) {
+  // repeated bool sensibleness = 29;
+  if (this->sensibleness_size() > 0) {
     ::google::protobuf::internal::WireFormatLite::WriteTag(29, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_oppo_size1_cached_byte_size_);
+    output->WriteVarint32(_sensibleness_cached_byte_size_);
   }
-  for (int i = 0; i < this->cap_oppo_size1_size(); i++) {
+  for (int i = 0; i < this->sensibleness_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_oppo_size1(i), output);
+      this->sensibleness(i), output);
   }
 
-  // repeated bool cap_oppo_size2 = 30;
-  if (this->cap_oppo_size2_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(30, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_oppo_size2_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_oppo_size2_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_oppo_size2(i), output);
-  }
-
-  // repeated bool cap_oppo_size3 = 31;
-  if (this->cap_oppo_size3_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(31, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_oppo_size3_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_oppo_size3_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_oppo_size3(i), output);
-  }
-
-  // repeated bool cap_oppo_size4 = 32;
-  if (this->cap_oppo_size4_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(32, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_oppo_size4_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_oppo_size4_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_oppo_size4(i), output);
-  }
-
-  // repeated bool cap_oppo_size5 = 33;
-  if (this->cap_oppo_size5_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(33, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_oppo_size5_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_oppo_size5_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_oppo_size5(i), output);
-  }
-
-  // repeated bool cap_oppo_size6 = 34;
-  if (this->cap_oppo_size6_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(34, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_oppo_size6_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_oppo_size6_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_oppo_size6(i), output);
-  }
-
-  // repeated bool cap_oppo_size7 = 35;
-  if (this->cap_oppo_size7_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(35, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_oppo_size7_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_oppo_size7_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_oppo_size7(i), output);
-  }
-
-  // repeated bool cap_oppo_size8_plus = 36;
-  if (this->cap_oppo_size8_plus_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(36, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_oppo_size8_plus_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_oppo_size8_plus_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_oppo_size8_plus(i), output);
-  }
-
-  // repeated bool cap_our_size1 = 37;
-  if (this->cap_our_size1_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(37, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_our_size1_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_our_size1_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_our_size1(i), output);
-  }
-
-  // repeated bool cap_our_size2 = 38;
-  if (this->cap_our_size2_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(38, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_our_size2_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_our_size2_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_our_size2(i), output);
-  }
-
-  // repeated bool cap_our_size3 = 39;
-  if (this->cap_our_size3_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(39, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_our_size3_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_our_size3_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_our_size3(i), output);
-  }
-
-  // repeated bool cap_our_size4 = 40;
-  if (this->cap_our_size4_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(40, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_our_size4_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_our_size4_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_our_size4(i), output);
-  }
-
-  // repeated bool cap_our_size5 = 41;
-  if (this->cap_our_size5_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(41, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_our_size5_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_our_size5_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_our_size5(i), output);
-  }
-
-  // repeated bool cap_our_size6 = 42;
-  if (this->cap_our_size6_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(42, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_our_size6_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_our_size6_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_our_size6(i), output);
-  }
-
-  // repeated bool cap_our_size7 = 43;
-  if (this->cap_our_size7_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(43, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_our_size7_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_our_size7_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_our_size7(i), output);
-  }
-
-  // repeated bool cap_our_size8_plus = 44;
-  if (this->cap_our_size8_plus_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(44, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_cap_our_size8_plus_cached_byte_size_);
-  }
-  for (int i = 0; i < this->cap_our_size8_plus_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->cap_our_size8_plus(i), output);
-  }
-
-  // repeated bool not_fill_own_eyes = 45;
-  if (this->not_fill_own_eyes_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(45, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_not_fill_own_eyes_cached_byte_size_);
-  }
-  for (int i = 0; i < this->not_fill_own_eyes_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->not_fill_own_eyes(i), output);
-  }
-
-  // repeated bool ko = 46;
+  // repeated bool ko = 30;
   if (this->ko_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(46, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    ::google::protobuf::internal::WireFormatLite::WriteTag(30, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
     output->WriteVarint32(_ko_cached_byte_size_);
   }
   for (int i = 0; i < this->ko_size(); i++) {
@@ -2985,9 +2467,9 @@ void RequestV2::SerializeWithCachedSizes(
       this->ko(i), output);
   }
 
-  // repeated bool border = 47;
+  // repeated bool border = 31;
   if (this->border_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(47, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    ::google::protobuf::internal::WireFormatLite::WriteTag(31, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
     output->WriteVarint32(_border_cached_byte_size_);
   }
   for (int i = 0; i < this->border_size(); i++) {
@@ -2995,34 +2477,14 @@ void RequestV2::SerializeWithCachedSizes(
       this->border(i), output);
   }
 
-  // repeated float position = 48;
+  // repeated float position = 32;
   if (this->position_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(48, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    ::google::protobuf::internal::WireFormatLite::WriteTag(32, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
     output->WriteVarint32(_position_cached_byte_size_);
   }
   for (int i = 0; i < this->position_size(); i++) {
     ::google::protobuf::internal::WireFormatLite::WriteFloatNoTag(
       this->position(i), output);
-  }
-
-  // repeated bool ones = 49;
-  if (this->ones_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(49, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_ones_cached_byte_size_);
-  }
-  for (int i = 0; i < this->ones_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->ones(i), output);
-  }
-
-  // repeated bool zeros = 50;
-  if (this->zeros_size() > 0) {
-    ::google::protobuf::internal::WireFormatLite::WriteTag(50, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
-    output->WriteVarint32(_zeros_cached_byte_size_);
-  }
-  for (int i = 0; i < this->zeros_size(); i++) {
-    ::google::protobuf::internal::WireFormatLite::WriteBoolNoTag(
-      this->zeros(i), output);
   }
 
   // @@protoc_insertion_point(serialize_end:gocnn.RequestV2)
@@ -3036,626 +2498,402 @@ void RequestV2::SerializeWithCachedSizes(
     target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->board_size(), target);
   }
 
-  // repeated bool our_stone = 2;
-  if (this->our_stone_size() > 0) {
+  // repeated bool stone_color_our = 2;
+  if (this->stone_color_our_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       2,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _our_stone_cached_byte_size_, target);
+      _stone_color_our_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->our_stone_size(); i++) {
+  for (int i = 0; i < this->stone_color_our_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->our_stone(i), target);
+      WriteBoolNoTagToArray(this->stone_color_our(i), target);
   }
 
-  // repeated bool oppo_stone = 3;
-  if (this->oppo_stone_size() > 0) {
+  // repeated bool stone_color_oppo = 3;
+  if (this->stone_color_oppo_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       3,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _oppo_stone_cached_byte_size_, target);
+      _stone_color_oppo_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->oppo_stone_size(); i++) {
+  for (int i = 0; i < this->stone_color_oppo_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->oppo_stone(i), target);
+      WriteBoolNoTagToArray(this->stone_color_oppo(i), target);
   }
 
-  // repeated bool empty_stone = 4;
-  if (this->empty_stone_size() > 0) {
+  // repeated bool stone_color_empty = 4;
+  if (this->stone_color_empty_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       4,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _empty_stone_cached_byte_size_, target);
+      _stone_color_empty_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->empty_stone_size(); i++) {
+  for (int i = 0; i < this->stone_color_empty_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->empty_stone(i), target);
+      WriteBoolNoTagToArray(this->stone_color_empty(i), target);
   }
 
-  // repeated bool turn_since1 = 5;
-  if (this->turn_since1_size() > 0) {
+  // repeated bool turns_since_one = 5;
+  if (this->turns_since_one_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       5,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _turn_since1_cached_byte_size_, target);
+      _turns_since_one_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->turn_since1_size(); i++) {
+  for (int i = 0; i < this->turns_since_one_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->turn_since1(i), target);
+      WriteBoolNoTagToArray(this->turns_since_one(i), target);
   }
 
-  // repeated bool turn_since2 = 6;
-  if (this->turn_since2_size() > 0) {
+  // repeated bool turns_since_two = 6;
+  if (this->turns_since_two_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       6,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _turn_since2_cached_byte_size_, target);
+      _turns_since_two_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->turn_since2_size(); i++) {
+  for (int i = 0; i < this->turns_since_two_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->turn_since2(i), target);
+      WriteBoolNoTagToArray(this->turns_since_two(i), target);
   }
 
-  // repeated bool turn_since3 = 7;
-  if (this->turn_since3_size() > 0) {
+  // repeated bool turns_since_three = 7;
+  if (this->turns_since_three_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       7,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _turn_since3_cached_byte_size_, target);
+      _turns_since_three_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->turn_since3_size(); i++) {
+  for (int i = 0; i < this->turns_since_three_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->turn_since3(i), target);
+      WriteBoolNoTagToArray(this->turns_since_three(i), target);
   }
 
-  // repeated bool turn_since4 = 8;
-  if (this->turn_since4_size() > 0) {
+  // repeated bool turns_since_four = 8;
+  if (this->turns_since_four_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       8,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _turn_since4_cached_byte_size_, target);
+      _turns_since_four_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->turn_since4_size(); i++) {
+  for (int i = 0; i < this->turns_since_four_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->turn_since4(i), target);
+      WriteBoolNoTagToArray(this->turns_since_four(i), target);
   }
 
-  // repeated bool turn_since5 = 9;
-  if (this->turn_since5_size() > 0) {
+  // repeated bool turns_since_five = 9;
+  if (this->turns_since_five_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       9,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _turn_since5_cached_byte_size_, target);
+      _turns_since_five_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->turn_since5_size(); i++) {
+  for (int i = 0; i < this->turns_since_five_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->turn_since5(i), target);
+      WriteBoolNoTagToArray(this->turns_since_five(i), target);
   }
 
-  // repeated bool turn_since6 = 10;
-  if (this->turn_since6_size() > 0) {
+  // repeated bool turns_since_six = 10;
+  if (this->turns_since_six_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       10,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _turn_since6_cached_byte_size_, target);
+      _turns_since_six_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->turn_since6_size(); i++) {
+  for (int i = 0; i < this->turns_since_six_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->turn_since6(i), target);
+      WriteBoolNoTagToArray(this->turns_since_six(i), target);
   }
 
-  // repeated bool turn_since7 = 11;
-  if (this->turn_since7_size() > 0) {
+  // repeated bool turns_since_seven = 11;
+  if (this->turns_since_seven_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       11,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _turn_since7_cached_byte_size_, target);
+      _turns_since_seven_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->turn_since7_size(); i++) {
+  for (int i = 0; i < this->turns_since_seven_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->turn_since7(i), target);
+      WriteBoolNoTagToArray(this->turns_since_seven(i), target);
   }
 
-  // repeated bool turn_since8_plus = 12;
-  if (this->turn_since8_plus_size() > 0) {
+  // repeated bool turns_since_more = 12;
+  if (this->turns_since_more_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       12,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _turn_since8_plus_cached_byte_size_, target);
+      _turns_since_more_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->turn_since8_plus_size(); i++) {
+  for (int i = 0; i < this->turns_since_more_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->turn_since8_plus(i), target);
+      WriteBoolNoTagToArray(this->turns_since_more(i), target);
   }
 
-  // repeated bool lib1 = 13;
-  if (this->lib1_size() > 0) {
+  // repeated bool liberties_our_one = 13;
+  if (this->liberties_our_one_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       13,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _lib1_cached_byte_size_, target);
+      _liberties_our_one_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->lib1_size(); i++) {
+  for (int i = 0; i < this->liberties_our_one_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->lib1(i), target);
+      WriteBoolNoTagToArray(this->liberties_our_one(i), target);
   }
 
-  // repeated bool lib2 = 14;
-  if (this->lib2_size() > 0) {
+  // repeated bool liberties_our_two = 14;
+  if (this->liberties_our_two_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       14,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _lib2_cached_byte_size_, target);
+      _liberties_our_two_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->lib2_size(); i++) {
+  for (int i = 0; i < this->liberties_our_two_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->lib2(i), target);
+      WriteBoolNoTagToArray(this->liberties_our_two(i), target);
   }
 
-  // repeated bool lib3 = 15;
-  if (this->lib3_size() > 0) {
+  // repeated bool liberties_our_three = 15;
+  if (this->liberties_our_three_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       15,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _lib3_cached_byte_size_, target);
+      _liberties_our_three_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->lib3_size(); i++) {
+  for (int i = 0; i < this->liberties_our_three_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->lib3(i), target);
+      WriteBoolNoTagToArray(this->liberties_our_three(i), target);
   }
 
-  // repeated bool lib4 = 16;
-  if (this->lib4_size() > 0) {
+  // repeated bool liberties_our_more = 16;
+  if (this->liberties_our_more_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       16,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _lib4_cached_byte_size_, target);
+      _liberties_our_more_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->lib4_size(); i++) {
+  for (int i = 0; i < this->liberties_our_more_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->lib4(i), target);
+      WriteBoolNoTagToArray(this->liberties_our_more(i), target);
   }
 
-  // repeated bool lib5 = 17;
-  if (this->lib5_size() > 0) {
+  // repeated bool liberties_oppo_one = 17;
+  if (this->liberties_oppo_one_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       17,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _lib5_cached_byte_size_, target);
+      _liberties_oppo_one_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->lib5_size(); i++) {
+  for (int i = 0; i < this->liberties_oppo_one_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->lib5(i), target);
+      WriteBoolNoTagToArray(this->liberties_oppo_one(i), target);
   }
 
-  // repeated bool lib6 = 18;
-  if (this->lib6_size() > 0) {
+  // repeated bool liberties_oppo_two = 18;
+  if (this->liberties_oppo_two_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       18,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _lib6_cached_byte_size_, target);
+      _liberties_oppo_two_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->lib6_size(); i++) {
+  for (int i = 0; i < this->liberties_oppo_two_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->lib6(i), target);
+      WriteBoolNoTagToArray(this->liberties_oppo_two(i), target);
   }
 
-  // repeated bool lib7 = 19;
-  if (this->lib7_size() > 0) {
+  // repeated bool liberties_oppo_three = 19;
+  if (this->liberties_oppo_three_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       19,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _lib7_cached_byte_size_, target);
+      _liberties_oppo_three_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->lib7_size(); i++) {
+  for (int i = 0; i < this->liberties_oppo_three_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->lib7(i), target);
+      WriteBoolNoTagToArray(this->liberties_oppo_three(i), target);
   }
 
-  // repeated bool lib8_plus = 20;
-  if (this->lib8_plus_size() > 0) {
+  // repeated bool liberties_oppo_more = 20;
+  if (this->liberties_oppo_more_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       20,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _lib8_plus_cached_byte_size_, target);
+      _liberties_oppo_more_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->lib8_plus_size(); i++) {
+  for (int i = 0; i < this->liberties_oppo_more_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->lib8_plus(i), target);
+      WriteBoolNoTagToArray(this->liberties_oppo_more(i), target);
   }
 
-  // repeated bool after_move_lib1 = 21;
-  if (this->after_move_lib1_size() > 0) {
+  // repeated bool capture_size_one = 21;
+  if (this->capture_size_one_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       21,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _after_move_lib1_cached_byte_size_, target);
+      _capture_size_one_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->after_move_lib1_size(); i++) {
+  for (int i = 0; i < this->capture_size_one_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->after_move_lib1(i), target);
+      WriteBoolNoTagToArray(this->capture_size_one(i), target);
   }
 
-  // repeated bool after_move_lib2 = 22;
-  if (this->after_move_lib2_size() > 0) {
+  // repeated bool capture_size_two = 22;
+  if (this->capture_size_two_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       22,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _after_move_lib2_cached_byte_size_, target);
+      _capture_size_two_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->after_move_lib2_size(); i++) {
+  for (int i = 0; i < this->capture_size_two_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->after_move_lib2(i), target);
+      WriteBoolNoTagToArray(this->capture_size_two(i), target);
   }
 
-  // repeated bool after_move_lib3 = 23;
-  if (this->after_move_lib3_size() > 0) {
+  // repeated bool capture_size_three = 23;
+  if (this->capture_size_three_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       23,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _after_move_lib3_cached_byte_size_, target);
+      _capture_size_three_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->after_move_lib3_size(); i++) {
+  for (int i = 0; i < this->capture_size_three_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->after_move_lib3(i), target);
+      WriteBoolNoTagToArray(this->capture_size_three(i), target);
   }
 
-  // repeated bool after_move_lib4 = 24;
-  if (this->after_move_lib4_size() > 0) {
+  // repeated bool capture_size_four = 24;
+  if (this->capture_size_four_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       24,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _after_move_lib4_cached_byte_size_, target);
+      _capture_size_four_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->after_move_lib4_size(); i++) {
+  for (int i = 0; i < this->capture_size_four_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->after_move_lib4(i), target);
+      WriteBoolNoTagToArray(this->capture_size_four(i), target);
   }
 
-  // repeated bool after_move_lib5 = 25;
-  if (this->after_move_lib5_size() > 0) {
+  // repeated bool capture_size_five = 25;
+  if (this->capture_size_five_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       25,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _after_move_lib5_cached_byte_size_, target);
+      _capture_size_five_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->after_move_lib5_size(); i++) {
+  for (int i = 0; i < this->capture_size_five_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->after_move_lib5(i), target);
+      WriteBoolNoTagToArray(this->capture_size_five(i), target);
   }
 
-  // repeated bool after_move_lib6 = 26;
-  if (this->after_move_lib6_size() > 0) {
+  // repeated bool capture_size_six = 26;
+  if (this->capture_size_six_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       26,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _after_move_lib6_cached_byte_size_, target);
+      _capture_size_six_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->after_move_lib6_size(); i++) {
+  for (int i = 0; i < this->capture_size_six_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->after_move_lib6(i), target);
+      WriteBoolNoTagToArray(this->capture_size_six(i), target);
   }
 
-  // repeated bool after_move_lib7 = 27;
-  if (this->after_move_lib7_size() > 0) {
+  // repeated bool capture_size_seven = 27;
+  if (this->capture_size_seven_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       27,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _after_move_lib7_cached_byte_size_, target);
+      _capture_size_seven_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->after_move_lib7_size(); i++) {
+  for (int i = 0; i < this->capture_size_seven_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->after_move_lib7(i), target);
+      WriteBoolNoTagToArray(this->capture_size_seven(i), target);
   }
 
-  // repeated bool after_move_lib8_plus = 28;
-  if (this->after_move_lib8_plus_size() > 0) {
+  // repeated bool capture_size_more = 28;
+  if (this->capture_size_more_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       28,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _after_move_lib8_plus_cached_byte_size_, target);
+      _capture_size_more_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->after_move_lib8_plus_size(); i++) {
+  for (int i = 0; i < this->capture_size_more_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->after_move_lib8_plus(i), target);
+      WriteBoolNoTagToArray(this->capture_size_more(i), target);
   }
 
-  // repeated bool cap_oppo_size1 = 29;
-  if (this->cap_oppo_size1_size() > 0) {
+  // repeated bool sensibleness = 29;
+  if (this->sensibleness_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
       29,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_oppo_size1_cached_byte_size_, target);
+      _sensibleness_cached_byte_size_, target);
   }
-  for (int i = 0; i < this->cap_oppo_size1_size(); i++) {
+  for (int i = 0; i < this->sensibleness_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_oppo_size1(i), target);
+      WriteBoolNoTagToArray(this->sensibleness(i), target);
   }
 
-  // repeated bool cap_oppo_size2 = 30;
-  if (this->cap_oppo_size2_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      30,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_oppo_size2_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_oppo_size2_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_oppo_size2(i), target);
-  }
-
-  // repeated bool cap_oppo_size3 = 31;
-  if (this->cap_oppo_size3_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      31,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_oppo_size3_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_oppo_size3_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_oppo_size3(i), target);
-  }
-
-  // repeated bool cap_oppo_size4 = 32;
-  if (this->cap_oppo_size4_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      32,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_oppo_size4_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_oppo_size4_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_oppo_size4(i), target);
-  }
-
-  // repeated bool cap_oppo_size5 = 33;
-  if (this->cap_oppo_size5_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      33,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_oppo_size5_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_oppo_size5_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_oppo_size5(i), target);
-  }
-
-  // repeated bool cap_oppo_size6 = 34;
-  if (this->cap_oppo_size6_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      34,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_oppo_size6_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_oppo_size6_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_oppo_size6(i), target);
-  }
-
-  // repeated bool cap_oppo_size7 = 35;
-  if (this->cap_oppo_size7_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      35,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_oppo_size7_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_oppo_size7_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_oppo_size7(i), target);
-  }
-
-  // repeated bool cap_oppo_size8_plus = 36;
-  if (this->cap_oppo_size8_plus_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      36,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_oppo_size8_plus_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_oppo_size8_plus_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_oppo_size8_plus(i), target);
-  }
-
-  // repeated bool cap_our_size1 = 37;
-  if (this->cap_our_size1_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      37,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_our_size1_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_our_size1_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_our_size1(i), target);
-  }
-
-  // repeated bool cap_our_size2 = 38;
-  if (this->cap_our_size2_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      38,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_our_size2_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_our_size2_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_our_size2(i), target);
-  }
-
-  // repeated bool cap_our_size3 = 39;
-  if (this->cap_our_size3_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      39,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_our_size3_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_our_size3_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_our_size3(i), target);
-  }
-
-  // repeated bool cap_our_size4 = 40;
-  if (this->cap_our_size4_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      40,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_our_size4_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_our_size4_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_our_size4(i), target);
-  }
-
-  // repeated bool cap_our_size5 = 41;
-  if (this->cap_our_size5_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      41,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_our_size5_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_our_size5_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_our_size5(i), target);
-  }
-
-  // repeated bool cap_our_size6 = 42;
-  if (this->cap_our_size6_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      42,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_our_size6_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_our_size6_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_our_size6(i), target);
-  }
-
-  // repeated bool cap_our_size7 = 43;
-  if (this->cap_our_size7_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      43,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_our_size7_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_our_size7_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_our_size7(i), target);
-  }
-
-  // repeated bool cap_our_size8_plus = 44;
-  if (this->cap_our_size8_plus_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      44,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _cap_our_size8_plus_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->cap_our_size8_plus_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->cap_our_size8_plus(i), target);
-  }
-
-  // repeated bool not_fill_own_eyes = 45;
-  if (this->not_fill_own_eyes_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      45,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _not_fill_own_eyes_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->not_fill_own_eyes_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->not_fill_own_eyes(i), target);
-  }
-
-  // repeated bool ko = 46;
+  // repeated bool ko = 30;
   if (this->ko_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      46,
+      30,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
@@ -3666,10 +2904,10 @@ void RequestV2::SerializeWithCachedSizes(
       WriteBoolNoTagToArray(this->ko(i), target);
   }
 
-  // repeated bool border = 47;
+  // repeated bool border = 31;
   if (this->border_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      47,
+      31,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
@@ -3680,10 +2918,10 @@ void RequestV2::SerializeWithCachedSizes(
       WriteBoolNoTagToArray(this->border(i), target);
   }
 
-  // repeated float position = 48;
+  // repeated float position = 32;
   if (this->position_size() > 0) {
     target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      48,
+      32,
       ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
       target);
     target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
@@ -3692,34 +2930,6 @@ void RequestV2::SerializeWithCachedSizes(
   for (int i = 0; i < this->position_size(); i++) {
     target = ::google::protobuf::internal::WireFormatLite::
       WriteFloatNoTagToArray(this->position(i), target);
-  }
-
-  // repeated bool ones = 49;
-  if (this->ones_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      49,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _ones_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->ones_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->ones(i), target);
-  }
-
-  // repeated bool zeros = 50;
-  if (this->zeros_size() > 0) {
-    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
-      50,
-      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
-      target);
-    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
-      _zeros_cached_byte_size_, target);
-  }
-  for (int i = 0; i < this->zeros_size(); i++) {
-    target = ::google::protobuf::internal::WireFormatLite::
-      WriteBoolNoTagToArray(this->zeros(i), target);
   }
 
   // @@protoc_insertion_point(serialize_to_array_end:gocnn.RequestV2)
@@ -3737,623 +2947,399 @@ int RequestV2::ByteSize() const {
         this->board_size());
   }
 
-  // repeated bool our_stone = 2;
+  // repeated bool stone_color_our = 2;
   {
     int data_size = 0;
-    data_size = 1 * this->our_stone_size();
+    data_size = 1 * this->stone_color_our_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _our_stone_cached_byte_size_ = data_size;
+    _stone_color_our_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool oppo_stone = 3;
+  // repeated bool stone_color_oppo = 3;
   {
     int data_size = 0;
-    data_size = 1 * this->oppo_stone_size();
+    data_size = 1 * this->stone_color_oppo_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _oppo_stone_cached_byte_size_ = data_size;
+    _stone_color_oppo_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool empty_stone = 4;
+  // repeated bool stone_color_empty = 4;
   {
     int data_size = 0;
-    data_size = 1 * this->empty_stone_size();
+    data_size = 1 * this->stone_color_empty_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _empty_stone_cached_byte_size_ = data_size;
+    _stone_color_empty_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool turn_since1 = 5;
+  // repeated bool turns_since_one = 5;
   {
     int data_size = 0;
-    data_size = 1 * this->turn_since1_size();
+    data_size = 1 * this->turns_since_one_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _turn_since1_cached_byte_size_ = data_size;
+    _turns_since_one_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool turn_since2 = 6;
+  // repeated bool turns_since_two = 6;
   {
     int data_size = 0;
-    data_size = 1 * this->turn_since2_size();
+    data_size = 1 * this->turns_since_two_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _turn_since2_cached_byte_size_ = data_size;
+    _turns_since_two_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool turn_since3 = 7;
+  // repeated bool turns_since_three = 7;
   {
     int data_size = 0;
-    data_size = 1 * this->turn_since3_size();
+    data_size = 1 * this->turns_since_three_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _turn_since3_cached_byte_size_ = data_size;
+    _turns_since_three_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool turn_since4 = 8;
+  // repeated bool turns_since_four = 8;
   {
     int data_size = 0;
-    data_size = 1 * this->turn_since4_size();
+    data_size = 1 * this->turns_since_four_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _turn_since4_cached_byte_size_ = data_size;
+    _turns_since_four_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool turn_since5 = 9;
+  // repeated bool turns_since_five = 9;
   {
     int data_size = 0;
-    data_size = 1 * this->turn_since5_size();
+    data_size = 1 * this->turns_since_five_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _turn_since5_cached_byte_size_ = data_size;
+    _turns_since_five_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool turn_since6 = 10;
+  // repeated bool turns_since_six = 10;
   {
     int data_size = 0;
-    data_size = 1 * this->turn_since6_size();
+    data_size = 1 * this->turns_since_six_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _turn_since6_cached_byte_size_ = data_size;
+    _turns_since_six_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool turn_since7 = 11;
+  // repeated bool turns_since_seven = 11;
   {
     int data_size = 0;
-    data_size = 1 * this->turn_since7_size();
+    data_size = 1 * this->turns_since_seven_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _turn_since7_cached_byte_size_ = data_size;
+    _turns_since_seven_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool turn_since8_plus = 12;
+  // repeated bool turns_since_more = 12;
   {
     int data_size = 0;
-    data_size = 1 * this->turn_since8_plus_size();
+    data_size = 1 * this->turns_since_more_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _turn_since8_plus_cached_byte_size_ = data_size;
+    _turns_since_more_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool lib1 = 13;
+  // repeated bool liberties_our_one = 13;
   {
     int data_size = 0;
-    data_size = 1 * this->lib1_size();
+    data_size = 1 * this->liberties_our_one_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _lib1_cached_byte_size_ = data_size;
+    _liberties_our_one_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool lib2 = 14;
+  // repeated bool liberties_our_two = 14;
   {
     int data_size = 0;
-    data_size = 1 * this->lib2_size();
+    data_size = 1 * this->liberties_our_two_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _lib2_cached_byte_size_ = data_size;
+    _liberties_our_two_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool lib3 = 15;
+  // repeated bool liberties_our_three = 15;
   {
     int data_size = 0;
-    data_size = 1 * this->lib3_size();
+    data_size = 1 * this->liberties_our_three_size();
     if (data_size > 0) {
       total_size += 1 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _lib3_cached_byte_size_ = data_size;
+    _liberties_our_three_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool lib4 = 16;
+  // repeated bool liberties_our_more = 16;
   {
     int data_size = 0;
-    data_size = 1 * this->lib4_size();
+    data_size = 1 * this->liberties_our_more_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _lib4_cached_byte_size_ = data_size;
+    _liberties_our_more_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool lib5 = 17;
+  // repeated bool liberties_oppo_one = 17;
   {
     int data_size = 0;
-    data_size = 1 * this->lib5_size();
+    data_size = 1 * this->liberties_oppo_one_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _lib5_cached_byte_size_ = data_size;
+    _liberties_oppo_one_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool lib6 = 18;
+  // repeated bool liberties_oppo_two = 18;
   {
     int data_size = 0;
-    data_size = 1 * this->lib6_size();
+    data_size = 1 * this->liberties_oppo_two_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _lib6_cached_byte_size_ = data_size;
+    _liberties_oppo_two_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool lib7 = 19;
+  // repeated bool liberties_oppo_three = 19;
   {
     int data_size = 0;
-    data_size = 1 * this->lib7_size();
+    data_size = 1 * this->liberties_oppo_three_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _lib7_cached_byte_size_ = data_size;
+    _liberties_oppo_three_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool lib8_plus = 20;
+  // repeated bool liberties_oppo_more = 20;
   {
     int data_size = 0;
-    data_size = 1 * this->lib8_plus_size();
+    data_size = 1 * this->liberties_oppo_more_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _lib8_plus_cached_byte_size_ = data_size;
+    _liberties_oppo_more_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool after_move_lib1 = 21;
+  // repeated bool capture_size_one = 21;
   {
     int data_size = 0;
-    data_size = 1 * this->after_move_lib1_size();
+    data_size = 1 * this->capture_size_one_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _after_move_lib1_cached_byte_size_ = data_size;
+    _capture_size_one_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool after_move_lib2 = 22;
+  // repeated bool capture_size_two = 22;
   {
     int data_size = 0;
-    data_size = 1 * this->after_move_lib2_size();
+    data_size = 1 * this->capture_size_two_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _after_move_lib2_cached_byte_size_ = data_size;
+    _capture_size_two_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool after_move_lib3 = 23;
+  // repeated bool capture_size_three = 23;
   {
     int data_size = 0;
-    data_size = 1 * this->after_move_lib3_size();
+    data_size = 1 * this->capture_size_three_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _after_move_lib3_cached_byte_size_ = data_size;
+    _capture_size_three_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool after_move_lib4 = 24;
+  // repeated bool capture_size_four = 24;
   {
     int data_size = 0;
-    data_size = 1 * this->after_move_lib4_size();
+    data_size = 1 * this->capture_size_four_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _after_move_lib4_cached_byte_size_ = data_size;
+    _capture_size_four_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool after_move_lib5 = 25;
+  // repeated bool capture_size_five = 25;
   {
     int data_size = 0;
-    data_size = 1 * this->after_move_lib5_size();
+    data_size = 1 * this->capture_size_five_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _after_move_lib5_cached_byte_size_ = data_size;
+    _capture_size_five_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool after_move_lib6 = 26;
+  // repeated bool capture_size_six = 26;
   {
     int data_size = 0;
-    data_size = 1 * this->after_move_lib6_size();
+    data_size = 1 * this->capture_size_six_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _after_move_lib6_cached_byte_size_ = data_size;
+    _capture_size_six_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool after_move_lib7 = 27;
+  // repeated bool capture_size_seven = 27;
   {
     int data_size = 0;
-    data_size = 1 * this->after_move_lib7_size();
+    data_size = 1 * this->capture_size_seven_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _after_move_lib7_cached_byte_size_ = data_size;
+    _capture_size_seven_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool after_move_lib8_plus = 28;
+  // repeated bool capture_size_more = 28;
   {
     int data_size = 0;
-    data_size = 1 * this->after_move_lib8_plus_size();
+    data_size = 1 * this->capture_size_more_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _after_move_lib8_plus_cached_byte_size_ = data_size;
+    _capture_size_more_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool cap_oppo_size1 = 29;
+  // repeated bool sensibleness = 29;
   {
     int data_size = 0;
-    data_size = 1 * this->cap_oppo_size1_size();
+    data_size = 1 * this->sensibleness_size();
     if (data_size > 0) {
       total_size += 2 +
         ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_oppo_size1_cached_byte_size_ = data_size;
+    _sensibleness_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
 
-  // repeated bool cap_oppo_size2 = 30;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_oppo_size2_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_oppo_size2_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_oppo_size3 = 31;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_oppo_size3_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_oppo_size3_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_oppo_size4 = 32;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_oppo_size4_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_oppo_size4_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_oppo_size5 = 33;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_oppo_size5_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_oppo_size5_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_oppo_size6 = 34;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_oppo_size6_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_oppo_size6_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_oppo_size7 = 35;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_oppo_size7_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_oppo_size7_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_oppo_size8_plus = 36;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_oppo_size8_plus_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_oppo_size8_plus_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_our_size1 = 37;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_our_size1_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_our_size1_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_our_size2 = 38;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_our_size2_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_our_size2_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_our_size3 = 39;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_our_size3_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_our_size3_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_our_size4 = 40;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_our_size4_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_our_size4_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_our_size5 = 41;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_our_size5_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_our_size5_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_our_size6 = 42;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_our_size6_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_our_size6_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_our_size7 = 43;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_our_size7_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_our_size7_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool cap_our_size8_plus = 44;
-  {
-    int data_size = 0;
-    data_size = 1 * this->cap_our_size8_plus_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _cap_our_size8_plus_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool not_fill_own_eyes = 45;
-  {
-    int data_size = 0;
-    data_size = 1 * this->not_fill_own_eyes_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _not_fill_own_eyes_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool ko = 46;
+  // repeated bool ko = 30;
   {
     int data_size = 0;
     data_size = 1 * this->ko_size();
@@ -4367,7 +3353,7 @@ int RequestV2::ByteSize() const {
     total_size += data_size;
   }
 
-  // repeated bool border = 47;
+  // repeated bool border = 31;
   {
     int data_size = 0;
     data_size = 1 * this->border_size();
@@ -4381,7 +3367,7 @@ int RequestV2::ByteSize() const {
     total_size += data_size;
   }
 
-  // repeated float position = 48;
+  // repeated float position = 32;
   {
     int data_size = 0;
     data_size = 4 * this->position_size();
@@ -4391,34 +3377,6 @@ int RequestV2::ByteSize() const {
     }
     GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
     _position_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool ones = 49;
-  {
-    int data_size = 0;
-    data_size = 1 * this->ones_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _ones_cached_byte_size_ = data_size;
-    GOOGLE_SAFE_CONCURRENT_WRITES_END();
-    total_size += data_size;
-  }
-
-  // repeated bool zeros = 50;
-  {
-    int data_size = 0;
-    data_size = 1 * this->zeros_size();
-    if (data_size > 0) {
-      total_size += 2 +
-        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
-    }
-    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
-    _zeros_cached_byte_size_ = data_size;
     GOOGLE_SAFE_CONCURRENT_WRITES_END();
     total_size += data_size;
   }
@@ -4451,55 +3409,37 @@ void RequestV2::MergeFrom(const RequestV2& from) {
   if (GOOGLE_PREDICT_FALSE(&from == this)) {
     ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
   }
-  our_stone_.MergeFrom(from.our_stone_);
-  oppo_stone_.MergeFrom(from.oppo_stone_);
-  empty_stone_.MergeFrom(from.empty_stone_);
-  turn_since1_.MergeFrom(from.turn_since1_);
-  turn_since2_.MergeFrom(from.turn_since2_);
-  turn_since3_.MergeFrom(from.turn_since3_);
-  turn_since4_.MergeFrom(from.turn_since4_);
-  turn_since5_.MergeFrom(from.turn_since5_);
-  turn_since6_.MergeFrom(from.turn_since6_);
-  turn_since7_.MergeFrom(from.turn_since7_);
-  turn_since8_plus_.MergeFrom(from.turn_since8_plus_);
-  lib1_.MergeFrom(from.lib1_);
-  lib2_.MergeFrom(from.lib2_);
-  lib3_.MergeFrom(from.lib3_);
-  lib4_.MergeFrom(from.lib4_);
-  lib5_.MergeFrom(from.lib5_);
-  lib6_.MergeFrom(from.lib6_);
-  lib7_.MergeFrom(from.lib7_);
-  lib8_plus_.MergeFrom(from.lib8_plus_);
-  after_move_lib1_.MergeFrom(from.after_move_lib1_);
-  after_move_lib2_.MergeFrom(from.after_move_lib2_);
-  after_move_lib3_.MergeFrom(from.after_move_lib3_);
-  after_move_lib4_.MergeFrom(from.after_move_lib4_);
-  after_move_lib5_.MergeFrom(from.after_move_lib5_);
-  after_move_lib6_.MergeFrom(from.after_move_lib6_);
-  after_move_lib7_.MergeFrom(from.after_move_lib7_);
-  after_move_lib8_plus_.MergeFrom(from.after_move_lib8_plus_);
-  cap_oppo_size1_.MergeFrom(from.cap_oppo_size1_);
-  cap_oppo_size2_.MergeFrom(from.cap_oppo_size2_);
-  cap_oppo_size3_.MergeFrom(from.cap_oppo_size3_);
-  cap_oppo_size4_.MergeFrom(from.cap_oppo_size4_);
-  cap_oppo_size5_.MergeFrom(from.cap_oppo_size5_);
-  cap_oppo_size6_.MergeFrom(from.cap_oppo_size6_);
-  cap_oppo_size7_.MergeFrom(from.cap_oppo_size7_);
-  cap_oppo_size8_plus_.MergeFrom(from.cap_oppo_size8_plus_);
-  cap_our_size1_.MergeFrom(from.cap_our_size1_);
-  cap_our_size2_.MergeFrom(from.cap_our_size2_);
-  cap_our_size3_.MergeFrom(from.cap_our_size3_);
-  cap_our_size4_.MergeFrom(from.cap_our_size4_);
-  cap_our_size5_.MergeFrom(from.cap_our_size5_);
-  cap_our_size6_.MergeFrom(from.cap_our_size6_);
-  cap_our_size7_.MergeFrom(from.cap_our_size7_);
-  cap_our_size8_plus_.MergeFrom(from.cap_our_size8_plus_);
-  not_fill_own_eyes_.MergeFrom(from.not_fill_own_eyes_);
+  stone_color_our_.MergeFrom(from.stone_color_our_);
+  stone_color_oppo_.MergeFrom(from.stone_color_oppo_);
+  stone_color_empty_.MergeFrom(from.stone_color_empty_);
+  turns_since_one_.MergeFrom(from.turns_since_one_);
+  turns_since_two_.MergeFrom(from.turns_since_two_);
+  turns_since_three_.MergeFrom(from.turns_since_three_);
+  turns_since_four_.MergeFrom(from.turns_since_four_);
+  turns_since_five_.MergeFrom(from.turns_since_five_);
+  turns_since_six_.MergeFrom(from.turns_since_six_);
+  turns_since_seven_.MergeFrom(from.turns_since_seven_);
+  turns_since_more_.MergeFrom(from.turns_since_more_);
+  liberties_our_one_.MergeFrom(from.liberties_our_one_);
+  liberties_our_two_.MergeFrom(from.liberties_our_two_);
+  liberties_our_three_.MergeFrom(from.liberties_our_three_);
+  liberties_our_more_.MergeFrom(from.liberties_our_more_);
+  liberties_oppo_one_.MergeFrom(from.liberties_oppo_one_);
+  liberties_oppo_two_.MergeFrom(from.liberties_oppo_two_);
+  liberties_oppo_three_.MergeFrom(from.liberties_oppo_three_);
+  liberties_oppo_more_.MergeFrom(from.liberties_oppo_more_);
+  capture_size_one_.MergeFrom(from.capture_size_one_);
+  capture_size_two_.MergeFrom(from.capture_size_two_);
+  capture_size_three_.MergeFrom(from.capture_size_three_);
+  capture_size_four_.MergeFrom(from.capture_size_four_);
+  capture_size_five_.MergeFrom(from.capture_size_five_);
+  capture_size_six_.MergeFrom(from.capture_size_six_);
+  capture_size_seven_.MergeFrom(from.capture_size_seven_);
+  capture_size_more_.MergeFrom(from.capture_size_more_);
+  sensibleness_.MergeFrom(from.sensibleness_);
   ko_.MergeFrom(from.ko_);
   border_.MergeFrom(from.border_);
   position_.MergeFrom(from.position_);
-  ones_.MergeFrom(from.ones_);
-  zeros_.MergeFrom(from.zeros_);
   if (from.board_size() != 0) {
     set_board_size(from.board_size());
   }
@@ -4530,55 +3470,37 @@ void RequestV2::Swap(RequestV2* other) {
 }
 void RequestV2::InternalSwap(RequestV2* other) {
   std::swap(board_size_, other->board_size_);
-  our_stone_.UnsafeArenaSwap(&other->our_stone_);
-  oppo_stone_.UnsafeArenaSwap(&other->oppo_stone_);
-  empty_stone_.UnsafeArenaSwap(&other->empty_stone_);
-  turn_since1_.UnsafeArenaSwap(&other->turn_since1_);
-  turn_since2_.UnsafeArenaSwap(&other->turn_since2_);
-  turn_since3_.UnsafeArenaSwap(&other->turn_since3_);
-  turn_since4_.UnsafeArenaSwap(&other->turn_since4_);
-  turn_since5_.UnsafeArenaSwap(&other->turn_since5_);
-  turn_since6_.UnsafeArenaSwap(&other->turn_since6_);
-  turn_since7_.UnsafeArenaSwap(&other->turn_since7_);
-  turn_since8_plus_.UnsafeArenaSwap(&other->turn_since8_plus_);
-  lib1_.UnsafeArenaSwap(&other->lib1_);
-  lib2_.UnsafeArenaSwap(&other->lib2_);
-  lib3_.UnsafeArenaSwap(&other->lib3_);
-  lib4_.UnsafeArenaSwap(&other->lib4_);
-  lib5_.UnsafeArenaSwap(&other->lib5_);
-  lib6_.UnsafeArenaSwap(&other->lib6_);
-  lib7_.UnsafeArenaSwap(&other->lib7_);
-  lib8_plus_.UnsafeArenaSwap(&other->lib8_plus_);
-  after_move_lib1_.UnsafeArenaSwap(&other->after_move_lib1_);
-  after_move_lib2_.UnsafeArenaSwap(&other->after_move_lib2_);
-  after_move_lib3_.UnsafeArenaSwap(&other->after_move_lib3_);
-  after_move_lib4_.UnsafeArenaSwap(&other->after_move_lib4_);
-  after_move_lib5_.UnsafeArenaSwap(&other->after_move_lib5_);
-  after_move_lib6_.UnsafeArenaSwap(&other->after_move_lib6_);
-  after_move_lib7_.UnsafeArenaSwap(&other->after_move_lib7_);
-  after_move_lib8_plus_.UnsafeArenaSwap(&other->after_move_lib8_plus_);
-  cap_oppo_size1_.UnsafeArenaSwap(&other->cap_oppo_size1_);
-  cap_oppo_size2_.UnsafeArenaSwap(&other->cap_oppo_size2_);
-  cap_oppo_size3_.UnsafeArenaSwap(&other->cap_oppo_size3_);
-  cap_oppo_size4_.UnsafeArenaSwap(&other->cap_oppo_size4_);
-  cap_oppo_size5_.UnsafeArenaSwap(&other->cap_oppo_size5_);
-  cap_oppo_size6_.UnsafeArenaSwap(&other->cap_oppo_size6_);
-  cap_oppo_size7_.UnsafeArenaSwap(&other->cap_oppo_size7_);
-  cap_oppo_size8_plus_.UnsafeArenaSwap(&other->cap_oppo_size8_plus_);
-  cap_our_size1_.UnsafeArenaSwap(&other->cap_our_size1_);
-  cap_our_size2_.UnsafeArenaSwap(&other->cap_our_size2_);
-  cap_our_size3_.UnsafeArenaSwap(&other->cap_our_size3_);
-  cap_our_size4_.UnsafeArenaSwap(&other->cap_our_size4_);
-  cap_our_size5_.UnsafeArenaSwap(&other->cap_our_size5_);
-  cap_our_size6_.UnsafeArenaSwap(&other->cap_our_size6_);
-  cap_our_size7_.UnsafeArenaSwap(&other->cap_our_size7_);
-  cap_our_size8_plus_.UnsafeArenaSwap(&other->cap_our_size8_plus_);
-  not_fill_own_eyes_.UnsafeArenaSwap(&other->not_fill_own_eyes_);
+  stone_color_our_.UnsafeArenaSwap(&other->stone_color_our_);
+  stone_color_oppo_.UnsafeArenaSwap(&other->stone_color_oppo_);
+  stone_color_empty_.UnsafeArenaSwap(&other->stone_color_empty_);
+  turns_since_one_.UnsafeArenaSwap(&other->turns_since_one_);
+  turns_since_two_.UnsafeArenaSwap(&other->turns_since_two_);
+  turns_since_three_.UnsafeArenaSwap(&other->turns_since_three_);
+  turns_since_four_.UnsafeArenaSwap(&other->turns_since_four_);
+  turns_since_five_.UnsafeArenaSwap(&other->turns_since_five_);
+  turns_since_six_.UnsafeArenaSwap(&other->turns_since_six_);
+  turns_since_seven_.UnsafeArenaSwap(&other->turns_since_seven_);
+  turns_since_more_.UnsafeArenaSwap(&other->turns_since_more_);
+  liberties_our_one_.UnsafeArenaSwap(&other->liberties_our_one_);
+  liberties_our_two_.UnsafeArenaSwap(&other->liberties_our_two_);
+  liberties_our_three_.UnsafeArenaSwap(&other->liberties_our_three_);
+  liberties_our_more_.UnsafeArenaSwap(&other->liberties_our_more_);
+  liberties_oppo_one_.UnsafeArenaSwap(&other->liberties_oppo_one_);
+  liberties_oppo_two_.UnsafeArenaSwap(&other->liberties_oppo_two_);
+  liberties_oppo_three_.UnsafeArenaSwap(&other->liberties_oppo_three_);
+  liberties_oppo_more_.UnsafeArenaSwap(&other->liberties_oppo_more_);
+  capture_size_one_.UnsafeArenaSwap(&other->capture_size_one_);
+  capture_size_two_.UnsafeArenaSwap(&other->capture_size_two_);
+  capture_size_three_.UnsafeArenaSwap(&other->capture_size_three_);
+  capture_size_four_.UnsafeArenaSwap(&other->capture_size_four_);
+  capture_size_five_.UnsafeArenaSwap(&other->capture_size_five_);
+  capture_size_six_.UnsafeArenaSwap(&other->capture_size_six_);
+  capture_size_seven_.UnsafeArenaSwap(&other->capture_size_seven_);
+  capture_size_more_.UnsafeArenaSwap(&other->capture_size_more_);
+  sensibleness_.UnsafeArenaSwap(&other->sensibleness_);
   ko_.UnsafeArenaSwap(&other->ko_);
   border_.UnsafeArenaSwap(&other->border_);
   position_.UnsafeArenaSwap(&other->position_);
-  ones_.UnsafeArenaSwap(&other->ones_);
-  zeros_.UnsafeArenaSwap(&other->zeros_);
   _internal_metadata_.Swap(&other->_internal_metadata_);
   std::swap(_cached_size_, other->_cached_size_);
 }
@@ -4608,1327 +3530,847 @@ void RequestV2::clear_board_size() {
   // @@protoc_insertion_point(field_set:gocnn.RequestV2.board_size)
 }
 
-// repeated bool our_stone = 2;
-int RequestV2::our_stone_size() const {
-  return our_stone_.size();
+// repeated bool stone_color_our = 2;
+int RequestV2::stone_color_our_size() const {
+  return stone_color_our_.size();
 }
-void RequestV2::clear_our_stone() {
-  our_stone_.Clear();
+void RequestV2::clear_stone_color_our() {
+  stone_color_our_.Clear();
 }
- bool RequestV2::our_stone(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.our_stone)
-  return our_stone_.Get(index);
+ bool RequestV2::stone_color_our(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.stone_color_our)
+  return stone_color_our_.Get(index);
 }
- void RequestV2::set_our_stone(int index, bool value) {
-  our_stone_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.our_stone)
+ void RequestV2::set_stone_color_our(int index, bool value) {
+  stone_color_our_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.stone_color_our)
 }
- void RequestV2::add_our_stone(bool value) {
-  our_stone_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.our_stone)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::our_stone() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.our_stone)
-  return our_stone_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_our_stone() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.our_stone)
-  return &our_stone_;
-}
-
-// repeated bool oppo_stone = 3;
-int RequestV2::oppo_stone_size() const {
-  return oppo_stone_.size();
-}
-void RequestV2::clear_oppo_stone() {
-  oppo_stone_.Clear();
-}
- bool RequestV2::oppo_stone(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.oppo_stone)
-  return oppo_stone_.Get(index);
-}
- void RequestV2::set_oppo_stone(int index, bool value) {
-  oppo_stone_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.oppo_stone)
-}
- void RequestV2::add_oppo_stone(bool value) {
-  oppo_stone_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.oppo_stone)
+ void RequestV2::add_stone_color_our(bool value) {
+  stone_color_our_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.stone_color_our)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::oppo_stone() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.oppo_stone)
-  return oppo_stone_;
+RequestV2::stone_color_our() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.stone_color_our)
+  return stone_color_our_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_oppo_stone() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.oppo_stone)
-  return &oppo_stone_;
+RequestV2::mutable_stone_color_our() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.stone_color_our)
+  return &stone_color_our_;
 }
 
-// repeated bool empty_stone = 4;
-int RequestV2::empty_stone_size() const {
-  return empty_stone_.size();
+// repeated bool stone_color_oppo = 3;
+int RequestV2::stone_color_oppo_size() const {
+  return stone_color_oppo_.size();
 }
-void RequestV2::clear_empty_stone() {
-  empty_stone_.Clear();
+void RequestV2::clear_stone_color_oppo() {
+  stone_color_oppo_.Clear();
 }
- bool RequestV2::empty_stone(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.empty_stone)
-  return empty_stone_.Get(index);
+ bool RequestV2::stone_color_oppo(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.stone_color_oppo)
+  return stone_color_oppo_.Get(index);
 }
- void RequestV2::set_empty_stone(int index, bool value) {
-  empty_stone_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.empty_stone)
+ void RequestV2::set_stone_color_oppo(int index, bool value) {
+  stone_color_oppo_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.stone_color_oppo)
 }
- void RequestV2::add_empty_stone(bool value) {
-  empty_stone_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.empty_stone)
+ void RequestV2::add_stone_color_oppo(bool value) {
+  stone_color_oppo_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.stone_color_oppo)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::empty_stone() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.empty_stone)
-  return empty_stone_;
+RequestV2::stone_color_oppo() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.stone_color_oppo)
+  return stone_color_oppo_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_empty_stone() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.empty_stone)
-  return &empty_stone_;
+RequestV2::mutable_stone_color_oppo() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.stone_color_oppo)
+  return &stone_color_oppo_;
 }
 
-// repeated bool turn_since1 = 5;
-int RequestV2::turn_since1_size() const {
-  return turn_since1_.size();
+// repeated bool stone_color_empty = 4;
+int RequestV2::stone_color_empty_size() const {
+  return stone_color_empty_.size();
 }
-void RequestV2::clear_turn_since1() {
-  turn_since1_.Clear();
+void RequestV2::clear_stone_color_empty() {
+  stone_color_empty_.Clear();
 }
- bool RequestV2::turn_since1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since1)
-  return turn_since1_.Get(index);
+ bool RequestV2::stone_color_empty(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.stone_color_empty)
+  return stone_color_empty_.Get(index);
 }
- void RequestV2::set_turn_since1(int index, bool value) {
-  turn_since1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since1)
+ void RequestV2::set_stone_color_empty(int index, bool value) {
+  stone_color_empty_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.stone_color_empty)
 }
- void RequestV2::add_turn_since1(bool value) {
-  turn_since1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since1)
+ void RequestV2::add_stone_color_empty(bool value) {
+  stone_color_empty_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.stone_color_empty)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since1)
-  return turn_since1_;
+RequestV2::stone_color_empty() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.stone_color_empty)
+  return stone_color_empty_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since1)
-  return &turn_since1_;
+RequestV2::mutable_stone_color_empty() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.stone_color_empty)
+  return &stone_color_empty_;
 }
 
-// repeated bool turn_since2 = 6;
-int RequestV2::turn_since2_size() const {
-  return turn_since2_.size();
+// repeated bool turns_since_one = 5;
+int RequestV2::turns_since_one_size() const {
+  return turns_since_one_.size();
 }
-void RequestV2::clear_turn_since2() {
-  turn_since2_.Clear();
+void RequestV2::clear_turns_since_one() {
+  turns_since_one_.Clear();
 }
- bool RequestV2::turn_since2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since2)
-  return turn_since2_.Get(index);
+ bool RequestV2::turns_since_one(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_one)
+  return turns_since_one_.Get(index);
 }
- void RequestV2::set_turn_since2(int index, bool value) {
-  turn_since2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since2)
+ void RequestV2::set_turns_since_one(int index, bool value) {
+  turns_since_one_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_one)
 }
- void RequestV2::add_turn_since2(bool value) {
-  turn_since2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since2)
+ void RequestV2::add_turns_since_one(bool value) {
+  turns_since_one_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_one)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since2)
-  return turn_since2_;
+RequestV2::turns_since_one() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_one)
+  return turns_since_one_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since2)
-  return &turn_since2_;
+RequestV2::mutable_turns_since_one() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_one)
+  return &turns_since_one_;
 }
 
-// repeated bool turn_since3 = 7;
-int RequestV2::turn_since3_size() const {
-  return turn_since3_.size();
+// repeated bool turns_since_two = 6;
+int RequestV2::turns_since_two_size() const {
+  return turns_since_two_.size();
 }
-void RequestV2::clear_turn_since3() {
-  turn_since3_.Clear();
+void RequestV2::clear_turns_since_two() {
+  turns_since_two_.Clear();
 }
- bool RequestV2::turn_since3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since3)
-  return turn_since3_.Get(index);
+ bool RequestV2::turns_since_two(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_two)
+  return turns_since_two_.Get(index);
 }
- void RequestV2::set_turn_since3(int index, bool value) {
-  turn_since3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since3)
+ void RequestV2::set_turns_since_two(int index, bool value) {
+  turns_since_two_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_two)
 }
- void RequestV2::add_turn_since3(bool value) {
-  turn_since3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since3)
+ void RequestV2::add_turns_since_two(bool value) {
+  turns_since_two_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_two)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since3)
-  return turn_since3_;
+RequestV2::turns_since_two() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_two)
+  return turns_since_two_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since3)
-  return &turn_since3_;
+RequestV2::mutable_turns_since_two() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_two)
+  return &turns_since_two_;
 }
 
-// repeated bool turn_since4 = 8;
-int RequestV2::turn_since4_size() const {
-  return turn_since4_.size();
+// repeated bool turns_since_three = 7;
+int RequestV2::turns_since_three_size() const {
+  return turns_since_three_.size();
 }
-void RequestV2::clear_turn_since4() {
-  turn_since4_.Clear();
+void RequestV2::clear_turns_since_three() {
+  turns_since_three_.Clear();
 }
- bool RequestV2::turn_since4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since4)
-  return turn_since4_.Get(index);
+ bool RequestV2::turns_since_three(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_three)
+  return turns_since_three_.Get(index);
 }
- void RequestV2::set_turn_since4(int index, bool value) {
-  turn_since4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since4)
+ void RequestV2::set_turns_since_three(int index, bool value) {
+  turns_since_three_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_three)
 }
- void RequestV2::add_turn_since4(bool value) {
-  turn_since4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since4)
+ void RequestV2::add_turns_since_three(bool value) {
+  turns_since_three_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_three)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since4)
-  return turn_since4_;
+RequestV2::turns_since_three() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_three)
+  return turns_since_three_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since4)
-  return &turn_since4_;
+RequestV2::mutable_turns_since_three() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_three)
+  return &turns_since_three_;
 }
 
-// repeated bool turn_since5 = 9;
-int RequestV2::turn_since5_size() const {
-  return turn_since5_.size();
+// repeated bool turns_since_four = 8;
+int RequestV2::turns_since_four_size() const {
+  return turns_since_four_.size();
 }
-void RequestV2::clear_turn_since5() {
-  turn_since5_.Clear();
+void RequestV2::clear_turns_since_four() {
+  turns_since_four_.Clear();
 }
- bool RequestV2::turn_since5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since5)
-  return turn_since5_.Get(index);
+ bool RequestV2::turns_since_four(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_four)
+  return turns_since_four_.Get(index);
 }
- void RequestV2::set_turn_since5(int index, bool value) {
-  turn_since5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since5)
+ void RequestV2::set_turns_since_four(int index, bool value) {
+  turns_since_four_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_four)
 }
- void RequestV2::add_turn_since5(bool value) {
-  turn_since5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since5)
+ void RequestV2::add_turns_since_four(bool value) {
+  turns_since_four_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_four)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since5)
-  return turn_since5_;
+RequestV2::turns_since_four() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_four)
+  return turns_since_four_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since5)
-  return &turn_since5_;
+RequestV2::mutable_turns_since_four() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_four)
+  return &turns_since_four_;
 }
 
-// repeated bool turn_since6 = 10;
-int RequestV2::turn_since6_size() const {
-  return turn_since6_.size();
+// repeated bool turns_since_five = 9;
+int RequestV2::turns_since_five_size() const {
+  return turns_since_five_.size();
 }
-void RequestV2::clear_turn_since6() {
-  turn_since6_.Clear();
+void RequestV2::clear_turns_since_five() {
+  turns_since_five_.Clear();
 }
- bool RequestV2::turn_since6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since6)
-  return turn_since6_.Get(index);
+ bool RequestV2::turns_since_five(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_five)
+  return turns_since_five_.Get(index);
 }
- void RequestV2::set_turn_since6(int index, bool value) {
-  turn_since6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since6)
+ void RequestV2::set_turns_since_five(int index, bool value) {
+  turns_since_five_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_five)
 }
- void RequestV2::add_turn_since6(bool value) {
-  turn_since6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since6)
+ void RequestV2::add_turns_since_five(bool value) {
+  turns_since_five_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_five)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since6)
-  return turn_since6_;
+RequestV2::turns_since_five() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_five)
+  return turns_since_five_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since6)
-  return &turn_since6_;
+RequestV2::mutable_turns_since_five() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_five)
+  return &turns_since_five_;
 }
 
-// repeated bool turn_since7 = 11;
-int RequestV2::turn_since7_size() const {
-  return turn_since7_.size();
+// repeated bool turns_since_six = 10;
+int RequestV2::turns_since_six_size() const {
+  return turns_since_six_.size();
 }
-void RequestV2::clear_turn_since7() {
-  turn_since7_.Clear();
+void RequestV2::clear_turns_since_six() {
+  turns_since_six_.Clear();
 }
- bool RequestV2::turn_since7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since7)
-  return turn_since7_.Get(index);
+ bool RequestV2::turns_since_six(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_six)
+  return turns_since_six_.Get(index);
 }
- void RequestV2::set_turn_since7(int index, bool value) {
-  turn_since7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since7)
+ void RequestV2::set_turns_since_six(int index, bool value) {
+  turns_since_six_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_six)
 }
- void RequestV2::add_turn_since7(bool value) {
-  turn_since7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since7)
+ void RequestV2::add_turns_since_six(bool value) {
+  turns_since_six_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_six)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since7)
-  return turn_since7_;
+RequestV2::turns_since_six() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_six)
+  return turns_since_six_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since7)
-  return &turn_since7_;
+RequestV2::mutable_turns_since_six() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_six)
+  return &turns_since_six_;
 }
 
-// repeated bool turn_since8_plus = 12;
-int RequestV2::turn_since8_plus_size() const {
-  return turn_since8_plus_.size();
+// repeated bool turns_since_seven = 11;
+int RequestV2::turns_since_seven_size() const {
+  return turns_since_seven_.size();
 }
-void RequestV2::clear_turn_since8_plus() {
-  turn_since8_plus_.Clear();
+void RequestV2::clear_turns_since_seven() {
+  turns_since_seven_.Clear();
 }
- bool RequestV2::turn_since8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turn_since8_plus)
-  return turn_since8_plus_.Get(index);
+ bool RequestV2::turns_since_seven(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_seven)
+  return turns_since_seven_.Get(index);
 }
- void RequestV2::set_turn_since8_plus(int index, bool value) {
-  turn_since8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turn_since8_plus)
+ void RequestV2::set_turns_since_seven(int index, bool value) {
+  turns_since_seven_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_seven)
 }
- void RequestV2::add_turn_since8_plus(bool value) {
-  turn_since8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turn_since8_plus)
+ void RequestV2::add_turns_since_seven(bool value) {
+  turns_since_seven_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_seven)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::turn_since8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turn_since8_plus)
-  return turn_since8_plus_;
+RequestV2::turns_since_seven() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_seven)
+  return turns_since_seven_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_turn_since8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turn_since8_plus)
-  return &turn_since8_plus_;
+RequestV2::mutable_turns_since_seven() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_seven)
+  return &turns_since_seven_;
 }
 
-// repeated bool lib1 = 13;
-int RequestV2::lib1_size() const {
-  return lib1_.size();
+// repeated bool turns_since_more = 12;
+int RequestV2::turns_since_more_size() const {
+  return turns_since_more_.size();
 }
-void RequestV2::clear_lib1() {
-  lib1_.Clear();
+void RequestV2::clear_turns_since_more() {
+  turns_since_more_.Clear();
 }
- bool RequestV2::lib1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib1)
-  return lib1_.Get(index);
+ bool RequestV2::turns_since_more(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.turns_since_more)
+  return turns_since_more_.Get(index);
 }
- void RequestV2::set_lib1(int index, bool value) {
-  lib1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib1)
+ void RequestV2::set_turns_since_more(int index, bool value) {
+  turns_since_more_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.turns_since_more)
 }
- void RequestV2::add_lib1(bool value) {
-  lib1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib1)
+ void RequestV2::add_turns_since_more(bool value) {
+  turns_since_more_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.turns_since_more)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib1)
-  return lib1_;
+RequestV2::turns_since_more() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.turns_since_more)
+  return turns_since_more_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib1)
-  return &lib1_;
+RequestV2::mutable_turns_since_more() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.turns_since_more)
+  return &turns_since_more_;
 }
 
-// repeated bool lib2 = 14;
-int RequestV2::lib2_size() const {
-  return lib2_.size();
+// repeated bool liberties_our_one = 13;
+int RequestV2::liberties_our_one_size() const {
+  return liberties_our_one_.size();
 }
-void RequestV2::clear_lib2() {
-  lib2_.Clear();
+void RequestV2::clear_liberties_our_one() {
+  liberties_our_one_.Clear();
 }
- bool RequestV2::lib2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib2)
-  return lib2_.Get(index);
+ bool RequestV2::liberties_our_one(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_our_one)
+  return liberties_our_one_.Get(index);
 }
- void RequestV2::set_lib2(int index, bool value) {
-  lib2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib2)
+ void RequestV2::set_liberties_our_one(int index, bool value) {
+  liberties_our_one_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_our_one)
 }
- void RequestV2::add_lib2(bool value) {
-  lib2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib2)
+ void RequestV2::add_liberties_our_one(bool value) {
+  liberties_our_one_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_our_one)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib2)
-  return lib2_;
+RequestV2::liberties_our_one() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_our_one)
+  return liberties_our_one_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib2)
-  return &lib2_;
+RequestV2::mutable_liberties_our_one() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_our_one)
+  return &liberties_our_one_;
 }
 
-// repeated bool lib3 = 15;
-int RequestV2::lib3_size() const {
-  return lib3_.size();
+// repeated bool liberties_our_two = 14;
+int RequestV2::liberties_our_two_size() const {
+  return liberties_our_two_.size();
 }
-void RequestV2::clear_lib3() {
-  lib3_.Clear();
+void RequestV2::clear_liberties_our_two() {
+  liberties_our_two_.Clear();
 }
- bool RequestV2::lib3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib3)
-  return lib3_.Get(index);
+ bool RequestV2::liberties_our_two(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_our_two)
+  return liberties_our_two_.Get(index);
 }
- void RequestV2::set_lib3(int index, bool value) {
-  lib3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib3)
+ void RequestV2::set_liberties_our_two(int index, bool value) {
+  liberties_our_two_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_our_two)
 }
- void RequestV2::add_lib3(bool value) {
-  lib3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib3)
+ void RequestV2::add_liberties_our_two(bool value) {
+  liberties_our_two_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_our_two)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib3)
-  return lib3_;
+RequestV2::liberties_our_two() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_our_two)
+  return liberties_our_two_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib3)
-  return &lib3_;
+RequestV2::mutable_liberties_our_two() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_our_two)
+  return &liberties_our_two_;
 }
 
-// repeated bool lib4 = 16;
-int RequestV2::lib4_size() const {
-  return lib4_.size();
+// repeated bool liberties_our_three = 15;
+int RequestV2::liberties_our_three_size() const {
+  return liberties_our_three_.size();
 }
-void RequestV2::clear_lib4() {
-  lib4_.Clear();
+void RequestV2::clear_liberties_our_three() {
+  liberties_our_three_.Clear();
 }
- bool RequestV2::lib4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib4)
-  return lib4_.Get(index);
+ bool RequestV2::liberties_our_three(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_our_three)
+  return liberties_our_three_.Get(index);
 }
- void RequestV2::set_lib4(int index, bool value) {
-  lib4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib4)
+ void RequestV2::set_liberties_our_three(int index, bool value) {
+  liberties_our_three_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_our_three)
 }
- void RequestV2::add_lib4(bool value) {
-  lib4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib4)
+ void RequestV2::add_liberties_our_three(bool value) {
+  liberties_our_three_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_our_three)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib4)
-  return lib4_;
+RequestV2::liberties_our_three() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_our_three)
+  return liberties_our_three_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib4)
-  return &lib4_;
+RequestV2::mutable_liberties_our_three() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_our_three)
+  return &liberties_our_three_;
 }
 
-// repeated bool lib5 = 17;
-int RequestV2::lib5_size() const {
-  return lib5_.size();
+// repeated bool liberties_our_more = 16;
+int RequestV2::liberties_our_more_size() const {
+  return liberties_our_more_.size();
 }
-void RequestV2::clear_lib5() {
-  lib5_.Clear();
+void RequestV2::clear_liberties_our_more() {
+  liberties_our_more_.Clear();
 }
- bool RequestV2::lib5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib5)
-  return lib5_.Get(index);
+ bool RequestV2::liberties_our_more(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_our_more)
+  return liberties_our_more_.Get(index);
 }
- void RequestV2::set_lib5(int index, bool value) {
-  lib5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib5)
+ void RequestV2::set_liberties_our_more(int index, bool value) {
+  liberties_our_more_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_our_more)
 }
- void RequestV2::add_lib5(bool value) {
-  lib5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib5)
+ void RequestV2::add_liberties_our_more(bool value) {
+  liberties_our_more_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_our_more)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib5)
-  return lib5_;
+RequestV2::liberties_our_more() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_our_more)
+  return liberties_our_more_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib5)
-  return &lib5_;
+RequestV2::mutable_liberties_our_more() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_our_more)
+  return &liberties_our_more_;
 }
 
-// repeated bool lib6 = 18;
-int RequestV2::lib6_size() const {
-  return lib6_.size();
+// repeated bool liberties_oppo_one = 17;
+int RequestV2::liberties_oppo_one_size() const {
+  return liberties_oppo_one_.size();
 }
-void RequestV2::clear_lib6() {
-  lib6_.Clear();
+void RequestV2::clear_liberties_oppo_one() {
+  liberties_oppo_one_.Clear();
 }
- bool RequestV2::lib6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib6)
-  return lib6_.Get(index);
+ bool RequestV2::liberties_oppo_one(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_oppo_one)
+  return liberties_oppo_one_.Get(index);
 }
- void RequestV2::set_lib6(int index, bool value) {
-  lib6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib6)
+ void RequestV2::set_liberties_oppo_one(int index, bool value) {
+  liberties_oppo_one_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_oppo_one)
 }
- void RequestV2::add_lib6(bool value) {
-  lib6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib6)
+ void RequestV2::add_liberties_oppo_one(bool value) {
+  liberties_oppo_one_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_oppo_one)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib6)
-  return lib6_;
+RequestV2::liberties_oppo_one() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_oppo_one)
+  return liberties_oppo_one_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib6)
-  return &lib6_;
+RequestV2::mutable_liberties_oppo_one() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_oppo_one)
+  return &liberties_oppo_one_;
 }
 
-// repeated bool lib7 = 19;
-int RequestV2::lib7_size() const {
-  return lib7_.size();
+// repeated bool liberties_oppo_two = 18;
+int RequestV2::liberties_oppo_two_size() const {
+  return liberties_oppo_two_.size();
 }
-void RequestV2::clear_lib7() {
-  lib7_.Clear();
+void RequestV2::clear_liberties_oppo_two() {
+  liberties_oppo_two_.Clear();
 }
- bool RequestV2::lib7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib7)
-  return lib7_.Get(index);
+ bool RequestV2::liberties_oppo_two(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_oppo_two)
+  return liberties_oppo_two_.Get(index);
 }
- void RequestV2::set_lib7(int index, bool value) {
-  lib7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib7)
+ void RequestV2::set_liberties_oppo_two(int index, bool value) {
+  liberties_oppo_two_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_oppo_two)
 }
- void RequestV2::add_lib7(bool value) {
-  lib7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib7)
+ void RequestV2::add_liberties_oppo_two(bool value) {
+  liberties_oppo_two_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_oppo_two)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib7)
-  return lib7_;
+RequestV2::liberties_oppo_two() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_oppo_two)
+  return liberties_oppo_two_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib7)
-  return &lib7_;
+RequestV2::mutable_liberties_oppo_two() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_oppo_two)
+  return &liberties_oppo_two_;
 }
 
-// repeated bool lib8_plus = 20;
-int RequestV2::lib8_plus_size() const {
-  return lib8_plus_.size();
+// repeated bool liberties_oppo_three = 19;
+int RequestV2::liberties_oppo_three_size() const {
+  return liberties_oppo_three_.size();
 }
-void RequestV2::clear_lib8_plus() {
-  lib8_plus_.Clear();
+void RequestV2::clear_liberties_oppo_three() {
+  liberties_oppo_three_.Clear();
 }
- bool RequestV2::lib8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.lib8_plus)
-  return lib8_plus_.Get(index);
+ bool RequestV2::liberties_oppo_three(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_oppo_three)
+  return liberties_oppo_three_.Get(index);
 }
- void RequestV2::set_lib8_plus(int index, bool value) {
-  lib8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.lib8_plus)
+ void RequestV2::set_liberties_oppo_three(int index, bool value) {
+  liberties_oppo_three_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_oppo_three)
 }
- void RequestV2::add_lib8_plus(bool value) {
-  lib8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.lib8_plus)
+ void RequestV2::add_liberties_oppo_three(bool value) {
+  liberties_oppo_three_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_oppo_three)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::lib8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.lib8_plus)
-  return lib8_plus_;
+RequestV2::liberties_oppo_three() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_oppo_three)
+  return liberties_oppo_three_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_lib8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.lib8_plus)
-  return &lib8_plus_;
+RequestV2::mutable_liberties_oppo_three() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_oppo_three)
+  return &liberties_oppo_three_;
 }
 
-// repeated bool after_move_lib1 = 21;
-int RequestV2::after_move_lib1_size() const {
-  return after_move_lib1_.size();
+// repeated bool liberties_oppo_more = 20;
+int RequestV2::liberties_oppo_more_size() const {
+  return liberties_oppo_more_.size();
 }
-void RequestV2::clear_after_move_lib1() {
-  after_move_lib1_.Clear();
+void RequestV2::clear_liberties_oppo_more() {
+  liberties_oppo_more_.Clear();
 }
- bool RequestV2::after_move_lib1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib1)
-  return after_move_lib1_.Get(index);
+ bool RequestV2::liberties_oppo_more(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.liberties_oppo_more)
+  return liberties_oppo_more_.Get(index);
 }
- void RequestV2::set_after_move_lib1(int index, bool value) {
-  after_move_lib1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib1)
+ void RequestV2::set_liberties_oppo_more(int index, bool value) {
+  liberties_oppo_more_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.liberties_oppo_more)
 }
- void RequestV2::add_after_move_lib1(bool value) {
-  after_move_lib1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib1)
+ void RequestV2::add_liberties_oppo_more(bool value) {
+  liberties_oppo_more_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.liberties_oppo_more)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib1)
-  return after_move_lib1_;
+RequestV2::liberties_oppo_more() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.liberties_oppo_more)
+  return liberties_oppo_more_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib1)
-  return &after_move_lib1_;
+RequestV2::mutable_liberties_oppo_more() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.liberties_oppo_more)
+  return &liberties_oppo_more_;
 }
 
-// repeated bool after_move_lib2 = 22;
-int RequestV2::after_move_lib2_size() const {
-  return after_move_lib2_.size();
+// repeated bool capture_size_one = 21;
+int RequestV2::capture_size_one_size() const {
+  return capture_size_one_.size();
 }
-void RequestV2::clear_after_move_lib2() {
-  after_move_lib2_.Clear();
+void RequestV2::clear_capture_size_one() {
+  capture_size_one_.Clear();
 }
- bool RequestV2::after_move_lib2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib2)
-  return after_move_lib2_.Get(index);
+ bool RequestV2::capture_size_one(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_one)
+  return capture_size_one_.Get(index);
 }
- void RequestV2::set_after_move_lib2(int index, bool value) {
-  after_move_lib2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib2)
+ void RequestV2::set_capture_size_one(int index, bool value) {
+  capture_size_one_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_one)
 }
- void RequestV2::add_after_move_lib2(bool value) {
-  after_move_lib2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib2)
+ void RequestV2::add_capture_size_one(bool value) {
+  capture_size_one_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_one)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib2)
-  return after_move_lib2_;
+RequestV2::capture_size_one() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_one)
+  return capture_size_one_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib2)
-  return &after_move_lib2_;
+RequestV2::mutable_capture_size_one() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_one)
+  return &capture_size_one_;
 }
 
-// repeated bool after_move_lib3 = 23;
-int RequestV2::after_move_lib3_size() const {
-  return after_move_lib3_.size();
+// repeated bool capture_size_two = 22;
+int RequestV2::capture_size_two_size() const {
+  return capture_size_two_.size();
 }
-void RequestV2::clear_after_move_lib3() {
-  after_move_lib3_.Clear();
+void RequestV2::clear_capture_size_two() {
+  capture_size_two_.Clear();
 }
- bool RequestV2::after_move_lib3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib3)
-  return after_move_lib3_.Get(index);
+ bool RequestV2::capture_size_two(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_two)
+  return capture_size_two_.Get(index);
 }
- void RequestV2::set_after_move_lib3(int index, bool value) {
-  after_move_lib3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib3)
+ void RequestV2::set_capture_size_two(int index, bool value) {
+  capture_size_two_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_two)
 }
- void RequestV2::add_after_move_lib3(bool value) {
-  after_move_lib3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib3)
+ void RequestV2::add_capture_size_two(bool value) {
+  capture_size_two_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_two)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib3)
-  return after_move_lib3_;
+RequestV2::capture_size_two() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_two)
+  return capture_size_two_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib3)
-  return &after_move_lib3_;
+RequestV2::mutable_capture_size_two() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_two)
+  return &capture_size_two_;
 }
 
-// repeated bool after_move_lib4 = 24;
-int RequestV2::after_move_lib4_size() const {
-  return after_move_lib4_.size();
+// repeated bool capture_size_three = 23;
+int RequestV2::capture_size_three_size() const {
+  return capture_size_three_.size();
 }
-void RequestV2::clear_after_move_lib4() {
-  after_move_lib4_.Clear();
+void RequestV2::clear_capture_size_three() {
+  capture_size_three_.Clear();
 }
- bool RequestV2::after_move_lib4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib4)
-  return after_move_lib4_.Get(index);
+ bool RequestV2::capture_size_three(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_three)
+  return capture_size_three_.Get(index);
 }
- void RequestV2::set_after_move_lib4(int index, bool value) {
-  after_move_lib4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib4)
+ void RequestV2::set_capture_size_three(int index, bool value) {
+  capture_size_three_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_three)
 }
- void RequestV2::add_after_move_lib4(bool value) {
-  after_move_lib4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib4)
+ void RequestV2::add_capture_size_three(bool value) {
+  capture_size_three_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_three)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib4)
-  return after_move_lib4_;
+RequestV2::capture_size_three() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_three)
+  return capture_size_three_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib4)
-  return &after_move_lib4_;
+RequestV2::mutable_capture_size_three() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_three)
+  return &capture_size_three_;
 }
 
-// repeated bool after_move_lib5 = 25;
-int RequestV2::after_move_lib5_size() const {
-  return after_move_lib5_.size();
+// repeated bool capture_size_four = 24;
+int RequestV2::capture_size_four_size() const {
+  return capture_size_four_.size();
 }
-void RequestV2::clear_after_move_lib5() {
-  after_move_lib5_.Clear();
+void RequestV2::clear_capture_size_four() {
+  capture_size_four_.Clear();
 }
- bool RequestV2::after_move_lib5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib5)
-  return after_move_lib5_.Get(index);
+ bool RequestV2::capture_size_four(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_four)
+  return capture_size_four_.Get(index);
 }
- void RequestV2::set_after_move_lib5(int index, bool value) {
-  after_move_lib5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib5)
+ void RequestV2::set_capture_size_four(int index, bool value) {
+  capture_size_four_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_four)
 }
- void RequestV2::add_after_move_lib5(bool value) {
-  after_move_lib5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib5)
+ void RequestV2::add_capture_size_four(bool value) {
+  capture_size_four_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_four)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib5)
-  return after_move_lib5_;
+RequestV2::capture_size_four() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_four)
+  return capture_size_four_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib5)
-  return &after_move_lib5_;
+RequestV2::mutable_capture_size_four() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_four)
+  return &capture_size_four_;
 }
 
-// repeated bool after_move_lib6 = 26;
-int RequestV2::after_move_lib6_size() const {
-  return after_move_lib6_.size();
+// repeated bool capture_size_five = 25;
+int RequestV2::capture_size_five_size() const {
+  return capture_size_five_.size();
 }
-void RequestV2::clear_after_move_lib6() {
-  after_move_lib6_.Clear();
+void RequestV2::clear_capture_size_five() {
+  capture_size_five_.Clear();
 }
- bool RequestV2::after_move_lib6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib6)
-  return after_move_lib6_.Get(index);
+ bool RequestV2::capture_size_five(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_five)
+  return capture_size_five_.Get(index);
 }
- void RequestV2::set_after_move_lib6(int index, bool value) {
-  after_move_lib6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib6)
+ void RequestV2::set_capture_size_five(int index, bool value) {
+  capture_size_five_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_five)
 }
- void RequestV2::add_after_move_lib6(bool value) {
-  after_move_lib6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib6)
+ void RequestV2::add_capture_size_five(bool value) {
+  capture_size_five_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_five)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib6)
-  return after_move_lib6_;
+RequestV2::capture_size_five() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_five)
+  return capture_size_five_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib6)
-  return &after_move_lib6_;
+RequestV2::mutable_capture_size_five() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_five)
+  return &capture_size_five_;
 }
 
-// repeated bool after_move_lib7 = 27;
-int RequestV2::after_move_lib7_size() const {
-  return after_move_lib7_.size();
+// repeated bool capture_size_six = 26;
+int RequestV2::capture_size_six_size() const {
+  return capture_size_six_.size();
 }
-void RequestV2::clear_after_move_lib7() {
-  after_move_lib7_.Clear();
+void RequestV2::clear_capture_size_six() {
+  capture_size_six_.Clear();
 }
- bool RequestV2::after_move_lib7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib7)
-  return after_move_lib7_.Get(index);
+ bool RequestV2::capture_size_six(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_six)
+  return capture_size_six_.Get(index);
 }
- void RequestV2::set_after_move_lib7(int index, bool value) {
-  after_move_lib7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib7)
+ void RequestV2::set_capture_size_six(int index, bool value) {
+  capture_size_six_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_six)
 }
- void RequestV2::add_after_move_lib7(bool value) {
-  after_move_lib7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib7)
+ void RequestV2::add_capture_size_six(bool value) {
+  capture_size_six_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_six)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib7)
-  return after_move_lib7_;
+RequestV2::capture_size_six() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_six)
+  return capture_size_six_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib7)
-  return &after_move_lib7_;
+RequestV2::mutable_capture_size_six() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_six)
+  return &capture_size_six_;
 }
 
-// repeated bool after_move_lib8_plus = 28;
-int RequestV2::after_move_lib8_plus_size() const {
-  return after_move_lib8_plus_.size();
+// repeated bool capture_size_seven = 27;
+int RequestV2::capture_size_seven_size() const {
+  return capture_size_seven_.size();
 }
-void RequestV2::clear_after_move_lib8_plus() {
-  after_move_lib8_plus_.Clear();
+void RequestV2::clear_capture_size_seven() {
+  capture_size_seven_.Clear();
 }
- bool RequestV2::after_move_lib8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.after_move_lib8_plus)
-  return after_move_lib8_plus_.Get(index);
+ bool RequestV2::capture_size_seven(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_seven)
+  return capture_size_seven_.Get(index);
 }
- void RequestV2::set_after_move_lib8_plus(int index, bool value) {
-  after_move_lib8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.after_move_lib8_plus)
+ void RequestV2::set_capture_size_seven(int index, bool value) {
+  capture_size_seven_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_seven)
 }
- void RequestV2::add_after_move_lib8_plus(bool value) {
-  after_move_lib8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.after_move_lib8_plus)
+ void RequestV2::add_capture_size_seven(bool value) {
+  capture_size_seven_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_seven)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::after_move_lib8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.after_move_lib8_plus)
-  return after_move_lib8_plus_;
+RequestV2::capture_size_seven() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_seven)
+  return capture_size_seven_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_after_move_lib8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.after_move_lib8_plus)
-  return &after_move_lib8_plus_;
+RequestV2::mutable_capture_size_seven() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_seven)
+  return &capture_size_seven_;
 }
 
-// repeated bool cap_oppo_size1 = 29;
-int RequestV2::cap_oppo_size1_size() const {
-  return cap_oppo_size1_.size();
+// repeated bool capture_size_more = 28;
+int RequestV2::capture_size_more_size() const {
+  return capture_size_more_.size();
 }
-void RequestV2::clear_cap_oppo_size1() {
-  cap_oppo_size1_.Clear();
+void RequestV2::clear_capture_size_more() {
+  capture_size_more_.Clear();
 }
- bool RequestV2::cap_oppo_size1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size1)
-  return cap_oppo_size1_.Get(index);
+ bool RequestV2::capture_size_more(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.capture_size_more)
+  return capture_size_more_.Get(index);
 }
- void RequestV2::set_cap_oppo_size1(int index, bool value) {
-  cap_oppo_size1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size1)
+ void RequestV2::set_capture_size_more(int index, bool value) {
+  capture_size_more_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.capture_size_more)
 }
- void RequestV2::add_cap_oppo_size1(bool value) {
-  cap_oppo_size1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size1)
+ void RequestV2::add_capture_size_more(bool value) {
+  capture_size_more_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.capture_size_more)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size1)
-  return cap_oppo_size1_;
+RequestV2::capture_size_more() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.capture_size_more)
+  return capture_size_more_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size1)
-  return &cap_oppo_size1_;
+RequestV2::mutable_capture_size_more() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.capture_size_more)
+  return &capture_size_more_;
 }
 
-// repeated bool cap_oppo_size2 = 30;
-int RequestV2::cap_oppo_size2_size() const {
-  return cap_oppo_size2_.size();
+// repeated bool sensibleness = 29;
+int RequestV2::sensibleness_size() const {
+  return sensibleness_.size();
 }
-void RequestV2::clear_cap_oppo_size2() {
-  cap_oppo_size2_.Clear();
+void RequestV2::clear_sensibleness() {
+  sensibleness_.Clear();
 }
- bool RequestV2::cap_oppo_size2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size2)
-  return cap_oppo_size2_.Get(index);
+ bool RequestV2::sensibleness(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.RequestV2.sensibleness)
+  return sensibleness_.Get(index);
 }
- void RequestV2::set_cap_oppo_size2(int index, bool value) {
-  cap_oppo_size2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size2)
+ void RequestV2::set_sensibleness(int index, bool value) {
+  sensibleness_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.RequestV2.sensibleness)
 }
- void RequestV2::add_cap_oppo_size2(bool value) {
-  cap_oppo_size2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size2)
+ void RequestV2::add_sensibleness(bool value) {
+  sensibleness_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.RequestV2.sensibleness)
 }
  const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size2)
-  return cap_oppo_size2_;
+RequestV2::sensibleness() const {
+  // @@protoc_insertion_point(field_list:gocnn.RequestV2.sensibleness)
+  return sensibleness_;
 }
  ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size2)
-  return &cap_oppo_size2_;
+RequestV2::mutable_sensibleness() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.sensibleness)
+  return &sensibleness_;
 }
 
-// repeated bool cap_oppo_size3 = 31;
-int RequestV2::cap_oppo_size3_size() const {
-  return cap_oppo_size3_.size();
-}
-void RequestV2::clear_cap_oppo_size3() {
-  cap_oppo_size3_.Clear();
-}
- bool RequestV2::cap_oppo_size3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size3)
-  return cap_oppo_size3_.Get(index);
-}
- void RequestV2::set_cap_oppo_size3(int index, bool value) {
-  cap_oppo_size3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size3)
-}
- void RequestV2::add_cap_oppo_size3(bool value) {
-  cap_oppo_size3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size3)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size3)
-  return cap_oppo_size3_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size3)
-  return &cap_oppo_size3_;
-}
-
-// repeated bool cap_oppo_size4 = 32;
-int RequestV2::cap_oppo_size4_size() const {
-  return cap_oppo_size4_.size();
-}
-void RequestV2::clear_cap_oppo_size4() {
-  cap_oppo_size4_.Clear();
-}
- bool RequestV2::cap_oppo_size4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size4)
-  return cap_oppo_size4_.Get(index);
-}
- void RequestV2::set_cap_oppo_size4(int index, bool value) {
-  cap_oppo_size4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size4)
-}
- void RequestV2::add_cap_oppo_size4(bool value) {
-  cap_oppo_size4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size4)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size4)
-  return cap_oppo_size4_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size4)
-  return &cap_oppo_size4_;
-}
-
-// repeated bool cap_oppo_size5 = 33;
-int RequestV2::cap_oppo_size5_size() const {
-  return cap_oppo_size5_.size();
-}
-void RequestV2::clear_cap_oppo_size5() {
-  cap_oppo_size5_.Clear();
-}
- bool RequestV2::cap_oppo_size5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size5)
-  return cap_oppo_size5_.Get(index);
-}
- void RequestV2::set_cap_oppo_size5(int index, bool value) {
-  cap_oppo_size5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size5)
-}
- void RequestV2::add_cap_oppo_size5(bool value) {
-  cap_oppo_size5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size5)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size5)
-  return cap_oppo_size5_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size5)
-  return &cap_oppo_size5_;
-}
-
-// repeated bool cap_oppo_size6 = 34;
-int RequestV2::cap_oppo_size6_size() const {
-  return cap_oppo_size6_.size();
-}
-void RequestV2::clear_cap_oppo_size6() {
-  cap_oppo_size6_.Clear();
-}
- bool RequestV2::cap_oppo_size6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size6)
-  return cap_oppo_size6_.Get(index);
-}
- void RequestV2::set_cap_oppo_size6(int index, bool value) {
-  cap_oppo_size6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size6)
-}
- void RequestV2::add_cap_oppo_size6(bool value) {
-  cap_oppo_size6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size6)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size6)
-  return cap_oppo_size6_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size6)
-  return &cap_oppo_size6_;
-}
-
-// repeated bool cap_oppo_size7 = 35;
-int RequestV2::cap_oppo_size7_size() const {
-  return cap_oppo_size7_.size();
-}
-void RequestV2::clear_cap_oppo_size7() {
-  cap_oppo_size7_.Clear();
-}
- bool RequestV2::cap_oppo_size7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size7)
-  return cap_oppo_size7_.Get(index);
-}
- void RequestV2::set_cap_oppo_size7(int index, bool value) {
-  cap_oppo_size7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size7)
-}
- void RequestV2::add_cap_oppo_size7(bool value) {
-  cap_oppo_size7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size7)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size7)
-  return cap_oppo_size7_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size7)
-  return &cap_oppo_size7_;
-}
-
-// repeated bool cap_oppo_size8_plus = 36;
-int RequestV2::cap_oppo_size8_plus_size() const {
-  return cap_oppo_size8_plus_.size();
-}
-void RequestV2::clear_cap_oppo_size8_plus() {
-  cap_oppo_size8_plus_.Clear();
-}
- bool RequestV2::cap_oppo_size8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_oppo_size8_plus)
-  return cap_oppo_size8_plus_.Get(index);
-}
- void RequestV2::set_cap_oppo_size8_plus(int index, bool value) {
-  cap_oppo_size8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_oppo_size8_plus)
-}
- void RequestV2::add_cap_oppo_size8_plus(bool value) {
-  cap_oppo_size8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_oppo_size8_plus)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_oppo_size8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_oppo_size8_plus)
-  return cap_oppo_size8_plus_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_oppo_size8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_oppo_size8_plus)
-  return &cap_oppo_size8_plus_;
-}
-
-// repeated bool cap_our_size1 = 37;
-int RequestV2::cap_our_size1_size() const {
-  return cap_our_size1_.size();
-}
-void RequestV2::clear_cap_our_size1() {
-  cap_our_size1_.Clear();
-}
- bool RequestV2::cap_our_size1(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size1)
-  return cap_our_size1_.Get(index);
-}
- void RequestV2::set_cap_our_size1(int index, bool value) {
-  cap_our_size1_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size1)
-}
- void RequestV2::add_cap_our_size1(bool value) {
-  cap_our_size1_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size1)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size1() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size1)
-  return cap_our_size1_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size1() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size1)
-  return &cap_our_size1_;
-}
-
-// repeated bool cap_our_size2 = 38;
-int RequestV2::cap_our_size2_size() const {
-  return cap_our_size2_.size();
-}
-void RequestV2::clear_cap_our_size2() {
-  cap_our_size2_.Clear();
-}
- bool RequestV2::cap_our_size2(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size2)
-  return cap_our_size2_.Get(index);
-}
- void RequestV2::set_cap_our_size2(int index, bool value) {
-  cap_our_size2_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size2)
-}
- void RequestV2::add_cap_our_size2(bool value) {
-  cap_our_size2_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size2)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size2() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size2)
-  return cap_our_size2_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size2() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size2)
-  return &cap_our_size2_;
-}
-
-// repeated bool cap_our_size3 = 39;
-int RequestV2::cap_our_size3_size() const {
-  return cap_our_size3_.size();
-}
-void RequestV2::clear_cap_our_size3() {
-  cap_our_size3_.Clear();
-}
- bool RequestV2::cap_our_size3(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size3)
-  return cap_our_size3_.Get(index);
-}
- void RequestV2::set_cap_our_size3(int index, bool value) {
-  cap_our_size3_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size3)
-}
- void RequestV2::add_cap_our_size3(bool value) {
-  cap_our_size3_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size3)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size3() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size3)
-  return cap_our_size3_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size3() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size3)
-  return &cap_our_size3_;
-}
-
-// repeated bool cap_our_size4 = 40;
-int RequestV2::cap_our_size4_size() const {
-  return cap_our_size4_.size();
-}
-void RequestV2::clear_cap_our_size4() {
-  cap_our_size4_.Clear();
-}
- bool RequestV2::cap_our_size4(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size4)
-  return cap_our_size4_.Get(index);
-}
- void RequestV2::set_cap_our_size4(int index, bool value) {
-  cap_our_size4_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size4)
-}
- void RequestV2::add_cap_our_size4(bool value) {
-  cap_our_size4_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size4)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size4() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size4)
-  return cap_our_size4_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size4() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size4)
-  return &cap_our_size4_;
-}
-
-// repeated bool cap_our_size5 = 41;
-int RequestV2::cap_our_size5_size() const {
-  return cap_our_size5_.size();
-}
-void RequestV2::clear_cap_our_size5() {
-  cap_our_size5_.Clear();
-}
- bool RequestV2::cap_our_size5(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size5)
-  return cap_our_size5_.Get(index);
-}
- void RequestV2::set_cap_our_size5(int index, bool value) {
-  cap_our_size5_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size5)
-}
- void RequestV2::add_cap_our_size5(bool value) {
-  cap_our_size5_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size5)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size5() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size5)
-  return cap_our_size5_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size5() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size5)
-  return &cap_our_size5_;
-}
-
-// repeated bool cap_our_size6 = 42;
-int RequestV2::cap_our_size6_size() const {
-  return cap_our_size6_.size();
-}
-void RequestV2::clear_cap_our_size6() {
-  cap_our_size6_.Clear();
-}
- bool RequestV2::cap_our_size6(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size6)
-  return cap_our_size6_.Get(index);
-}
- void RequestV2::set_cap_our_size6(int index, bool value) {
-  cap_our_size6_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size6)
-}
- void RequestV2::add_cap_our_size6(bool value) {
-  cap_our_size6_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size6)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size6() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size6)
-  return cap_our_size6_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size6() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size6)
-  return &cap_our_size6_;
-}
-
-// repeated bool cap_our_size7 = 43;
-int RequestV2::cap_our_size7_size() const {
-  return cap_our_size7_.size();
-}
-void RequestV2::clear_cap_our_size7() {
-  cap_our_size7_.Clear();
-}
- bool RequestV2::cap_our_size7(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size7)
-  return cap_our_size7_.Get(index);
-}
- void RequestV2::set_cap_our_size7(int index, bool value) {
-  cap_our_size7_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size7)
-}
- void RequestV2::add_cap_our_size7(bool value) {
-  cap_our_size7_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size7)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size7() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size7)
-  return cap_our_size7_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size7() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size7)
-  return &cap_our_size7_;
-}
-
-// repeated bool cap_our_size8_plus = 44;
-int RequestV2::cap_our_size8_plus_size() const {
-  return cap_our_size8_plus_.size();
-}
-void RequestV2::clear_cap_our_size8_plus() {
-  cap_our_size8_plus_.Clear();
-}
- bool RequestV2::cap_our_size8_plus(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.cap_our_size8_plus)
-  return cap_our_size8_plus_.Get(index);
-}
- void RequestV2::set_cap_our_size8_plus(int index, bool value) {
-  cap_our_size8_plus_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.cap_our_size8_plus)
-}
- void RequestV2::add_cap_our_size8_plus(bool value) {
-  cap_our_size8_plus_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.cap_our_size8_plus)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::cap_our_size8_plus() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.cap_our_size8_plus)
-  return cap_our_size8_plus_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_cap_our_size8_plus() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.cap_our_size8_plus)
-  return &cap_our_size8_plus_;
-}
-
-// repeated bool not_fill_own_eyes = 45;
-int RequestV2::not_fill_own_eyes_size() const {
-  return not_fill_own_eyes_.size();
-}
-void RequestV2::clear_not_fill_own_eyes() {
-  not_fill_own_eyes_.Clear();
-}
- bool RequestV2::not_fill_own_eyes(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.not_fill_own_eyes)
-  return not_fill_own_eyes_.Get(index);
-}
- void RequestV2::set_not_fill_own_eyes(int index, bool value) {
-  not_fill_own_eyes_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.not_fill_own_eyes)
-}
- void RequestV2::add_not_fill_own_eyes(bool value) {
-  not_fill_own_eyes_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.not_fill_own_eyes)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::not_fill_own_eyes() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.not_fill_own_eyes)
-  return not_fill_own_eyes_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_not_fill_own_eyes() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.not_fill_own_eyes)
-  return &not_fill_own_eyes_;
-}
-
-// repeated bool ko = 46;
+// repeated bool ko = 30;
 int RequestV2::ko_size() const {
   return ko_.size();
 }
@@ -5958,7 +4400,7 @@ RequestV2::mutable_ko() {
   return &ko_;
 }
 
-// repeated bool border = 47;
+// repeated bool border = 31;
 int RequestV2::border_size() const {
   return border_.size();
 }
@@ -5988,7 +4430,7 @@ RequestV2::mutable_border() {
   return &border_;
 }
 
-// repeated float position = 48;
+// repeated float position = 32;
 int RequestV2::position_size() const {
   return position_.size();
 }
@@ -6018,64 +4460,332 @@ RequestV2::mutable_position() {
   return &position_;
 }
 
-// repeated bool ones = 49;
-int RequestV2::ones_size() const {
-  return ones_.size();
-}
-void RequestV2::clear_ones() {
-  ones_.Clear();
-}
- bool RequestV2::ones(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.ones)
-  return ones_.Get(index);
-}
- void RequestV2::set_ones(int index, bool value) {
-  ones_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.ones)
-}
- void RequestV2::add_ones(bool value) {
-  ones_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.ones)
-}
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::ones() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.ones)
-  return ones_;
-}
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_ones() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.ones)
-  return &ones_;
+#endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
+
+// ===================================================================
+
+#if !defined(_MSC_VER) || _MSC_VER >= 1900
+const int ResponseV2::kBoardSizeFieldNumber;
+const int ResponseV2::kPossibilityFieldNumber;
+#endif  // !defined(_MSC_VER) || _MSC_VER >= 1900
+
+ResponseV2::ResponseV2()
+  : ::google::protobuf::Message(), _internal_metadata_(NULL) {
+  SharedCtor();
+  // @@protoc_insertion_point(constructor:gocnn.ResponseV2)
 }
 
-// repeated bool zeros = 50;
-int RequestV2::zeros_size() const {
-  return zeros_.size();
+void ResponseV2::InitAsDefaultInstance() {
+  _is_default_instance_ = true;
 }
-void RequestV2::clear_zeros() {
-  zeros_.Clear();
+
+ResponseV2::ResponseV2(const ResponseV2& from)
+  : ::google::protobuf::Message(),
+    _internal_metadata_(NULL) {
+  SharedCtor();
+  MergeFrom(from);
+  // @@protoc_insertion_point(copy_constructor:gocnn.ResponseV2)
 }
- bool RequestV2::zeros(int index) const {
-  // @@protoc_insertion_point(field_get:gocnn.RequestV2.zeros)
-  return zeros_.Get(index);
+
+void ResponseV2::SharedCtor() {
+    _is_default_instance_ = false;
+  _cached_size_ = 0;
+  board_size_ = 0;
 }
- void RequestV2::set_zeros(int index, bool value) {
-  zeros_.Set(index, value);
-  // @@protoc_insertion_point(field_set:gocnn.RequestV2.zeros)
+
+ResponseV2::~ResponseV2() {
+  // @@protoc_insertion_point(destructor:gocnn.ResponseV2)
+  SharedDtor();
 }
- void RequestV2::add_zeros(bool value) {
-  zeros_.Add(value);
-  // @@protoc_insertion_point(field_add:gocnn.RequestV2.zeros)
+
+void ResponseV2::SharedDtor() {
+  if (this != default_instance_) {
+  }
 }
- const ::google::protobuf::RepeatedField< bool >&
-RequestV2::zeros() const {
-  // @@protoc_insertion_point(field_list:gocnn.RequestV2.zeros)
-  return zeros_;
+
+void ResponseV2::SetCachedSize(int size) const {
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
 }
- ::google::protobuf::RepeatedField< bool >*
-RequestV2::mutable_zeros() {
-  // @@protoc_insertion_point(field_mutable_list:gocnn.RequestV2.zeros)
-  return &zeros_;
+const ::google::protobuf::Descriptor* ResponseV2::descriptor() {
+  protobuf_AssignDescriptorsOnce();
+  return ResponseV2_descriptor_;
+}
+
+const ResponseV2& ResponseV2::default_instance() {
+  if (default_instance_ == NULL) protobuf_AddDesc_message_2eproto();
+  return *default_instance_;
+}
+
+ResponseV2* ResponseV2::default_instance_ = NULL;
+
+ResponseV2* ResponseV2::New(::google::protobuf::Arena* arena) const {
+  ResponseV2* n = new ResponseV2;
+  if (arena != NULL) {
+    arena->Own(n);
+  }
+  return n;
+}
+
+void ResponseV2::Clear() {
+// @@protoc_insertion_point(message_clear_start:gocnn.ResponseV2)
+  board_size_ = 0;
+  possibility_.Clear();
+}
+
+bool ResponseV2::MergePartialFromCodedStream(
+    ::google::protobuf::io::CodedInputStream* input) {
+#define DO_(EXPRESSION) if (!GOOGLE_PREDICT_TRUE(EXPRESSION)) goto failure
+  ::google::protobuf::uint32 tag;
+  // @@protoc_insertion_point(parse_start:gocnn.ResponseV2)
+  for (;;) {
+    ::std::pair< ::google::protobuf::uint32, bool> p = input->ReadTagWithCutoff(127);
+    tag = p.first;
+    if (!p.second) goto handle_unusual;
+    switch (::google::protobuf::internal::WireFormatLite::GetTagFieldNumber(tag)) {
+      // optional int32 board_size = 1;
+      case 1: {
+        if (tag == 8) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPrimitive<
+                   ::google::protobuf::int32, ::google::protobuf::internal::WireFormatLite::TYPE_INT32>(
+                 input, &board_size_)));
+
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectTag(18)) goto parse_possibility;
+        break;
+      }
+
+      // repeated float possibility = 2;
+      case 2: {
+        if (tag == 18) {
+         parse_possibility:
+          DO_((::google::protobuf::internal::WireFormatLite::ReadPackedPrimitive<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 input, this->mutable_possibility())));
+        } else if (tag == 21) {
+          DO_((::google::protobuf::internal::WireFormatLite::ReadRepeatedPrimitiveNoInline<
+                   float, ::google::protobuf::internal::WireFormatLite::TYPE_FLOAT>(
+                 1, 18, input, this->mutable_possibility())));
+        } else {
+          goto handle_unusual;
+        }
+        if (input->ExpectAtEnd()) goto success;
+        break;
+      }
+
+      default: {
+      handle_unusual:
+        if (tag == 0 ||
+            ::google::protobuf::internal::WireFormatLite::GetTagWireType(tag) ==
+            ::google::protobuf::internal::WireFormatLite::WIRETYPE_END_GROUP) {
+          goto success;
+        }
+        DO_(::google::protobuf::internal::WireFormatLite::SkipField(input, tag));
+        break;
+      }
+    }
+  }
+success:
+  // @@protoc_insertion_point(parse_success:gocnn.ResponseV2)
+  return true;
+failure:
+  // @@protoc_insertion_point(parse_failure:gocnn.ResponseV2)
+  return false;
+#undef DO_
+}
+
+void ResponseV2::SerializeWithCachedSizes(
+    ::google::protobuf::io::CodedOutputStream* output) const {
+  // @@protoc_insertion_point(serialize_start:gocnn.ResponseV2)
+  // optional int32 board_size = 1;
+  if (this->board_size() != 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteInt32(1, this->board_size(), output);
+  }
+
+  // repeated float possibility = 2;
+  if (this->possibility_size() > 0) {
+    ::google::protobuf::internal::WireFormatLite::WriteTag(2, ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED, output);
+    output->WriteVarint32(_possibility_cached_byte_size_);
+  }
+  for (int i = 0; i < this->possibility_size(); i++) {
+    ::google::protobuf::internal::WireFormatLite::WriteFloatNoTag(
+      this->possibility(i), output);
+  }
+
+  // @@protoc_insertion_point(serialize_end:gocnn.ResponseV2)
+}
+
+::google::protobuf::uint8* ResponseV2::InternalSerializeWithCachedSizesToArray(
+    bool deterministic, ::google::protobuf::uint8* target) const {
+  // @@protoc_insertion_point(serialize_to_array_start:gocnn.ResponseV2)
+  // optional int32 board_size = 1;
+  if (this->board_size() != 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteInt32ToArray(1, this->board_size(), target);
+  }
+
+  // repeated float possibility = 2;
+  if (this->possibility_size() > 0) {
+    target = ::google::protobuf::internal::WireFormatLite::WriteTagToArray(
+      2,
+      ::google::protobuf::internal::WireFormatLite::WIRETYPE_LENGTH_DELIMITED,
+      target);
+    target = ::google::protobuf::io::CodedOutputStream::WriteVarint32ToArray(
+      _possibility_cached_byte_size_, target);
+  }
+  for (int i = 0; i < this->possibility_size(); i++) {
+    target = ::google::protobuf::internal::WireFormatLite::
+      WriteFloatNoTagToArray(this->possibility(i), target);
+  }
+
+  // @@protoc_insertion_point(serialize_to_array_end:gocnn.ResponseV2)
+  return target;
+}
+
+int ResponseV2::ByteSize() const {
+// @@protoc_insertion_point(message_byte_size_start:gocnn.ResponseV2)
+  int total_size = 0;
+
+  // optional int32 board_size = 1;
+  if (this->board_size() != 0) {
+    total_size += 1 +
+      ::google::protobuf::internal::WireFormatLite::Int32Size(
+        this->board_size());
+  }
+
+  // repeated float possibility = 2;
+  {
+    int data_size = 0;
+    data_size = 4 * this->possibility_size();
+    if (data_size > 0) {
+      total_size += 1 +
+        ::google::protobuf::internal::WireFormatLite::Int32Size(data_size);
+    }
+    GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+    _possibility_cached_byte_size_ = data_size;
+    GOOGLE_SAFE_CONCURRENT_WRITES_END();
+    total_size += data_size;
+  }
+
+  GOOGLE_SAFE_CONCURRENT_WRITES_BEGIN();
+  _cached_size_ = total_size;
+  GOOGLE_SAFE_CONCURRENT_WRITES_END();
+  return total_size;
+}
+
+void ResponseV2::MergeFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_merge_from_start:gocnn.ResponseV2)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  const ResponseV2* source = 
+      ::google::protobuf::internal::DynamicCastToGenerated<const ResponseV2>(
+          &from);
+  if (source == NULL) {
+  // @@protoc_insertion_point(generalized_merge_from_cast_fail:gocnn.ResponseV2)
+    ::google::protobuf::internal::ReflectionOps::Merge(from, this);
+  } else {
+  // @@protoc_insertion_point(generalized_merge_from_cast_success:gocnn.ResponseV2)
+    MergeFrom(*source);
+  }
+}
+
+void ResponseV2::MergeFrom(const ResponseV2& from) {
+// @@protoc_insertion_point(class_specific_merge_from_start:gocnn.ResponseV2)
+  if (GOOGLE_PREDICT_FALSE(&from == this)) {
+    ::google::protobuf::internal::MergeFromFail(__FILE__, __LINE__);
+  }
+  possibility_.MergeFrom(from.possibility_);
+  if (from.board_size() != 0) {
+    set_board_size(from.board_size());
+  }
+}
+
+void ResponseV2::CopyFrom(const ::google::protobuf::Message& from) {
+// @@protoc_insertion_point(generalized_copy_from_start:gocnn.ResponseV2)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+void ResponseV2::CopyFrom(const ResponseV2& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:gocnn.ResponseV2)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool ResponseV2::IsInitialized() const {
+
+  return true;
+}
+
+void ResponseV2::Swap(ResponseV2* other) {
+  if (other == this) return;
+  InternalSwap(other);
+}
+void ResponseV2::InternalSwap(ResponseV2* other) {
+  std::swap(board_size_, other->board_size_);
+  possibility_.UnsafeArenaSwap(&other->possibility_);
+  _internal_metadata_.Swap(&other->_internal_metadata_);
+  std::swap(_cached_size_, other->_cached_size_);
+}
+
+::google::protobuf::Metadata ResponseV2::GetMetadata() const {
+  protobuf_AssignDescriptorsOnce();
+  ::google::protobuf::Metadata metadata;
+  metadata.descriptor = ResponseV2_descriptor_;
+  metadata.reflection = ResponseV2_reflection_;
+  return metadata;
+}
+
+#if PROTOBUF_INLINE_NOT_IN_HEADERS
+// ResponseV2
+
+// optional int32 board_size = 1;
+void ResponseV2::clear_board_size() {
+  board_size_ = 0;
+}
+ ::google::protobuf::int32 ResponseV2::board_size() const {
+  // @@protoc_insertion_point(field_get:gocnn.ResponseV2.board_size)
+  return board_size_;
+}
+ void ResponseV2::set_board_size(::google::protobuf::int32 value) {
+  
+  board_size_ = value;
+  // @@protoc_insertion_point(field_set:gocnn.ResponseV2.board_size)
+}
+
+// repeated float possibility = 2;
+int ResponseV2::possibility_size() const {
+  return possibility_.size();
+}
+void ResponseV2::clear_possibility() {
+  possibility_.Clear();
+}
+ float ResponseV2::possibility(int index) const {
+  // @@protoc_insertion_point(field_get:gocnn.ResponseV2.possibility)
+  return possibility_.Get(index);
+}
+ void ResponseV2::set_possibility(int index, float value) {
+  possibility_.Set(index, value);
+  // @@protoc_insertion_point(field_set:gocnn.ResponseV2.possibility)
+}
+ void ResponseV2::add_possibility(float value) {
+  possibility_.Add(value);
+  // @@protoc_insertion_point(field_add:gocnn.ResponseV2.possibility)
+}
+ const ::google::protobuf::RepeatedField< float >&
+ResponseV2::possibility() const {
+  // @@protoc_insertion_point(field_list:gocnn.ResponseV2.possibility)
+  return possibility_;
+}
+ ::google::protobuf::RepeatedField< float >*
+ResponseV2::mutable_possibility() {
+  // @@protoc_insertion_point(field_mutable_list:gocnn.ResponseV2.possibility)
+  return &possibility_;
 }
 
 #endif  // PROTOBUF_INLINE_NOT_IN_HEADERS
